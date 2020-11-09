@@ -1,0 +1,4700 @@
+info:
+  description: Specification for ManagedServices.
+  pascal_case_title: ManagedServicesClient
+  python_title: managed_services_client
+  title: ManagedServicesClient
+  extensions:
+    cli-dump-index: 10
+schemas:
+  booleans:
+    - &ref_30
+      type: boolean
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: boolean
+          description: ''
+        python:
+          name: boolean
+          description: ''
+      protocol: {}
+  strings:
+    - &ref_0
+      type: string
+      language:
+        default:
+          name: String
+          description: simple string
+        cli:
+          name: String
+          description: simple string
+        python:
+          name: string
+          description: simple string.
+      protocol: {}
+    - &ref_2
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: String
+          description: ''
+        cli:
+          name: String
+          description: ''
+        python:
+          name: string
+          description: ''
+      protocol: {}
+    - &ref_66
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionPropertiesDescription
+          description: Description of the registration definition.
+        cli:
+          name: RegistrationDefinitionPropertiesDescription
+          description: Description of the registration definition.
+        python:
+          name: registrationdefinitionpropertiesdescription
+          description: Description of the registration definition.
+      protocol: {}
+    - &ref_67
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: AuthorizationPrincipalId
+          description: Principal Id of the security group/service principal/user that would be assigned permissions to the projected subscription
+        cli:
+          name: AuthorizationPrincipalId
+          description: Principal Id of the security group/service principal/user that would be assigned permissions to the projected subscription
+        python:
+          name: authorizationprincipalid
+          description: Principal Id of the security group/service principal/user that would be assigned permissions to the projected subscription.
+      protocol: {}
+    - &ref_68
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: AuthorizationPrincipalIdDisplayName
+          description: Display name of the principal Id.
+        cli:
+          name: AuthorizationPrincipalIdDisplayName
+          description: Display name of the principal Id.
+        python:
+          name: authorizationprincipaliddisplayname
+          description: Display name of the principal Id.
+      protocol: {}
+    - &ref_69
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: AuthorizationRoleDefinitionId
+          description: The role definition identifier. This role will define all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+        cli:
+          name: AuthorizationRoleDefinitionId
+          description: The role definition identifier. This role will define all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+        python:
+          name: authorizationroledefinitionid
+          description: The role definition identifier. This role will define all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+      protocol: {}
+    - &ref_70
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: EligibleAuthorizationPrincipalId
+          description: Principal Id of the security group/service principal/user that would be delegated permissions to the projected subscription
+        cli:
+          name: EligibleAuthorizationPrincipalId
+          description: Principal Id of the security group/service principal/user that would be delegated permissions to the projected subscription
+        python:
+          name: eligibleauthorizationprincipalid
+          description: Principal Id of the security group/service principal/user that would be delegated permissions to the projected subscription.
+      protocol: {}
+    - &ref_71
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: EligibleAuthorizationPrincipalIdDisplayName
+          description: Display name of the principal Id.
+        cli:
+          name: EligibleAuthorizationPrincipalIdDisplayName
+          description: Display name of the principal Id.
+        python:
+          name: eligibleauthorizationprincipaliddisplayname
+          description: Display name of the principal Id.
+      protocol: {}
+    - &ref_72
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: EligibleAuthorizationRoleDefinitionId
+          description: The role definition identifier. This role will delegate all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+        cli:
+          name: EligibleAuthorizationRoleDefinitionId
+          description: The role definition identifier. This role will delegate all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+        python:
+          name: eligibleauthorizationroledefinitionid
+          description: The role definition identifier. This role will delegate all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+      protocol: {}
+    - &ref_73
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionPropertiesRegistrationDefinitionName
+          description: Name of the registration definition.
+        cli:
+          name: RegistrationDefinitionPropertiesRegistrationDefinitionName
+          description: Name of the registration definition.
+        python:
+          name: registrationdefinitionpropertiesregistrationdefinitionname
+          description: Name of the registration definition.
+      protocol: {}
+    - &ref_74
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionPropertiesManagedByTenantId
+          description: Id of the managedBy tenant.
+        cli:
+          name: RegistrationDefinitionPropertiesManagedByTenantId
+          description: Id of the managedBy tenant.
+        python:
+          name: registrationdefinitionpropertiesmanagedbytenantid
+          description: Id of the managedBy tenant.
+      protocol: {}
+    - &ref_75
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionPropertiesManagedByTenantName
+          description: Name of the managedBy tenant.
+        cli:
+          name: RegistrationDefinitionPropertiesManagedByTenantName
+          description: Name of the managedBy tenant.
+        python:
+          name: registrationdefinitionpropertiesmanagedbytenantname
+          description: Name of the managedBy tenant.
+      protocol: {}
+    - &ref_76
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: PlanName
+          description: The plan name.
+        cli:
+          name: PlanName
+          description: The plan name.
+        python:
+          name: planname
+          description: The plan name.
+      protocol: {}
+    - &ref_77
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: PlanPublisher
+          description: The publisher ID.
+        cli:
+          name: PlanPublisher
+          description: The publisher ID.
+        python:
+          name: planpublisher
+          description: The publisher ID.
+      protocol: {}
+    - &ref_78
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: PlanProduct
+          description: The product code.
+        cli:
+          name: PlanProduct
+          description: The product code.
+        python:
+          name: planproduct
+          description: The product code.
+      protocol: {}
+    - &ref_79
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: PlanVersion
+          description: The plan's version.
+        cli:
+          name: PlanVersion
+          description: The plan's version.
+        python:
+          name: planversion
+          description: The plan's version.
+      protocol: {}
+    - &ref_80
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionId
+          description: Fully qualified path of the registration definition.
+        cli:
+          name: RegistrationDefinitionId
+          description: Fully qualified path of the registration definition.
+        python:
+          name: registrationdefinitionid
+          description: Fully qualified path of the registration definition.
+      protocol: {}
+    - &ref_81
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionType
+          description: Type of the resource.
+        cli:
+          name: RegistrationDefinitionType
+          description: Type of the resource.
+        python:
+          name: registrationdefinitiontype
+          description: Type of the resource.
+      protocol: {}
+    - &ref_82
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionName
+          description: Name of the registration definition.
+        cli:
+          name: RegistrationDefinitionName
+          description: Name of the registration definition.
+        python:
+          name: registrationdefinitionname
+          description: Name of the registration definition.
+      protocol: {}
+    - &ref_83
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: ErrorResponseErrorCode
+          description: Error code.
+        cli:
+          name: ErrorResponseErrorCode
+          description: Error code.
+        python:
+          name: errorresponseerrorcode
+          description: Error code.
+      protocol: {}
+    - &ref_84
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: ErrorResponseErrorMessage
+          description: Error message indicating why the operation failed.
+        cli:
+          name: ErrorResponseErrorMessage
+          description: Error message indicating why the operation failed.
+        python:
+          name: errorresponseerrormessage
+          description: Error message indicating why the operation failed.
+      protocol: {}
+    - &ref_85
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionId
+          description: Fully qualified path of the registration definition.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionId
+          description: Fully qualified path of the registration definition.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionid
+          description: Fully qualified path of the registration definition.
+      protocol: {}
+    - &ref_86
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesDescription
+          description: Description of the registration definition.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesDescription
+          description: Description of the registration definition.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionpropertiesdescription
+          description: Description of the registration definition.
+      protocol: {}
+    - &ref_87
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesRegistrationDefinitionName
+          description: Name of the registration definition.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesRegistrationDefinitionName
+          description: Name of the registration definition.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionpropertiesregistrationdefinitionname
+          description: Name of the registration definition.
+      protocol: {}
+    - &ref_88
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManageeTenantId
+          description: Id of the home tenant.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManageeTenantId
+          description: Id of the home tenant.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionpropertiesmanageetenantid
+          description: Id of the home tenant.
+      protocol: {}
+    - &ref_89
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManageeTenantName
+          description: Name of the home tenant.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManageeTenantName
+          description: Name of the home tenant.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionpropertiesmanageetenantname
+          description: Name of the home tenant.
+      protocol: {}
+    - &ref_90
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManagedByTenantId
+          description: Id of the managedBy tenant.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManagedByTenantId
+          description: Id of the managedBy tenant.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionpropertiesmanagedbytenantid
+          description: Id of the managedBy tenant.
+      protocol: {}
+    - &ref_91
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManagedByTenantName
+          description: Name of the managedBy tenant.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesManagedByTenantName
+          description: Name of the managedBy tenant.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionpropertiesmanagedbytenantname
+          description: Name of the managedBy tenant.
+      protocol: {}
+    - &ref_92
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionId
+          description: Fully qualified path of the registration definition.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionId
+          description: Fully qualified path of the registration definition.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionid
+          description: Fully qualified path of the registration definition.
+      protocol: {}
+    - &ref_93
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionType
+          description: Type of the resource (Microsoft.ManagedServices/registrationDefinitions).
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionType
+          description: Type of the resource (Microsoft.ManagedServices/registrationDefinitions).
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitiontype
+          description: Type of the resource (Microsoft.ManagedServices/registrationDefinitions).
+      protocol: {}
+    - &ref_94
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionName
+          description: Name of the registration definition.
+        cli:
+          name: RegistrationAssignmentPropertiesRegistrationDefinitionName
+          description: Name of the registration definition.
+        python:
+          name: registrationassignmentpropertiesregistrationdefinitionname
+          description: Name of the registration definition.
+      protocol: {}
+    - &ref_95
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentId
+          description: The fully qualified path of the registration assignment.
+        cli:
+          name: RegistrationAssignmentId
+          description: The fully qualified path of the registration assignment.
+        python:
+          name: registrationassignmentid
+          description: The fully qualified path of the registration assignment.
+      protocol: {}
+    - &ref_96
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentType
+          description: Type of the resource.
+        cli:
+          name: RegistrationAssignmentType
+          description: Type of the resource.
+        python:
+          name: registrationassignmenttype
+          description: Type of the resource.
+      protocol: {}
+    - &ref_97
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentName
+          description: Name of the registration assignment.
+        cli:
+          name: RegistrationAssignmentName
+          description: Name of the registration assignment.
+        python:
+          name: registrationassignmentname
+          description: Name of the registration assignment.
+      protocol: {}
+    - &ref_98
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationDefinitionListNextLink
+          description: Link to next page of registration definitions.
+        cli:
+          name: RegistrationDefinitionListNextLink
+          description: Link to next page of registration definitions.
+        python:
+          name: registrationdefinitionlistnextlink
+          description: Link to next page of registration definitions.
+      protocol: {}
+    - &ref_99
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: RegistrationAssignmentListNextLink
+          description: Link to next page of registration assignments.
+        cli:
+          name: RegistrationAssignmentListNextLink
+          description: Link to next page of registration assignments.
+        python:
+          name: registrationassignmentlistnextlink
+          description: Link to next page of registration assignments.
+      protocol: {}
+    - &ref_100
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionPropertiesManagedByTenantId
+          description: Id of the managedBy tenant.
+        cli:
+          name: MarketplaceRegistrationDefinitionPropertiesManagedByTenantId
+          description: Id of the managedBy tenant.
+        python:
+          name: marketplaceregistrationdefinitionpropertiesmanagedbytenantid
+          description: Id of the managedBy tenant.
+      protocol: {}
+    - &ref_101
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionPropertiesOfferDisplayName
+          description: The marketplace offer display name.
+        cli:
+          name: MarketplaceRegistrationDefinitionPropertiesOfferDisplayName
+          description: The marketplace offer display name.
+        python:
+          name: marketplaceregistrationdefinitionpropertiesofferdisplayname
+          description: The marketplace offer display name.
+      protocol: {}
+    - &ref_102
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionPropertiesPublisherDisplayName
+          description: The marketplace publisher display name.
+        cli:
+          name: MarketplaceRegistrationDefinitionPropertiesPublisherDisplayName
+          description: The marketplace publisher display name.
+        python:
+          name: marketplaceregistrationdefinitionpropertiespublisherdisplayname
+          description: The marketplace publisher display name.
+      protocol: {}
+    - &ref_103
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionPropertiesPlanDisplayName
+          description: The marketplace plan display name.
+        cli:
+          name: MarketplaceRegistrationDefinitionPropertiesPlanDisplayName
+          description: The marketplace plan display name.
+        python:
+          name: marketplaceregistrationdefinitionpropertiesplandisplayname
+          description: The marketplace plan display name.
+      protocol: {}
+    - &ref_104
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionId
+          description: Fully qualified path of the marketplace registration definition.
+        cli:
+          name: MarketplaceRegistrationDefinitionId
+          description: Fully qualified path of the marketplace registration definition.
+        python:
+          name: marketplaceregistrationdefinitionid
+          description: Fully qualified path of the marketplace registration definition.
+      protocol: {}
+    - &ref_105
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionType
+          description: Type of the resource.
+        cli:
+          name: MarketplaceRegistrationDefinitionType
+          description: Type of the resource.
+        python:
+          name: marketplaceregistrationdefinitiontype
+          description: Type of the resource.
+      protocol: {}
+    - &ref_106
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionName
+          description: Name of the marketplace registration definition.
+        cli:
+          name: MarketplaceRegistrationDefinitionName
+          description: Name of the marketplace registration definition.
+        python:
+          name: marketplaceregistrationdefinitionname
+          description: Name of the marketplace registration definition.
+      protocol: {}
+    - &ref_107
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionListNextLink
+          description: Link to next page of marketplace registration definitions.
+        cli:
+          name: MarketplaceRegistrationDefinitionListNextLink
+          description: Link to next page of marketplace registration definitions.
+        python:
+          name: marketplaceregistrationdefinitionlistnextlink
+          description: Link to next page of marketplace registration definitions.
+      protocol: {}
+    - &ref_108
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: OperationName
+          description: 'Operation name: {provider}/{resource}/{operation}'
+        cli:
+          name: OperationName
+          description: 'Operation name: {provider}/{resource}/{operation}'
+        python:
+          name: operationname
+          description: 'Operation name: {provider}/{resource}/{operation}.'
+      protocol: {}
+    - &ref_109
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: OperationDisplayProvider
+          description: 'Service provider: Microsoft.ManagedServices'
+        cli:
+          name: OperationDisplayProvider
+          description: 'Service provider: Microsoft.ManagedServices'
+        python:
+          name: operationdisplayprovider
+          description: 'Service provider: Microsoft.ManagedServices.'
+      protocol: {}
+    - &ref_110
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: OperationDisplayResource
+          description: 'Resource on which the operation is performed: Registration definition, registration assignment etc.'
+        cli:
+          name: OperationDisplayResource
+          description: 'Resource on which the operation is performed: Registration definition, registration assignment etc.'
+        python:
+          name: operationdisplayresource
+          description: 'Resource on which the operation is performed: Registration definition, registration assignment etc.'
+      protocol: {}
+    - &ref_111
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: OperationDisplayOperation
+          description: 'Operation type: Read, write, delete, etc.'
+        cli:
+          name: OperationDisplayOperation
+          description: 'Operation type: Read, write, delete, etc.'
+        python:
+          name: operationdisplayoperation
+          description: 'Operation type: Read, write, delete, etc.'
+      protocol: {}
+    - &ref_112
+      type: string
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: OperationDisplayDescription
+          description: Description of the operation.
+        cli:
+          name: OperationDisplayDescription
+          description: Description of the operation.
+        python:
+          name: operationdisplaydescription
+          description: Description of the operation.
+      protocol: {}
+  choices:
+    - &ref_50
+      choices:
+        - value: Azure
+          language:
+            default:
+              name: azure
+              description: ''
+            cli:
+              name: Azure
+              description: ''
+              cliKey: Azure
+            python:
+              name: AZURE
+              description: ''
+        - value: None
+          language:
+            default:
+              name: none
+              description: ''
+            cli:
+              name: None
+              description: ''
+              cliKey: None
+            python:
+              name: NONE
+              description: ''
+      type: choice
+      apiVersions:
+        - version: 2020-02-01-preview
+      choiceType: *ref_0
+      language:
+        default:
+          name: MultiFactorAuthProvider
+          description: MFA provider.
+        cli:
+          name: MultiFactorAuthProvider
+          description: MFA provider.
+          cliKey: MultiFactorAuthProvider
+        python:
+          name: MultiFactorAuthProvider
+          description: MFA provider.
+      protocol: {}
+    - &ref_15
+      choices:
+        - value: NotSpecified
+          language:
+            default:
+              name: not_specified
+              description: ''
+            cli:
+              name: NotSpecified
+              description: ''
+              cliKey: NotSpecified
+            python:
+              name: NOT_SPECIFIED
+              description: ''
+        - value: Accepted
+          language:
+            default:
+              name: accepted
+              description: ''
+            cli:
+              name: Accepted
+              description: ''
+              cliKey: Accepted
+            python:
+              name: ACCEPTED
+              description: ''
+        - value: Running
+          language:
+            default:
+              name: running
+              description: ''
+            cli:
+              name: Running
+              description: ''
+              cliKey: Running
+            python:
+              name: RUNNING
+              description: ''
+        - value: Ready
+          language:
+            default:
+              name: ready
+              description: ''
+            cli:
+              name: Ready
+              description: ''
+              cliKey: Ready
+            python:
+              name: READY
+              description: ''
+        - value: Creating
+          language:
+            default:
+              name: creating
+              description: ''
+            cli:
+              name: Creating
+              description: ''
+              cliKey: Creating
+            python:
+              name: CREATING
+              description: ''
+        - value: Created
+          language:
+            default:
+              name: created
+              description: ''
+            cli:
+              name: Created
+              description: ''
+              cliKey: Created
+            python:
+              name: CREATED
+              description: ''
+        - value: Deleting
+          language:
+            default:
+              name: deleting
+              description: ''
+            cli:
+              name: Deleting
+              description: ''
+              cliKey: Deleting
+            python:
+              name: DELETING
+              description: ''
+        - value: Deleted
+          language:
+            default:
+              name: deleted
+              description: ''
+            cli:
+              name: Deleted
+              description: ''
+              cliKey: Deleted
+            python:
+              name: DELETED
+              description: ''
+        - value: Canceled
+          language:
+            default:
+              name: canceled
+              description: ''
+            cli:
+              name: Canceled
+              description: ''
+              cliKey: Canceled
+            python:
+              name: CANCELED
+              description: ''
+        - value: Failed
+          language:
+            default:
+              name: failed
+              description: ''
+            cli:
+              name: Failed
+              description: ''
+              cliKey: Failed
+            python:
+              name: FAILED
+              description: ''
+        - value: Succeeded
+          language:
+            default:
+              name: succeeded
+              description: ''
+            cli:
+              name: Succeeded
+              description: ''
+              cliKey: Succeeded
+            python:
+              name: SUCCEEDED
+              description: ''
+        - value: Updating
+          language:
+            default:
+              name: updating
+              description: ''
+            cli:
+              name: Updating
+              description: ''
+              cliKey: Updating
+            python:
+              name: UPDATING
+              description: ''
+      type: choice
+      apiVersions:
+        - version: 2020-02-01-preview
+      choiceType: *ref_0
+      language:
+        default:
+          name: ProvisioningState
+          description: Current state of the registration definition.
+        cli:
+          name: ProvisioningState
+          description: Current state of the registration definition.
+          cliKey: ProvisioningState
+        python:
+          name: ProvisioningState
+          description: Current state of the registration definition.
+      protocol: {}
+  constants:
+    - &ref_51
+      type: constant
+      value:
+        value: 2020-02-01-preview
+      valueType: *ref_0
+      language:
+        default:
+          name: api_version2020_02_01_preview
+          description: Api Version (2020-02-01-preview)
+        cli:
+          name: ApiVersion20200201Preview
+          description: Api Version (2020-02-01-preview)
+        python:
+          name: api_version2020_02_01_preview
+          description: Api Version (2020-02-01-preview).
+      protocol: {}
+    - &ref_24
+      type: constant
+      value:
+        value: application/json
+      valueType: *ref_0
+      language:
+        default:
+          name: application_json
+          description: Content Type 'application/json'
+        cli:
+          name: ApplicationJson
+          description: Content Type 'application/json'
+        python:
+          name: application_json
+          description: Content Type 'application/json'.
+      protocol: {}
+  durations:
+    - &ref_52
+      type: duration
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: just_in_time_access_policy_maximum_activation_duration
+          description: Maximum access duration in ISO 8601 format.  The default value is "PT8H".
+        python:
+          name: just_in_time_access_policy_maximum_activation_duration
+          description: Maximum access duration in ISO 8601 format.  The default value is "PT8H".
+      protocol: {}
+  uuids:
+    - &ref_113
+      type: uuid
+      apiVersions:
+        - version: 2020-02-01-preview
+      language:
+        default:
+          name: AuthorizationDelegatedRoleDefinitionIdsItem
+          description: ''
+        cli:
+          name: AuthorizationDelegatedRoleDefinitionIdsItem
+          description: ''
+        python:
+          name: authorizationdelegatedroledefinitionidsitem
+          description: ''
+      protocol: {}
+  objects:
+    - &ref_9
+      type: object
+      apiVersions:
+        - version: 2020-02-01-preview
+      properties:
+        - schema: &ref_53
+            type: object
+            apiVersions:
+              - version: 2020-02-01-preview
+            properties:
+              - schema: *ref_66
+                required: false
+                serializedName: description
+                language:
+                  default:
+                    name: description
+                    description: Description of the registration definition.
+                  cli:
+                    name: description
+                    description: Description of the registration definition.
+                    cliKey: description
+                  python:
+                    name: description
+                    description: Description of the registration definition.
+                protocol: {}
+              - schema: &ref_40
+                  type: array
+                  apiVersions:
+                    - version: 2020-02-01-preview
+                  elementType: &ref_16
+                    type: object
+                    apiVersions:
+                      - version: 2020-02-01-preview
+                    properties:
+                      - schema: *ref_67
+                        required: true
+                        serializedName: principalId
+                        language:
+                          default:
+                            name: principal_id
+                            description: Principal Id of the security group/service principal/user that would be assigned permissions to the projected subscription
+                          cli:
+                            name: principalId
+                            description: Principal Id of the security group/service principal/user that would be assigned permissions to the projected subscription
+                            cliKey: principalId
+                          python:
+                            name: principal_id
+                            description: Principal Id of the security group/service principal/user that would be assigned permissions to the projected subscription.
+                        protocol: {}
+                      - schema: *ref_68
+                        required: false
+                        serializedName: principalIdDisplayName
+                        language:
+                          default:
+                            name: principal_id_display_name
+                            description: Display name of the principal Id.
+                          cli:
+                            name: principalIdDisplayName
+                            description: Display name of the principal Id.
+                            cliKey: principalIdDisplayName
+                          python:
+                            name: principal_id_display_name
+                            description: Display name of the principal Id.
+                        protocol: {}
+                      - schema: *ref_69
+                        required: true
+                        serializedName: roleDefinitionId
+                        language:
+                          default:
+                            name: role_definition_id
+                            description: The role definition identifier. This role will define all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+                          cli:
+                            name: roleDefinitionId
+                            description: The role definition identifier. This role will define all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+                            cliKey: roleDefinitionId
+                          python:
+                            name: role_definition_id
+                            description: The role definition identifier. This role will define all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+                        protocol: {}
+                      - schema: &ref_39
+                          type: array
+                          apiVersions:
+                            - version: 2020-02-01-preview
+                          elementType: *ref_113
+                          language:
+                            default:
+                              name: AuthorizationDelegatedRoleDefinitionIds
+                              description: >-
+                                The delegatedRoleDefinitionIds field is required when the roleDefinitionId refers to the User Access Administrator Role. It is the list of role definition ids which define all the permissions that the user in
+                                the authorization can assign to other security groups/service principals/users.
+                            cli:
+                              name: AuthorizationDelegatedRoleDefinitionIds
+                              description: >-
+                                The delegatedRoleDefinitionIds field is required when the roleDefinitionId refers to the User Access Administrator Role. It is the list of role definition ids which define all the permissions that the user in
+                                the authorization can assign to other security groups/service principals/users.
+                              cli-complexity: array_simple
+                              cli-mark: checked
+                            python:
+                              name: authorizationdelegatedroledefinitionids
+                              description: >-
+                                The delegatedRoleDefinitionIds field is required when the roleDefinitionId refers to the User Access Administrator Role. It is the list of role definition ids which define all the permissions that the user in
+                                the authorization can assign to other security groups/service principals/users.
+                          protocol: {}
+                        required: false
+                        serializedName: delegatedRoleDefinitionIds
+                        language:
+                          default:
+                            name: delegated_role_definition_ids
+                            description: >-
+                              The delegatedRoleDefinitionIds field is required when the roleDefinitionId refers to the User Access Administrator Role. It is the list of role definition ids which define all the permissions that the user in
+                              the authorization can assign to other security groups/service principals/users.
+                          cli:
+                            name: delegatedRoleDefinitionIds
+                            description: >-
+                              The delegatedRoleDefinitionIds field is required when the roleDefinitionId refers to the User Access Administrator Role. It is the list of role definition ids which define all the permissions that the user in
+                              the authorization can assign to other security groups/service principals/users.
+                            cliKey: delegatedRoleDefinitionIds
+                          python:
+                            name: delegated_role_definition_ids
+                            description: >-
+                              The delegatedRoleDefinitionIds field is required when the roleDefinitionId refers to the User Access Administrator Role. It is the list of role definition ids which define all the permissions that the user in
+                              the authorization can assign to other security groups/service principals/users.
+                        protocol: {}
+                    serializationFormats:
+                      - json
+                    usage:
+                      - output
+                      - input
+                    language:
+                      default:
+                        name: Authorization
+                        description: Authorization tuple containing principal Id (of user/service principal/security group) and role definition id.
+                        namespace: ''
+                      cli:
+                        name: Authorization
+                        description: Authorization tuple containing principal Id (of user/service principal/security group) and role definition id.
+                        cli-complexity: object_simple
+                        cli-mark: checked
+                        cli-simplify-indicator:
+                          propertyCountIfSimplify: 10000
+                          propertyCountIfSimplifyWithoutSimpleObject: 10000
+                          simplifiable: false
+                        cliKey: Authorization
+                      python:
+                        name: Authorization
+                        description: Authorization tuple containing principal Id (of user/service principal/security group) and role definition id.
+                        namespace: ''
+                    protocol: {}
+                  language:
+                    default:
+                      name: RegistrationDefinitionPropertiesAuthorizations
+                      description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                    cli:
+                      name: RegistrationDefinitionPropertiesAuthorizations
+                      description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                      cli-complexity: array_complex
+                      cli-mark: checked
+                    python:
+                      name: registrationdefinitionpropertiesauthorizations
+                      description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                  protocol: {}
+                required: true
+                serializedName: authorizations
+                language:
+                  default:
+                    name: authorizations
+                    description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                  cli:
+                    name: authorizations
+                    description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                    cliKey: authorizations
+                  python:
+                    name: authorizations
+                    description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                protocol: {}
+              - schema: &ref_41
+                  type: array
+                  apiVersions:
+                    - version: 2020-02-01-preview
+                  elementType: &ref_17
+                    type: object
+                    apiVersions:
+                      - version: 2020-02-01-preview
+                    properties:
+                      - schema: *ref_70
+                        required: true
+                        serializedName: principalId
+                        language:
+                          default:
+                            name: principal_id
+                            description: Principal Id of the security group/service principal/user that would be delegated permissions to the projected subscription
+                          cli:
+                            name: principalId
+                            description: Principal Id of the security group/service principal/user that would be delegated permissions to the projected subscription
+                            cliKey: principalId
+                          python:
+                            name: principal_id
+                            description: Principal Id of the security group/service principal/user that would be delegated permissions to the projected subscription.
+                        protocol: {}
+                      - schema: *ref_71
+                        required: false
+                        serializedName: principalIdDisplayName
+                        language:
+                          default:
+                            name: principal_id_display_name
+                            description: Display name of the principal Id.
+                          cli:
+                            name: principalIdDisplayName
+                            description: Display name of the principal Id.
+                            cliKey: principalIdDisplayName
+                          python:
+                            name: principal_id_display_name
+                            description: Display name of the principal Id.
+                        protocol: {}
+                      - schema: *ref_72
+                        required: true
+                        serializedName: roleDefinitionId
+                        language:
+                          default:
+                            name: role_definition_id
+                            description: The role definition identifier. This role will delegate all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+                          cli:
+                            name: roleDefinitionId
+                            description: The role definition identifier. This role will delegate all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+                            cliKey: roleDefinitionId
+                          python:
+                            name: role_definition_id
+                            description: The role definition identifier. This role will delegate all the permissions that the security group/service principal/user must have on the projected subscription. This role cannot be an owner role.
+                        protocol: {}
+                      - schema: &ref_54
+                          type: object
+                          apiVersions:
+                            - version: 2020-02-01-preview
+                          properties:
+                            - schema: *ref_50
+                              required: true
+                              serializedName: multiFactorAuthProvider
+                              language:
+                                default:
+                                  name: multi_factor_auth_provider
+                                  description: MFA provider.
+                                cli:
+                                  name: multiFactorAuthProvider
+                                  description: MFA provider.
+                                  cliKey: multiFactorAuthProvider
+                                python:
+                                  name: multi_factor_auth_provider
+                                  description: MFA provider.
+                              protocol: {}
+                            - schema: *ref_52
+                              required: false
+                              serializedName: maximumActivationDuration
+                              language:
+                                default:
+                                  name: maximum_activation_duration
+                                  description: Maximum access duration in ISO 8601 format.  The default value is "PT8H".
+                                cli:
+                                  name: maximumActivationDuration
+                                  description: Maximum access duration in ISO 8601 format.  The default value is "PT8H".
+                                  cliKey: maximumActivationDuration
+                                python:
+                                  name: maximum_activation_duration
+                                  description: Maximum access duration in ISO 8601 format.  The default value is "PT8H".
+                              protocol: {}
+                          serializationFormats:
+                            - json
+                          usage:
+                            - output
+                            - input
+                          language:
+                            default:
+                              name: JustInTimeAccessPolicy
+                              description: Just-in-time access policy setting.
+                              namespace: ''
+                            cli:
+                              name: JustInTimeAccessPolicy
+                              description: Just-in-time access policy setting.
+                              cli-complexity: object_simple
+                              cli-mark: checked
+                              cli-simplify-indicator:
+                                propertyCountIfSimplify: 2
+                                propertyCountIfSimplifyWithoutSimpleObject: 2
+                                simplifiable: true
+                              cliKey: JustInTimeAccessPolicy
+                            python:
+                              name: JustInTimeAccessPolicy
+                              description: Just-in-time access policy setting.
+                              namespace: ''
+                          protocol: {}
+                        required: false
+                        serializedName: justInTimeAccessPolicy
+                        language:
+                          default:
+                            name: just_in_time_access_policy
+                            description: Just-in-time access policy setting.
+                          cli:
+                            name: justInTimeAccessPolicy
+                            description: Just-in-time access policy setting.
+                            cliKey: justInTimeAccessPolicy
+                          python:
+                            name: just_in_time_access_policy
+                            description: Just-in-time access policy setting.
+                        protocol: {}
+                    serializationFormats:
+                      - json
+                    usage:
+                      - output
+                      - input
+                    language:
+                      default:
+                        name: EligibleAuthorization
+                        description: 'Eligible authorization tuple containing principle Id (of user/service principal/security group), role definition id, and the just-in-time access setting.'
+                        namespace: ''
+                      cli:
+                        name: EligibleAuthorization
+                        description: 'Eligible authorization tuple containing principle Id (of user/service principal/security group), role definition id, and the just-in-time access setting.'
+                        cli-complexity: object_complex
+                        cli-mark: checked
+                        cli-simplify-indicator:
+                          propertyCountIfSimplify: 5
+                          propertyCountIfSimplifyWithoutSimpleObject: 4
+                          simplifiable: true
+                        cliKey: EligibleAuthorization
+                      python:
+                        name: EligibleAuthorization
+                        description: 'Eligible authorization tuple containing principle Id (of user/service principal/security group), role definition id, and the just-in-time access setting.'
+                        namespace: ''
+                    protocol: {}
+                  language:
+                    default:
+                      name: RegistrationDefinitionPropertiesEligibleAuthorizations
+                      description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                    cli:
+                      name: RegistrationDefinitionPropertiesEligibleAuthorizations
+                      description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                      cli-complexity: array_complex
+                      cli-mark: checked
+                    python:
+                      name: registrationdefinitionpropertieseligibleauthorizations
+                      description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting.'
+                  protocol: {}
+                required: false
+                serializedName: eligibleAuthorizations
+                language:
+                  default:
+                    name: eligible_authorizations
+                    description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                  cli:
+                    name: eligibleAuthorizations
+                    description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                    cliKey: eligibleAuthorizations
+                  python:
+                    name: eligible_authorizations
+                    description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting.'
+                protocol: {}
+              - schema: *ref_73
+                required: false
+                serializedName: registrationDefinitionName
+                language:
+                  default:
+                    name: registration_definition_name
+                    description: Name of the registration definition.
+                  cli:
+                    name: registrationDefinitionName
+                    description: Name of the registration definition.
+                    cliKey: registrationDefinitionName
+                  python:
+                    name: registration_definition_name
+                    description: Name of the registration definition.
+                protocol: {}
+              - schema: *ref_74
+                required: true
+                serializedName: managedByTenantId
+                language:
+                  default:
+                    name: managed_by_tenant_id
+                    description: Id of the managedBy tenant.
+                  cli:
+                    name: managedByTenantId
+                    description: Id of the managedBy tenant.
+                    cliKey: managedByTenantId
+                  python:
+                    name: managed_by_tenant_id
+                    description: Id of the managedBy tenant.
+                protocol: {}
+              - schema: *ref_15
+                readOnly: true
+                required: false
+                serializedName: provisioningState
+                language:
+                  default:
+                    name: provisioning_state
+                    description: Current state of the registration definition.
+                  cli:
+                    name: provisioningState
+                    description: Current state of the registration definition.
+                    cliKey: provisioningState
+                  python:
+                    name: provisioning_state
+                    description: Current state of the registration definition.
+                protocol: {}
+              - schema: *ref_75
+                readOnly: true
+                required: false
+                serializedName: managedByTenantName
+                language:
+                  default:
+                    name: managed_by_tenant_name
+                    description: Name of the managedBy tenant.
+                  cli:
+                    name: managedByTenantName
+                    description: Name of the managedBy tenant.
+                    cliKey: managedByTenantName
+                  python:
+                    name: managed_by_tenant_name
+                    description: Name of the managedBy tenant.
+                protocol: {}
+            serializationFormats:
+              - json
+            usage:
+              - output
+              - input
+            language:
+              default:
+                name: RegistrationDefinitionProperties
+                description: Properties of a registration definition.
+                namespace: ''
+              cli:
+                name: RegistrationDefinitionProperties
+                description: Properties of a registration definition.
+                cli-complexity: object_complex
+                cli-mark: checked
+                cli-simplify-indicator:
+                  propertyCountIfSimplify: 10000
+                  propertyCountIfSimplifyWithoutSimpleObject: 10000
+                  simplifiable: false
+                cliKey: RegistrationDefinitionProperties
+              python:
+                name: RegistrationDefinitionProperties
+                description: Properties of a registration definition.
+                namespace: ''
+            protocol: {}
+          serializedName: properties
+          language:
+            default:
+              name: properties
+              description: Properties of a registration definition.
+            cli:
+              name: properties
+              description: Properties of a registration definition.
+              cliKey: properties
+            python:
+              name: properties
+              description: Properties of a registration definition.
+          protocol: {}
+        - schema: &ref_18
+            type: object
+            apiVersions:
+              - version: 2020-02-01-preview
+            properties:
+              - schema: *ref_76
+                required: true
+                serializedName: name
+                language:
+                  default:
+                    name: name
+                    description: The plan name.
+                  cli:
+                    name: name
+                    description: The plan name.
+                    cliKey: name
+                  python:
+                    name: name
+                    description: The plan name.
+                protocol: {}
+              - schema: *ref_77
+                required: true
+                serializedName: publisher
+                language:
+                  default:
+                    name: publisher
+                    description: The publisher ID.
+                  cli:
+                    name: publisher
+                    description: The publisher ID.
+                    cliKey: publisher
+                  python:
+                    name: publisher
+                    description: The publisher ID.
+                protocol: {}
+              - schema: *ref_78
+                required: true
+                serializedName: product
+                language:
+                  default:
+                    name: product
+                    description: The product code.
+                  cli:
+                    name: product
+                    description: The product code.
+                    cliKey: product
+                  python:
+                    name: product
+                    description: The product code.
+                protocol: {}
+              - schema: *ref_79
+                required: true
+                serializedName: version
+                language:
+                  default:
+                    name: version
+                    description: The plan's version.
+                  cli:
+                    name: version
+                    description: The plan's version.
+                    cliKey: version
+                  python:
+                    name: version
+                    description: The plan's version.
+                protocol: {}
+            serializationFormats:
+              - json
+            usage:
+              - output
+              - input
+            language:
+              default:
+                name: Plan
+                description: Plan details for the managed services.
+                namespace: ''
+              cli:
+                name: Plan
+                description: Plan details for the managed services.
+                cli-complexity: object_simple
+                cli-mark: checked
+                cli-simplify-indicator:
+                  propertyCountIfSimplify: 4
+                  propertyCountIfSimplifyWithoutSimpleObject: 4
+                  simplifiable: true
+                cliKey: Plan
+              python:
+                name: Plan
+                description: Plan details for the managed services.
+                namespace: ''
+            protocol: {}
+          serializedName: plan
+          language:
+            default:
+              name: plan
+              description: Plan details for the managed services.
+            cli:
+              name: plan
+              description: Plan details for the managed services.
+              cliKey: plan
+            python:
+              name: plan
+              description: Plan details for the managed services.
+          protocol: {}
+        - schema: *ref_80
+          readOnly: true
+          serializedName: id
+          language:
+            default:
+              name: id
+              description: Fully qualified path of the registration definition.
+            cli:
+              name: id
+              description: Fully qualified path of the registration definition.
+              cliKey: id
+            python:
+              name: id
+              description: Fully qualified path of the registration definition.
+          protocol: {}
+        - schema: *ref_81
+          readOnly: true
+          serializedName: type
+          language:
+            default:
+              name: type
+              description: Type of the resource.
+            cli:
+              name: type
+              description: Type of the resource.
+              cliKey: type
+            python:
+              name: type
+              description: Type of the resource.
+          protocol: {}
+        - schema: *ref_82
+          readOnly: true
+          serializedName: name
+          language:
+            default:
+              name: name
+              description: Name of the registration definition.
+            cli:
+              name: name
+              description: Name of the registration definition.
+              cliKey: name
+            python:
+              name: name
+              description: Name of the registration definition.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+        - input
+      extensions:
+        x-ms-azure-resource: true
+      language:
+        default:
+          name: RegistrationDefinition
+          description: Registration definition.
+          namespace: ''
+        cli:
+          name: RegistrationDefinition
+          description: Registration definition.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 10000
+            propertyCountIfSimplifyWithoutSimpleObject: 10000
+            simplifiable: false
+          cliKey: RegistrationDefinition
+        python:
+          name: RegistrationDefinition
+          description: Registration definition.
+          namespace: ''
+      protocol: {}
+    - *ref_53
+    - *ref_16
+    - *ref_17
+    - *ref_54
+    - *ref_18
+    - &ref_6
+      type: object
+      apiVersions:
+        - version: 2020-02-01-preview
+      properties:
+        - schema: &ref_55
+            type: object
+            apiVersions:
+              - version: 2020-02-01-preview
+            properties:
+              - schema: *ref_83
+                required: true
+                serializedName: code
+                language:
+                  default:
+                    name: code
+                    description: Error code.
+                  cli:
+                    name: code
+                    description: Error code.
+                    cliKey: code
+                  python:
+                    name: code
+                    description: Error code.
+                protocol: {}
+              - schema: *ref_84
+                required: true
+                serializedName: message
+                language:
+                  default:
+                    name: message
+                    description: Error message indicating why the operation failed.
+                  cli:
+                    name: message
+                    description: Error message indicating why the operation failed.
+                    cliKey: message
+                  python:
+                    name: message
+                    description: Error message indicating why the operation failed.
+                protocol: {}
+            serializationFormats:
+              - json
+            usage:
+              - exception
+            extensions:
+              x-internal-autorest-anonymous-schema:
+                anonymous: true
+            language:
+              default:
+                name: ErrorResponseError
+                description: Error response indicates Azure Resource Manager is not able to process the incoming request. The reason is provided in the error message.
+                namespace: ''
+              cli:
+                name: ErrorResponseError
+                description: Error response indicates Azure Resource Manager is not able to process the incoming request. The reason is provided in the error message.
+                cli-complexity: object_simple
+                cli-mark: checked
+                cli-simplify-indicator:
+                  propertyCountIfSimplify: 2
+                  propertyCountIfSimplifyWithoutSimpleObject: 2
+                  simplifiable: true
+                cliKey: ErrorResponse-error
+              python:
+                name: ErrorResponseError
+                description: Error response indicates Azure Resource Manager is not able to process the incoming request. The reason is provided in the error message.
+                namespace: ''
+            protocol: {}
+          readOnly: true
+          serializedName: error
+          language:
+            default:
+              name: error
+              description: Error response indicates Azure Resource Manager is not able to process the incoming request. The reason is provided in the error message.
+            cli:
+              name: error
+              description: Error response indicates Azure Resource Manager is not able to process the incoming request. The reason is provided in the error message.
+              cliKey: error
+            python:
+              name: error
+              description: Error response indicates Azure Resource Manager is not able to process the incoming request. The reason is provided in the error message.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - exception
+      language:
+        default:
+          name: ErrorResponse
+          description: Error response.
+          namespace: ''
+        cli:
+          name: ErrorResponse
+          description: Error response.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: ErrorResponse
+        python:
+          name: ErrorResponse
+          description: Error response.
+          namespace: ''
+      protocol: {}
+    - *ref_55
+    - &ref_25
+      type: object
+      apiVersions:
+        - version: 2020-02-01-preview
+      properties:
+        - schema: &ref_56
+            type: object
+            apiVersions:
+              - version: 2020-02-01-preview
+            properties:
+              - schema: *ref_85
+                required: true
+                serializedName: registrationDefinitionId
+                language:
+                  default:
+                    name: registration_definition_id
+                    description: Fully qualified path of the registration definition.
+                  cli:
+                    name: registrationDefinitionId
+                    description: Fully qualified path of the registration definition.
+                    cliKey: registrationDefinitionId
+                  python:
+                    name: registration_definition_id
+                    description: Fully qualified path of the registration definition.
+                protocol: {}
+              - schema: *ref_15
+                readOnly: true
+                required: false
+                serializedName: provisioningState
+                language:
+                  default:
+                    name: provisioning_state
+                    description: Current state of the registration assignment.
+                  cli:
+                    name: provisioningState
+                    description: Current state of the registration assignment.
+                    cliKey: provisioningState
+                  python:
+                    name: provisioning_state
+                    description: Current state of the registration assignment.
+                protocol: {}
+              - schema: &ref_57
+                  type: object
+                  apiVersions:
+                    - version: 2020-02-01-preview
+                  properties:
+                    - schema: &ref_58
+                        type: object
+                        apiVersions:
+                          - version: 2020-02-01-preview
+                        properties:
+                          - schema: *ref_86
+                            serializedName: description
+                            language:
+                              default:
+                                name: description
+                                description: Description of the registration definition.
+                              cli:
+                                name: description
+                                description: Description of the registration definition.
+                                cliKey: description
+                              python:
+                                name: description
+                                description: Description of the registration definition.
+                            protocol: {}
+                          - schema: &ref_42
+                              type: array
+                              apiVersions:
+                                - version: 2020-02-01-preview
+                              elementType: *ref_16
+                              language:
+                                default:
+                                  name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesAuthorizations
+                                  description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                                cli:
+                                  name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesAuthorizations
+                                  description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                                  cli-complexity: array_complex
+                                  cli-mark: checked
+                                python:
+                                  name: registrationassignmentpropertiesregistrationdefinitionpropertiesauthorizations
+                                  description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                              protocol: {}
+                            serializedName: authorizations
+                            language:
+                              default:
+                                name: authorizations
+                                description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                              cli:
+                                name: authorizations
+                                description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                                cliKey: authorizations
+                              python:
+                                name: authorizations
+                                description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                            protocol: {}
+                          - schema: &ref_43
+                              type: array
+                              apiVersions:
+                                - version: 2020-02-01-preview
+                              elementType: *ref_17
+                              language:
+                                default:
+                                  name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesEligibleAuthorizations
+                                  description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                                cli:
+                                  name: RegistrationAssignmentPropertiesRegistrationDefinitionPropertiesEligibleAuthorizations
+                                  description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                                  cli-complexity: array_complex
+                                  cli-mark: checked
+                                python:
+                                  name: registrationassignmentpropertiesregistrationdefinitionpropertieseligibleauthorizations
+                                  description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting.'
+                              protocol: {}
+                            serializedName: eligibleAuthorizations
+                            language:
+                              default:
+                                name: eligible_authorizations
+                                description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                              cli:
+                                name: eligibleAuthorizations
+                                description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                                cliKey: eligibleAuthorizations
+                              python:
+                                name: eligible_authorizations
+                                description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting.'
+                            protocol: {}
+                          - schema: *ref_87
+                            serializedName: registrationDefinitionName
+                            language:
+                              default:
+                                name: registration_definition_name
+                                description: Name of the registration definition.
+                              cli:
+                                name: registrationDefinitionName
+                                description: Name of the registration definition.
+                                cliKey: registrationDefinitionName
+                              python:
+                                name: registration_definition_name
+                                description: Name of the registration definition.
+                            protocol: {}
+                          - schema: *ref_15
+                            serializedName: provisioningState
+                            language:
+                              default:
+                                name: provisioning_state
+                                description: Current state of the registration definition.
+                              cli:
+                                name: provisioningState
+                                description: Current state of the registration definition.
+                                cliKey: provisioningState
+                              python:
+                                name: provisioning_state
+                                description: Current state of the registration definition.
+                            protocol: {}
+                          - schema: *ref_88
+                            serializedName: manageeTenantId
+                            language:
+                              default:
+                                name: managee_tenant_id
+                                description: Id of the home tenant.
+                              cli:
+                                name: manageeTenantId
+                                description: Id of the home tenant.
+                                cliKey: manageeTenantId
+                              python:
+                                name: managee_tenant_id
+                                description: Id of the home tenant.
+                            protocol: {}
+                          - schema: *ref_89
+                            serializedName: manageeTenantName
+                            language:
+                              default:
+                                name: managee_tenant_name
+                                description: Name of the home tenant.
+                              cli:
+                                name: manageeTenantName
+                                description: Name of the home tenant.
+                                cliKey: manageeTenantName
+                              python:
+                                name: managee_tenant_name
+                                description: Name of the home tenant.
+                            protocol: {}
+                          - schema: *ref_90
+                            serializedName: managedByTenantId
+                            language:
+                              default:
+                                name: managed_by_tenant_id
+                                description: Id of the managedBy tenant.
+                              cli:
+                                name: managedByTenantId
+                                description: Id of the managedBy tenant.
+                                cliKey: managedByTenantId
+                              python:
+                                name: managed_by_tenant_id
+                                description: Id of the managedBy tenant.
+                            protocol: {}
+                          - schema: *ref_91
+                            serializedName: managedByTenantName
+                            language:
+                              default:
+                                name: managed_by_tenant_name
+                                description: Name of the managedBy tenant.
+                              cli:
+                                name: managedByTenantName
+                                description: Name of the managedBy tenant.
+                                cliKey: managedByTenantName
+                              python:
+                                name: managed_by_tenant_name
+                                description: Name of the managedBy tenant.
+                            protocol: {}
+                        serializationFormats:
+                          - json
+                        usage:
+                          - output
+                          - input
+                        extensions:
+                          x-internal-autorest-anonymous-schema:
+                            anonymous: true
+                        language:
+                          default:
+                            name: RegistrationAssignmentPropertiesRegistrationDefinitionProperties
+                            description: Properties of registration definition inside registration assignment.
+                            namespace: ''
+                          cli:
+                            name: RegistrationAssignmentPropertiesRegistrationDefinitionProperties
+                            description: Properties of registration definition inside registration assignment.
+                            cli-complexity: object_complex
+                            cli-mark: checked
+                            cli-simplify-indicator:
+                              propertyCountIfSimplify: 10000
+                              propertyCountIfSimplifyWithoutSimpleObject: 10000
+                              simplifiable: false
+                            cliKey: RegistrationAssignmentProperties-registrationDefinition-properties
+                          python:
+                            name: RegistrationAssignmentPropertiesRegistrationDefinitionProperties
+                            description: Properties of registration definition inside registration assignment.
+                            namespace: ''
+                        protocol: {}
+                      serializedName: properties
+                      language:
+                        default:
+                          name: properties
+                          description: Properties of registration definition inside registration assignment.
+                        cli:
+                          name: properties
+                          description: Properties of registration definition inside registration assignment.
+                          cliKey: properties
+                        python:
+                          name: properties
+                          description: Properties of registration definition inside registration assignment.
+                      protocol: {}
+                    - schema: *ref_18
+                      serializedName: plan
+                      language:
+                        default:
+                          name: plan
+                          description: Plan details for the managed services.
+                        cli:
+                          name: plan
+                          description: Plan details for the managed services.
+                          cliKey: plan
+                        python:
+                          name: plan
+                          description: Plan details for the managed services.
+                      protocol: {}
+                    - schema: *ref_92
+                      readOnly: true
+                      serializedName: id
+                      language:
+                        default:
+                          name: id
+                          description: Fully qualified path of the registration definition.
+                        cli:
+                          name: id
+                          description: Fully qualified path of the registration definition.
+                          cliKey: id
+                        python:
+                          name: id
+                          description: Fully qualified path of the registration definition.
+                      protocol: {}
+                    - schema: *ref_93
+                      readOnly: true
+                      serializedName: type
+                      language:
+                        default:
+                          name: type
+                          description: Type of the resource (Microsoft.ManagedServices/registrationDefinitions).
+                        cli:
+                          name: type
+                          description: Type of the resource (Microsoft.ManagedServices/registrationDefinitions).
+                          cliKey: type
+                        python:
+                          name: type
+                          description: Type of the resource (Microsoft.ManagedServices/registrationDefinitions).
+                      protocol: {}
+                    - schema: *ref_94
+                      readOnly: true
+                      serializedName: name
+                      language:
+                        default:
+                          name: name
+                          description: Name of the registration definition.
+                        cli:
+                          name: name
+                          description: Name of the registration definition.
+                          cliKey: name
+                        python:
+                          name: name
+                          description: Name of the registration definition.
+                      protocol: {}
+                  serializationFormats:
+                    - json
+                  usage:
+                    - output
+                    - input
+                  extensions:
+                    x-internal-autorest-anonymous-schema:
+                      anonymous: true
+                  language:
+                    default:
+                      name: RegistrationAssignmentPropertiesRegistrationDefinition
+                      description: Registration definition inside registration assignment.
+                      namespace: ''
+                    cli:
+                      name: RegistrationAssignmentPropertiesRegistrationDefinition
+                      description: Registration definition inside registration assignment.
+                      cli-complexity: object_complex
+                      cli-mark: checked
+                      cli-simplify-indicator:
+                        propertyCountIfSimplify: 10000
+                        propertyCountIfSimplifyWithoutSimpleObject: 10000
+                        simplifiable: false
+                      cliKey: RegistrationAssignmentProperties-registrationDefinition
+                    python:
+                      name: RegistrationAssignmentPropertiesRegistrationDefinition
+                      description: Registration definition inside registration assignment.
+                      namespace: ''
+                  protocol: {}
+                readOnly: true
+                required: false
+                serializedName: registrationDefinition
+                language:
+                  default:
+                    name: registration_definition
+                    description: Registration definition inside registration assignment.
+                  cli:
+                    name: registrationDefinition
+                    description: Registration definition inside registration assignment.
+                    cliKey: registrationDefinition
+                  python:
+                    name: registration_definition
+                    description: Registration definition inside registration assignment.
+                protocol: {}
+            serializationFormats:
+              - json
+            usage:
+              - output
+              - input
+            language:
+              default:
+                name: RegistrationAssignmentProperties
+                description: Properties of a registration assignment.
+                namespace: ''
+              cli:
+                name: RegistrationAssignmentProperties
+                description: Properties of a registration assignment.
+                cli-complexity: object_complex
+                cli-mark: checked
+                cli-simplify-indicator:
+                  propertyCountIfSimplify: 1
+                  propertyCountIfSimplifyWithoutSimpleObject: 1
+                  simplifiable: true
+                cliKey: RegistrationAssignmentProperties
+              python:
+                name: RegistrationAssignmentProperties
+                description: Properties of a registration assignment.
+                namespace: ''
+            protocol: {}
+          serializedName: properties
+          language:
+            default:
+              name: properties
+              description: Properties of a registration assignment.
+            cli:
+              name: properties
+              description: Properties of a registration assignment.
+              cliKey: properties
+            python:
+              name: properties
+              description: Properties of a registration assignment.
+          protocol: {}
+        - schema: *ref_95
+          readOnly: true
+          serializedName: id
+          language:
+            default:
+              name: id
+              description: The fully qualified path of the registration assignment.
+            cli:
+              name: id
+              description: The fully qualified path of the registration assignment.
+              cliKey: id
+            python:
+              name: id
+              description: The fully qualified path of the registration assignment.
+          protocol: {}
+        - schema: *ref_96
+          readOnly: true
+          serializedName: type
+          language:
+            default:
+              name: type
+              description: Type of the resource.
+            cli:
+              name: type
+              description: Type of the resource.
+              cliKey: type
+            python:
+              name: type
+              description: Type of the resource.
+          protocol: {}
+        - schema: *ref_97
+          readOnly: true
+          serializedName: name
+          language:
+            default:
+              name: name
+              description: Name of the registration assignment.
+            cli:
+              name: name
+              description: Name of the registration assignment.
+              cliKey: name
+            python:
+              name: name
+              description: Name of the registration assignment.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+        - input
+      extensions:
+        x-ms-azure-resource: true
+      language:
+        default:
+          name: RegistrationAssignment
+          description: Registration assignment.
+          namespace: ''
+        cli:
+          name: RegistrationAssignment
+          description: Registration assignment.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 1
+            propertyCountIfSimplifyWithoutSimpleObject: 1
+            simplifiable: true
+          cliKey: RegistrationAssignment
+        python:
+          name: RegistrationAssignment
+          description: Registration assignment.
+          namespace: ''
+      protocol: {}
+    - *ref_56
+    - *ref_57
+    - *ref_58
+    - &ref_59
+      type: object
+      apiVersions:
+        - version: 2020-02-01-preview
+      properties:
+        - schema: &ref_44
+            type: array
+            apiVersions:
+              - version: 2020-02-01-preview
+            elementType: *ref_9
+            language:
+              default:
+                name: RegistrationDefinitionListValue
+                description: List of registration definitions.
+              cli:
+                name: RegistrationDefinitionListValue
+                description: List of registration definitions.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: registrationdefinitionlistvalue
+                description: List of registration definitions.
+            protocol: {}
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: List of registration definitions.
+            cli:
+              name: value
+              description: List of registration definitions.
+              cliKey: value
+            python:
+              name: value
+              description: List of registration definitions.
+          protocol: {}
+        - schema: *ref_98
+          readOnly: true
+          serializedName: nextLink
+          language:
+            default:
+              name: next_link
+              description: Link to next page of registration definitions.
+            cli:
+              name: nextLink
+              description: Link to next page of registration definitions.
+              cliKey: nextLink
+            python:
+              name: next_link
+              description: Link to next page of registration definitions.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: RegistrationDefinitionList
+          description: List of registration definitions.
+          namespace: ''
+        cli:
+          name: RegistrationDefinitionList
+          description: List of registration definitions.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: RegistrationDefinitionList
+        python:
+          name: RegistrationDefinitionList
+          description: List of registration definitions.
+          namespace: ''
+      protocol: {}
+    - &ref_60
+      type: object
+      apiVersions:
+        - version: 2020-02-01-preview
+      properties:
+        - schema: &ref_45
+            type: array
+            apiVersions:
+              - version: 2020-02-01-preview
+            elementType: *ref_25
+            language:
+              default:
+                name: RegistrationAssignmentListValue
+                description: List of registration assignments.
+              cli:
+                name: RegistrationAssignmentListValue
+                description: List of registration assignments.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: registrationassignmentlistvalue
+                description: List of registration assignments.
+            protocol: {}
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: List of registration assignments.
+            cli:
+              name: value
+              description: List of registration assignments.
+              cliKey: value
+            python:
+              name: value
+              description: List of registration assignments.
+          protocol: {}
+        - schema: *ref_99
+          readOnly: true
+          serializedName: nextLink
+          language:
+            default:
+              name: next_link
+              description: Link to next page of registration assignments.
+            cli:
+              name: nextLink
+              description: Link to next page of registration assignments.
+              cliKey: nextLink
+            python:
+              name: next_link
+              description: Link to next page of registration assignments.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: RegistrationAssignmentList
+          description: List of registration assignments.
+          namespace: ''
+        cli:
+          name: RegistrationAssignmentList
+          description: List of registration assignments.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: RegistrationAssignmentList
+        python:
+          name: RegistrationAssignmentList
+          description: List of registration assignments.
+          namespace: ''
+      protocol: {}
+    - &ref_61
+      type: object
+      apiVersions:
+        - version: 2020-02-01-preview
+      properties:
+        - schema: &ref_48
+            type: array
+            apiVersions:
+              - version: 2020-02-01-preview
+            elementType: &ref_36
+              type: object
+              apiVersions:
+                - version: 2020-02-01-preview
+              properties:
+                - schema: &ref_62
+                    type: object
+                    apiVersions:
+                      - version: 2020-02-01-preview
+                    properties:
+                      - schema: *ref_100
+                        required: true
+                        serializedName: managedByTenantId
+                        language:
+                          default:
+                            name: managed_by_tenant_id
+                            description: Id of the managedBy tenant.
+                          cli:
+                            name: managedByTenantId
+                            description: Id of the managedBy tenant.
+                            cliKey: managedByTenantId
+                          python:
+                            name: managed_by_tenant_id
+                            description: Id of the managedBy tenant.
+                        protocol: {}
+                      - schema: &ref_46
+                          type: array
+                          apiVersions:
+                            - version: 2020-02-01-preview
+                          elementType: *ref_16
+                          language:
+                            default:
+                              name: MarketplaceRegistrationDefinitionPropertiesAuthorizations
+                              description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                            cli:
+                              name: MarketplaceRegistrationDefinitionPropertiesAuthorizations
+                              description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                              cli-complexity: array_complex
+                              cli-mark: checked
+                            python:
+                              name: marketplaceregistrationdefinitionpropertiesauthorizations
+                              description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                          protocol: {}
+                        required: true
+                        serializedName: authorizations
+                        language:
+                          default:
+                            name: authorizations
+                            description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                          cli:
+                            name: authorizations
+                            description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                            cliKey: authorizations
+                          python:
+                            name: authorizations
+                            description: Authorization tuple containing principal id of the user/security group or service principal and id of the build-in role.
+                        protocol: {}
+                      - schema: &ref_47
+                          type: array
+                          apiVersions:
+                            - version: 2020-02-01-preview
+                          elementType: *ref_17
+                          language:
+                            default:
+                              name: MarketplaceRegistrationDefinitionPropertiesEligibleAuthorizations
+                              description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                            cli:
+                              name: MarketplaceRegistrationDefinitionPropertiesEligibleAuthorizations
+                              description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                              cli-complexity: array_complex
+                              cli-mark: checked
+                            python:
+                              name: marketplaceregistrationdefinitionpropertieseligibleauthorizations
+                              description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting.'
+                          protocol: {}
+                        required: false
+                        serializedName: eligibleAuthorizations
+                        language:
+                          default:
+                            name: eligible_authorizations
+                            description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                          cli:
+                            name: eligibleAuthorizations
+                            description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting'
+                            cliKey: eligibleAuthorizations
+                          python:
+                            name: eligible_authorizations
+                            description: 'Eligible PIM authorization tuple containing principal id of the user/security group or service principal, id of the built-in role, and just-in-time access policy setting.'
+                        protocol: {}
+                      - schema: *ref_101
+                        required: false
+                        serializedName: offerDisplayName
+                        language:
+                          default:
+                            name: offer_display_name
+                            description: The marketplace offer display name.
+                          cli:
+                            name: offerDisplayName
+                            description: The marketplace offer display name.
+                            cliKey: offerDisplayName
+                          python:
+                            name: offer_display_name
+                            description: The marketplace offer display name.
+                        protocol: {}
+                      - schema: *ref_102
+                        required: false
+                        serializedName: publisherDisplayName
+                        language:
+                          default:
+                            name: publisher_display_name
+                            description: The marketplace publisher display name.
+                          cli:
+                            name: publisherDisplayName
+                            description: The marketplace publisher display name.
+                            cliKey: publisherDisplayName
+                          python:
+                            name: publisher_display_name
+                            description: The marketplace publisher display name.
+                        protocol: {}
+                      - schema: *ref_103
+                        required: false
+                        serializedName: planDisplayName
+                        language:
+                          default:
+                            name: plan_display_name
+                            description: The marketplace plan display name.
+                          cli:
+                            name: planDisplayName
+                            description: The marketplace plan display name.
+                            cliKey: planDisplayName
+                          python:
+                            name: plan_display_name
+                            description: The marketplace plan display name.
+                        protocol: {}
+                    serializationFormats:
+                      - json
+                    usage:
+                      - output
+                    language:
+                      default:
+                        name: MarketplaceRegistrationDefinitionProperties
+                        description: Properties of a marketplace registration definition.
+                        namespace: ''
+                      cli:
+                        name: MarketplaceRegistrationDefinitionProperties
+                        description: Properties of a marketplace registration definition.
+                        cli-complexity: object_complex
+                        cli-mark: checked
+                        cli-simplify-indicator:
+                          propertyCountIfSimplify: 10000
+                          propertyCountIfSimplifyWithoutSimpleObject: 10000
+                          simplifiable: false
+                        cliKey: MarketplaceRegistrationDefinitionProperties
+                      python:
+                        name: MarketplaceRegistrationDefinitionProperties
+                        description: Properties of a marketplace registration definition.
+                        namespace: ''
+                    protocol: {}
+                  serializedName: properties
+                  language:
+                    default:
+                      name: properties
+                      description: Properties of a marketplace registration definition.
+                    cli:
+                      name: properties
+                      description: Properties of a marketplace registration definition.
+                      cliKey: properties
+                    python:
+                      name: properties
+                      description: Properties of a marketplace registration definition.
+                  protocol: {}
+                - schema: *ref_18
+                  serializedName: plan
+                  language:
+                    default:
+                      name: plan
+                      description: Plan details for the managed services.
+                    cli:
+                      name: plan
+                      description: Plan details for the managed services.
+                      cliKey: plan
+                    python:
+                      name: plan
+                      description: Plan details for the managed services.
+                  protocol: {}
+                - schema: *ref_104
+                  readOnly: true
+                  serializedName: id
+                  language:
+                    default:
+                      name: id
+                      description: Fully qualified path of the marketplace registration definition.
+                    cli:
+                      name: id
+                      description: Fully qualified path of the marketplace registration definition.
+                      cliKey: id
+                    python:
+                      name: id
+                      description: Fully qualified path of the marketplace registration definition.
+                  protocol: {}
+                - schema: *ref_105
+                  readOnly: true
+                  serializedName: type
+                  language:
+                    default:
+                      name: type
+                      description: Type of the resource.
+                    cli:
+                      name: type
+                      description: Type of the resource.
+                      cliKey: type
+                    python:
+                      name: type
+                      description: Type of the resource.
+                  protocol: {}
+                - schema: *ref_106
+                  readOnly: true
+                  serializedName: name
+                  language:
+                    default:
+                      name: name
+                      description: Name of the marketplace registration definition.
+                    cli:
+                      name: name
+                      description: Name of the marketplace registration definition.
+                      cliKey: name
+                    python:
+                      name: name
+                      description: Name of the marketplace registration definition.
+                  protocol: {}
+              serializationFormats:
+                - json
+              usage:
+                - output
+              extensions:
+                x-ms-azure-resource: true
+              language:
+                default:
+                  name: MarketplaceRegistrationDefinition
+                  description: ''
+                  namespace: ''
+                cli:
+                  name: MarketplaceRegistrationDefinition
+                  description: ''
+                  cli-complexity: object_complex
+                  cli-mark: checked
+                  cli-simplify-indicator:
+                    propertyCountIfSimplify: 10000
+                    propertyCountIfSimplifyWithoutSimpleObject: 10000
+                    simplifiable: false
+                  cliKey: MarketplaceRegistrationDefinition
+                python:
+                  name: MarketplaceRegistrationDefinition
+                  description: MarketplaceRegistrationDefinition.
+                  namespace: ''
+              protocol: {}
+            language:
+              default:
+                name: MarketplaceRegistrationDefinitionListValue
+                description: List of marketplace registration definitions.
+              cli:
+                name: MarketplaceRegistrationDefinitionListValue
+                description: List of marketplace registration definitions.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: marketplaceregistrationdefinitionlistvalue
+                description: List of marketplace registration definitions.
+            protocol: {}
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: List of marketplace registration definitions.
+            cli:
+              name: value
+              description: List of marketplace registration definitions.
+              cliKey: value
+            python:
+              name: value
+              description: List of marketplace registration definitions.
+          protocol: {}
+        - schema: *ref_107
+          readOnly: true
+          serializedName: nextLink
+          language:
+            default:
+              name: next_link
+              description: Link to next page of marketplace registration definitions.
+            cli:
+              name: nextLink
+              description: Link to next page of marketplace registration definitions.
+              cliKey: nextLink
+            python:
+              name: next_link
+              description: Link to next page of marketplace registration definitions.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: MarketplaceRegistrationDefinitionList
+          description: List of marketplace registration definitions.
+          namespace: ''
+        cli:
+          name: MarketplaceRegistrationDefinitionList
+          description: List of marketplace registration definitions.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: MarketplaceRegistrationDefinitionList
+        python:
+          name: MarketplaceRegistrationDefinitionList
+          description: List of marketplace registration definitions.
+          namespace: ''
+      protocol: {}
+    - *ref_36
+    - *ref_62
+    - &ref_63
+      type: object
+      apiVersions:
+        - version: 2020-02-01-preview
+      properties:
+        - schema: &ref_49
+            type: array
+            apiVersions:
+              - version: 2020-02-01-preview
+            elementType: &ref_64
+              type: object
+              apiVersions:
+                - version: 2020-02-01-preview
+              properties:
+                - schema: *ref_108
+                  readOnly: true
+                  serializedName: name
+                  language:
+                    default:
+                      name: name
+                      description: 'Operation name: {provider}/{resource}/{operation}'
+                    cli:
+                      name: name
+                      description: 'Operation name: {provider}/{resource}/{operation}'
+                      cliKey: name
+                    python:
+                      name: name
+                      description: 'Operation name: {provider}/{resource}/{operation}.'
+                  protocol: {}
+                - schema: &ref_65
+                    type: object
+                    apiVersions:
+                      - version: 2020-02-01-preview
+                    properties:
+                      - schema: *ref_109
+                        serializedName: provider
+                        language:
+                          default:
+                            name: provider
+                            description: 'Service provider: Microsoft.ManagedServices'
+                          cli:
+                            name: provider
+                            description: 'Service provider: Microsoft.ManagedServices'
+                            cliKey: provider
+                          python:
+                            name: provider
+                            description: 'Service provider: Microsoft.ManagedServices.'
+                        protocol: {}
+                      - schema: *ref_110
+                        serializedName: resource
+                        language:
+                          default:
+                            name: resource
+                            description: 'Resource on which the operation is performed: Registration definition, registration assignment etc.'
+                          cli:
+                            name: resource
+                            description: 'Resource on which the operation is performed: Registration definition, registration assignment etc.'
+                            cliKey: resource
+                          python:
+                            name: resource
+                            description: 'Resource on which the operation is performed: Registration definition, registration assignment etc.'
+                        protocol: {}
+                      - schema: *ref_111
+                        serializedName: operation
+                        language:
+                          default:
+                            name: operation
+                            description: 'Operation type: Read, write, delete, etc.'
+                          cli:
+                            name: operation
+                            description: 'Operation type: Read, write, delete, etc.'
+                            cliKey: operation
+                          python:
+                            name: operation
+                            description: 'Operation type: Read, write, delete, etc.'
+                        protocol: {}
+                      - schema: *ref_112
+                        serializedName: description
+                        language:
+                          default:
+                            name: description
+                            description: Description of the operation.
+                          cli:
+                            name: description
+                            description: Description of the operation.
+                            cliKey: description
+                          python:
+                            name: description
+                            description: Description of the operation.
+                        protocol: {}
+                    serializationFormats:
+                      - json
+                    usage:
+                      - output
+                    extensions:
+                      x-internal-autorest-anonymous-schema:
+                        anonymous: true
+                    language:
+                      default:
+                        name: OperationDisplay
+                        description: The object that represents the operation.
+                        namespace: ''
+                      cli:
+                        name: OperationDisplay
+                        description: The object that represents the operation.
+                        cli-complexity: object_simple
+                        cli-mark: checked
+                        cli-simplify-indicator:
+                          propertyCountIfSimplify: 4
+                          propertyCountIfSimplifyWithoutSimpleObject: 4
+                          simplifiable: true
+                        cliKey: Operation-display
+                      python:
+                        name: OperationDisplay
+                        description: The object that represents the operation.
+                        namespace: ''
+                    protocol: {}
+                  readOnly: true
+                  serializedName: display
+                  language:
+                    default:
+                      name: display
+                      description: The object that represents the operation.
+                    cli:
+                      name: display
+                      description: The object that represents the operation.
+                      cliKey: display
+                    python:
+                      name: display
+                      description: The object that represents the operation.
+                  protocol: {}
+              serializationFormats:
+                - json
+              usage:
+                - output
+              language:
+                default:
+                  name: Operation
+                  description: Object that describes a single Microsoft.ManagedServices operation.
+                  namespace: ''
+                cli:
+                  name: Operation
+                  description: Object that describes a single Microsoft.ManagedServices operation.
+                  cli-complexity: object_complex
+                  cli-mark: checked
+                  cli-simplify-indicator:
+                    propertyCountIfSimplify: 0
+                    propertyCountIfSimplifyWithoutSimpleObject: 0
+                    simplifiable: true
+                  cliKey: Operation
+                python:
+                  name: Operation
+                  description: Object that describes a single Microsoft.ManagedServices operation.
+                  namespace: ''
+              protocol: {}
+            language:
+              default:
+                name: OperationListValue
+                description: List of Microsoft.ManagedServices operations.
+              cli:
+                name: OperationListValue
+                description: List of Microsoft.ManagedServices operations.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: operationlistvalue
+                description: List of Microsoft.ManagedServices operations.
+            protocol: {}
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: List of Microsoft.ManagedServices operations.
+            cli:
+              name: value
+              description: List of Microsoft.ManagedServices operations.
+              cliKey: value
+            python:
+              name: value
+              description: List of Microsoft.ManagedServices operations.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: OperationList
+          description: List of the operations.
+          namespace: ''
+        cli:
+          name: OperationList
+          description: List of the operations.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: OperationList
+        python:
+          name: OperationList
+          description: List of the operations.
+          namespace: ''
+      protocol: {}
+    - *ref_64
+    - *ref_65
+  arrays:
+    - *ref_39
+    - *ref_40
+    - *ref_41
+    - *ref_42
+    - *ref_43
+    - *ref_44
+    - *ref_45
+    - *ref_46
+    - *ref_47
+    - *ref_48
+    - *ref_49
+globalParameters:
+  - &ref_1
+    schema: *ref_0
+    clientDefaultValue: 'https://management.azure.com'
+    implementation: Client
+    origin: 'modelerfour:synthesized/host'
+    required: true
+    extensions:
+      x-ms-skip-url-encoding: true
+    language:
+      default:
+        name: $host
+        description: server parameter
+        serializedName: $host
+      cli:
+        name: $host
+        description: server parameter
+        cliKey: $host
+      python:
+        name: host
+        description: server parameter.
+        serializedName: $host
+    protocol:
+      http:
+        in: uri
+  - &ref_3
+    schema: *ref_51
+    implementation: Client
+    origin: 'modelerfour:synthesized/api-version'
+    required: true
+    language:
+      default:
+        name: api_version
+        description: Api Version
+        serializedName: api-version
+      cli:
+        name: ApiVersion
+        description: Api Version
+        cliKey: ApiVersion
+      python:
+        name: api_version
+        description: Api Version.
+        serializedName: api-version
+    protocol:
+      http:
+        in: query
+operationGroups:
+  - $key: RegistrationDefinitions
+    operations:
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_4
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - &ref_5
+            schema: *ref_2
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: registration_definition_id
+                description: Guid of the registration definition.
+                serializedName: registrationDefinitionId
+              cli:
+                name: registrationDefinitionId
+                description: Guid of the registration definition.
+                cliKey: registrationDefinitionId
+              python:
+                name: registration_definition_id
+                description: Guid of the registration definition.
+                serializedName: registrationDefinitionId
+            protocol:
+              http:
+                in: path
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationDefinitions/{registrationDefinitionId}'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_4
+          - *ref_5
+        responses:
+          - schema: *ref_9
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Get Registration Definition:
+              parameters:
+                api-version: 2020-02-01-preview
+                registrationDefinitionId: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    name: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                    type: Microsoft.ManagedServices/registrationDefinitions
+                    id: /subscriptions/0afefe50-734e-4610-8a82-a144ahf49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-6e081c90ada2
+                    plan:
+                      name: addesai-plan
+                      product: test
+                      publisher: marketplace-test
+                      version: 1.0.0
+                    properties:
+                      description: Test
+                      authorizations:
+                        - principalId: f98g86a2-4cc4-4e6d-ad47-b3e80a1bcdfc
+                          roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                      eligibleAuthorizations:
+                        - justInTimeAccessPolicy:
+                            maximumActivationDuration: PT8H
+                            multiFactorAuthProvider: Azure
+                          principalId: 3e0ed8c6-e902-4fc5-863c-e3ddbb2ae2a2
+                          principalIdDisplayName: Support User
+                          roleDefinitionId: ae349356-3a1b-4a5e-921d-050484c6347e
+                      managedByTenantId: 83ace5cd-bcc3-441a-hd86-e6a75360cecc
+                      managedByTenantName: Test Tenant
+                      provisioningState: Succeeded
+                      registrationDefinitionName: DefinitionName
+        language:
+          default:
+            name: get
+            description: Gets the registration definition details.
+          cli:
+            name: Get
+            description: Gets the registration definition details.
+            cliKey: Get
+          python:
+            name: get
+            description: Gets the registration definition details.
+        protocol: {}
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_7
+            schema: *ref_2
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: registration_definition_id
+                description: Guid of the registration definition.
+                serializedName: registrationDefinitionId
+              cli:
+                name: registrationDefinitionId
+                description: Guid of the registration definition.
+                cliKey: registrationDefinitionId
+              python:
+                name: registration_definition_id
+                description: Guid of the registration definition.
+                serializedName: registrationDefinitionId
+            protocol:
+              http:
+                in: path
+          - *ref_3
+          - &ref_8
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationDefinitions/{registrationDefinitionId}'
+                method: delete
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_7
+          - *ref_8
+        responses:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                statusCodes:
+                  - '200'
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                statusCodes:
+                  - '204'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Delete Registration Definition:
+              parameters:
+                api-version: 2020-02-01-preview
+                registrationDefinitionId: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200': {}
+                '204': {}
+        language:
+          default:
+            name: delete
+            description: Deletes the registration definition.
+          cli:
+            name: Delete
+            description: Deletes the registration definition.
+            cliKey: Delete
+          python:
+            name: delete
+            description: Deletes the registration definition.
+        protocol: {}
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_11
+            schema: *ref_2
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: registration_definition_id
+                description: Guid of the registration definition.
+                serializedName: registrationDefinitionId
+              cli:
+                name: registrationDefinitionId
+                description: Guid of the registration definition.
+                cliKey: registrationDefinitionId
+              python:
+                name: registration_definition_id
+                description: Guid of the registration definition.
+                serializedName: registrationDefinitionId
+            protocol:
+              http:
+                in: path
+          - *ref_3
+          - &ref_12
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+        requests:
+          - parameters:
+              - schema: *ref_24
+                implementation: Method
+                origin: 'modelerfour:synthesized/content-type'
+                required: true
+                language:
+                  default:
+                    name: content_type
+                    description: Body Parameter content-type
+                    serializedName: Content-Type
+                  cli:
+                    name: ContentType
+                    description: Body Parameter content-type
+                    cliKey: content-type
+                  python:
+                    name: content_type
+                    description: Body Parameter content-type.
+                    serializedName: Content-Type
+                protocol:
+                  http:
+                    in: header
+              - &ref_10
+                schema: *ref_9
+                implementation: Method
+                required: true
+                language:
+                  default:
+                    name: request_body
+                    description: The parameters required to create new registration definition.
+                  cli:
+                    name: requestBody
+                    description: The parameters required to create new registration definition.
+                    cliKey: requestBody
+                  python:
+                    name: request_body
+                    description: The parameters required to create new registration definition.
+                protocol:
+                  http:
+                    in: body
+                    style: json
+            signatureParameters:
+              - *ref_10
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationDefinitions/{registrationDefinitionId}'
+                method: put
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_11
+          - *ref_12
+        responses:
+          - schema: *ref_9
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+          - schema: *ref_9
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '201'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Put Registration Definition:
+              parameters:
+                api-version: 2020-02-01-preview
+                registrationDefinitionId: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                requestBody:
+                  plan:
+                    name: addesai-plan
+                    product: test
+                    publisher: marketplace-test
+                    version: 1.0.0
+                  properties:
+                    description: Tes1t
+                    authorizations:
+                      - principalId: f98d86a2-4cc4-4e9d-ad47-b3e80a1bcdfc
+                        roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                    eligibleAuthorizations:
+                      - justInTimeAccessPolicy:
+                          maximumActivationDuration: PT8H
+                          multiFactorAuthProvider: Azure
+                        principalId: 3e0ed8c6-e902-4fc5-863c-e3ddbb2ae2a2
+                        principalIdDisplayName: Support User
+                        roleDefinitionId: ae349356-3a1b-4a5e-921d-050484c6347e
+                    managedByTenantId: 83abe5cd-bcc3-441a-bd86-e6a75360cecc
+                    registrationDefinitionName: DefinitionName
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    name: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                    type: Microsoft.ManagedServices/registrationDefinitions
+                    id: /subscriptions/0afefe50-734e-4610-8a82-a144ahf49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-6e081c90ada2
+                    plan:
+                      name: addesai-plan
+                      product: test
+                      publisher: marketplace-test
+                      version: 1.0.0
+                    properties:
+                      description: Test
+                      authorizations:
+                        - principalId: f98g86a2-4cc4-4e6d-ad47-b3e80a1bcdfc
+                          roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                      eligibleAuthorizations:
+                        - justInTimeAccessPolicy:
+                            maximumActivationDuration: PT8H
+                            multiFactorAuthProvider: Azure
+                          principalId: 3e0ed8c6-e902-4fc5-863c-e3ddbb2ae2a2
+                          principalIdDisplayName: Support User
+                          roleDefinitionId: ae349356-3a1b-4a5e-921d-050484c6347e
+                      managedByTenantId: 83ace5cd-bcc3-441a-hd86-e6a75360cecc
+                      managedByTenantName: Test Tenant
+                      provisioningState: Succeeded
+                      registrationDefinitionName: DefinitionName
+                '201':
+                  body:
+                    name: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                    type: Microsoft.ManagedServices/registrationDefinitions
+                    id: /subscriptions/0afefe50-734e-4610-8a82-a144ahf49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-6e081c90ada2
+                    plan:
+                      name: addesai-plan
+                      product: test
+                      publisher: marketplace-test
+                      version: 1.0.0
+                    properties:
+                      description: Test
+                      authorizations:
+                        - principalId: f98g86a2-4cc4-4e6d-ad47-b3e80a1bcdfc
+                          roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                      eligibleAuthorizations:
+                        - justInTimeAccessPolicy:
+                            maximumActivationDuration: PT8H
+                            multiFactorAuthProvider: Azure
+                          principalId: 3e0ed8c6-e902-4fc5-863c-e3ddbb2ae2a2
+                          principalIdDisplayName: Support User
+                          roleDefinitionId: ae349356-3a1b-4a5e-921d-050484c6347e
+                      managedByTenantId: 83ace5cd-bcc3-441a-hd86-e6a75360cecc
+                      managedByTenantName: Test Tenant
+                      provisioningState: Succeeded
+                      registrationDefinitionName: DefinitionName
+          x-ms-long-running-operation: true
+        language:
+          default:
+            name: create_or_update
+            description: Creates or updates a registration definition.
+          cli:
+            name: CreateOrUpdate
+            description: Creates or updates a registration definition.
+            cliKey: CreateOrUpdate
+          python:
+            name: create_or_update
+            description: Creates or updates a registration definition.
+        protocol: {}
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_14
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationDefinitions'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_14
+        responses:
+          - schema: *ref_59
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Get Registration Definitions:
+              parameters:
+                api-version: 2020-02-01-preview
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    value:
+                      - name: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                        type: Microsoft.ManagedServices/registrationDefinitions
+                        id: /subscriptions/0afefe50-734e-4610-8a82-a144ahf49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-6e081c90ada2
+                        plan:
+                          name: addesai-plan
+                          product: test
+                          publisher: marketplace-test
+                          version: 1.0.0
+                        properties:
+                          description: Test
+                          authorizations:
+                            - principalId: f98g86a2-4cc4-4e6d-ad47-b3e80a1bcdfc
+                              roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                          eligibleAuthorizations:
+                            - justInTimeAccessPolicy:
+                                maximumActivationDuration: PT8H
+                                multiFactorAuthProvider: Azure
+                              principalId: 3e0ed8c6-e902-4fc5-863c-e3ddbb2ae2a2
+                              principalIdDisplayName: Support User
+                              roleDefinitionId: ae349356-3a1b-4a5e-921d-050484c6347e
+                          managedByTenantId: 83ace5cd-bcc3-441a-hd86-e6a75360cecc
+                          managedByTenantName: Test Tenant
+                          provisioningState: Succeeded
+                          registrationDefinitionName: DefinitionName
+          x-ms-pageable:
+            nextLinkName: nextLink
+        language:
+          default:
+            name: list
+            description: Gets a list of the registration definitions.
+            paging: &ref_13
+              nextLinkName: nextLink
+          cli:
+            name: List
+            description: Gets a list of the registration definitions.
+            cliKey: List
+          python:
+            name: list
+            description: Gets a list of the registration definitions.
+            paging: *ref_13
+        protocol: {}
+    language:
+      default:
+        name: RegistrationDefinitions
+        description: ''
+      cli:
+        name: RegistrationDefinition
+        description: ''
+        cliKey: RegistrationDefinitions
+      python:
+        name: registration_definitions
+        description: ''
+        className: RegistrationDefinitionsOperations
+    protocol: {}
+  - $key: RegistrationAssignments
+    operations:
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_19
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - &ref_20
+            schema: *ref_2
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: registration_assignment_id
+                description: Guid of the registration assignment.
+                serializedName: registrationAssignmentId
+              cli:
+                name: registrationAssignmentId
+                description: Guid of the registration assignment.
+                cliKey: registrationAssignmentId
+              python:
+                name: registration_assignment_id
+                description: Guid of the registration assignment.
+                serializedName: registrationAssignmentId
+            protocol:
+              http:
+                in: path
+          - &ref_21
+            schema: *ref_30
+            implementation: Method
+            language:
+              default:
+                name: expand_registration_definition
+                description: Tells whether to return registration definition details also along with registration assignment details.
+                serializedName: $expandRegistrationDefinition
+              cli:
+                name: expandRegistrationDefinition
+                description: Tells whether to return registration definition details also along with registration assignment details.
+                cliKey: $expandRegistrationDefinition
+              python:
+                name: expand_registration_definition
+                description: Tells whether to return registration definition details also along with registration assignment details.
+                serializedName: $expandRegistrationDefinition
+            protocol:
+              http:
+                in: query
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationAssignments/{registrationAssignmentId}'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_19
+          - *ref_20
+          - *ref_21
+        responses:
+          - schema: *ref_25
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Get Registration Assignment:
+              parameters:
+                api-version: 2020-02-01-preview
+                registrationAssignmentId: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    name: 484a7d5f-9729-4b87-bc9b-26610985a013
+                    type: Microsoft.ManagedServices/registrationAssignments
+                    id: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationAssignments/484a7d5f-9729-4b87-bc9b-26610985a013
+                    properties:
+                      provisioningState: Succeeded
+                      registrationDefinition:
+                        name: 26c128c2-fefa-4340-9bb1-8e081c90ada2
+                        type: Microsoft.ManagedServices/registrationDefinitions
+                        id: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-8e081c90ada2
+                        plan:
+                          name: addesai-plan
+                          product: test
+                          publisher: marketplace-test
+                          version: 1.0.0
+                        properties:
+                          description: Test
+                          authorizations:
+                            - principalId: f98d86a2-4cc4-4e9d-ad47-b3e80a1bcdfc
+                              roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                          eligibleAuthorizations:
+                            - justInTimeAccessPolicy:
+                                maximumActivationDuration: PT8H
+                                multiFactorAuthProvider: Azure
+                              principalId: 3e0ed8c6-e902-4fc5-863c-e3ddbb2ae2a2
+                              principalIdDisplayName: Support User
+                              roleDefinitionId: ae349356-3a1b-4a5e-921d-050484c6347e
+                          managedByTenantId: 83abe5cd-bcc3-441a-bd86-e6a75360cecc
+                          managedByTenantName: Contoso Corp.
+                          manageeTenantId: 01c0bcd5-4f47-4e4b-b492-418b7e2a8854
+                          manageeTenantName: test_test_aad_SbtFhyGiLHPFm
+                          provisioningState: Succeeded
+                          registrationDefinitionName: DefinitionName
+                      registrationDefinitionId: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-8e081c90ada2
+                  headers: {}
+        language:
+          default:
+            name: get
+            description: Gets the details of specified registration assignment.
+          cli:
+            name: Get
+            description: Gets the details of specified registration assignment.
+            cliKey: Get
+          python:
+            name: get
+            description: Gets the details of specified registration assignment.
+        protocol: {}
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_22
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - &ref_23
+            schema: *ref_2
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: registration_assignment_id
+                description: Guid of the registration assignment.
+                serializedName: registrationAssignmentId
+              cli:
+                name: registrationAssignmentId
+                description: Guid of the registration assignment.
+                cliKey: registrationAssignmentId
+              python:
+                name: registration_assignment_id
+                description: Guid of the registration assignment.
+                serializedName: registrationAssignmentId
+            protocol:
+              http:
+                in: path
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationAssignments/{registrationAssignmentId}'
+                method: delete
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_22
+          - *ref_23
+        responses:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                statusCodes:
+                  - '200'
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                statusCodes:
+                  - '202'
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                statusCodes:
+                  - '204'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Delete Registration Assignment:
+              parameters:
+                api-version: 2020-02-01-preview
+                registrationAssignmentId: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200': {}
+                '202': {}
+                '204': {}
+          x-ms-long-running-operation: true
+        language:
+          default:
+            name: delete
+            description: Deletes the specified registration assignment.
+          cli:
+            name: Delete
+            description: Deletes the specified registration assignment.
+            cliKey: Delete
+          python:
+            name: delete
+            description: Deletes the specified registration assignment.
+        protocol: {}
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_27
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - &ref_28
+            schema: *ref_2
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: registration_assignment_id
+                description: Guid of the registration assignment.
+                serializedName: registrationAssignmentId
+              cli:
+                name: registrationAssignmentId
+                description: Guid of the registration assignment.
+                cliKey: registrationAssignmentId
+              python:
+                name: registration_assignment_id
+                description: Guid of the registration assignment.
+                serializedName: registrationAssignmentId
+            protocol:
+              http:
+                in: path
+          - *ref_3
+        requests:
+          - parameters:
+              - schema: *ref_24
+                implementation: Method
+                origin: 'modelerfour:synthesized/content-type'
+                required: true
+                language:
+                  default:
+                    name: content_type
+                    description: Body Parameter content-type
+                    serializedName: Content-Type
+                  cli:
+                    name: ContentType
+                    description: Body Parameter content-type
+                    cliKey: content-type
+                  python:
+                    name: content_type
+                    description: Body Parameter content-type.
+                    serializedName: Content-Type
+                protocol:
+                  http:
+                    in: header
+              - &ref_26
+                schema: *ref_25
+                implementation: Method
+                required: true
+                language:
+                  default:
+                    name: request_body
+                    description: The parameters required to create new registration assignment.
+                  cli:
+                    name: requestBody
+                    description: The parameters required to create new registration assignment.
+                    cliKey: requestBody
+                  python:
+                    name: request_body
+                    description: The parameters required to create new registration assignment.
+                protocol:
+                  http:
+                    in: body
+                    style: json
+            signatureParameters:
+              - *ref_26
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationAssignments/{registrationAssignmentId}'
+                method: put
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_27
+          - *ref_28
+        responses:
+          - schema: *ref_25
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+          - schema: *ref_25
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '201'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Put Registration Assignment:
+              parameters:
+                api-version: 2020-02-01-preview
+                registrationAssignmentId: 26c128c2-fefa-4340-9bb1-6e081c90ada2
+                requestBody:
+                  properties:
+                    registrationDefinitionId: /subscriptions/0afefe50-734e-4610-8a82-a144ahf49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-6e081c90ada2
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    name: 484a7d5f-9729-4b87-bc9b-26610985a013
+                    type: Microsoft.ManagedServices/registrationAssignments
+                    id: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationAssignments/484a7d5f-9729-4b87-bc9b-26610985a013
+                    properties:
+                      provisioningState: Succeeded
+                      registrationDefinitionId: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-8e081c90ada2
+                '201':
+                  body:
+                    name: 484a7d5f-9729-4b87-bc9b-26610985a013
+                    type: Microsoft.ManagedServices/registrationAssignments
+                    id: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationAssignments/484a7d5f-9729-4b87-bc9b-26610985a013
+                    properties:
+                      provisioningState: Succeeded
+                      registrationDefinitionId: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-8e081c90ada2
+          x-ms-long-running-operation: true
+        language:
+          default:
+            name: create_or_update
+            description: Creates or updates a registration assignment.
+          cli:
+            name: CreateOrUpdate
+            description: Creates or updates a registration assignment.
+            cliKey: CreateOrUpdate
+          python:
+            name: create_or_update
+            description: Creates or updates a registration assignment.
+        protocol: {}
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_31
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - &ref_32
+            schema: *ref_30
+            implementation: Method
+            language:
+              default:
+                name: expand_registration_definition
+                description: Tells whether to return registration definition details also along with registration assignment details.
+                serializedName: $expandRegistrationDefinition
+              cli:
+                name: expandRegistrationDefinition
+                description: Tells whether to return registration definition details also along with registration assignment details.
+                cliKey: $expandRegistrationDefinition
+              python:
+                name: expand_registration_definition
+                description: Tells whether to return registration definition details also along with registration assignment details.
+                serializedName: $expandRegistrationDefinition
+            protocol:
+              http:
+                in: query
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/registrationAssignments'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_31
+          - *ref_32
+        responses:
+          - schema: *ref_60
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Get Registration Assignments:
+              parameters:
+                api-version: 2020-02-01-preview
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    value:
+                      - name: 484a7d5f-9729-4b87-bc9b-26610985a013
+                        type: Microsoft.ManagedServices/registrationAssignments
+                        id: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationAssignments/484a7d5f-9729-4b87-bc9b-26610985a013
+                        properties:
+                          provisioningState: Succeeded
+                          registrationDefinition:
+                            name: 26c128c2-fefa-4340-9bb1-8e081c90ada2
+                            type: Microsoft.ManagedServices/registrationDefinitions
+                            id: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-8e081c90ada2
+                            plan:
+                              name: addesai-plan
+                              product: test
+                              publisher: marketplace-test
+                              version: 1.0.0
+                            properties:
+                              description: Test
+                              authorizations:
+                                - principalId: f98d86a2-4cc4-4e9d-ad47-b3e80a1bcdfc
+                                  roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                              eligibleAuthorizations:
+                                - justInTimeAccessPolicy:
+                                    maximumActivationDuration: PT8H
+                                    multiFactorAuthProvider: Azure
+                                  principalId: 700bddf4-2c3b-4cd1-bb02-6a2c622524f4
+                                  roleDefinitionId: 8e3af657-a8ff-443c-a75c-2fe8c4bcb635
+                              managedByTenantId: 83abe5cd-bcc3-441a-bd86-e6a75360cecc
+                              managedByTenantName: Contoso Corp.
+                              manageeTenantId: 01c0bcd5-4f47-4e4b-b492-418b7e2a8854
+                              manageeTenantName: test_test_aad_SbtFhyGiLHPFm
+                              provisioningState: Succeeded
+                              registrationDefinitionName: DefinitionName
+                          registrationDefinitionId: /subscriptions/0afefe50-734e-4610-8c82-a144aff49dea/providers/Microsoft.ManagedServices/registrationDefinitions/26c128c2-fefa-4340-9bb1-8e081c90ada2
+          x-ms-pageable:
+            nextLinkName: nextLink
+        language:
+          default:
+            name: list
+            description: Gets a list of the registration assignments.
+            paging: &ref_29
+              nextLinkName: nextLink
+          cli:
+            name: List
+            description: Gets a list of the registration assignments.
+            cliKey: List
+          python:
+            name: list
+            description: Gets a list of the registration assignments.
+            paging: *ref_29
+        protocol: {}
+    language:
+      default:
+        name: RegistrationAssignments
+        description: ''
+      cli:
+        name: RegistrationAssignment
+        description: ''
+        cliKey: RegistrationAssignments
+      python:
+        name: registration_assignments
+        description: ''
+        className: RegistrationAssignmentsOperations
+    protocol: {}
+  - $key: MarketplaceRegistrationDefinitions
+    operations:
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_34
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - &ref_35
+            schema: *ref_2
+            implementation: Method
+            language:
+              default:
+                name: filter
+                description: 'The filter query parameter. Might be used to filter marketplace registration definition by plan identifier, publisher, version etc.'
+                serializedName: $filter
+              cli:
+                name: filter
+                description: 'The filter query parameter. Might be used to filter marketplace registration definition by plan identifier, publisher, version etc.'
+                cliKey: $filter
+              python:
+                name: filter
+                description: 'The filter query parameter. Might be used to filter marketplace registration definition by plan identifier, publisher, version etc.'
+                serializedName: $filter
+            protocol:
+              http:
+                in: query
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/marketplaceRegistrationDefinitions'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_34
+          - *ref_35
+        responses:
+          - schema: *ref_61
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Get Registration Definitions:
+              parameters:
+                $filter: planIdentifier eq 'publisher.offerIdentifier.planName.version'
+                api-version: 2020-02-01-preview
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    value:
+                      - name: marketplace-test.test.test-plan.1.0.0
+                        type: Microsoft.ManagedServices/marketplaceRegistrationDefinitions
+                        id: /subscriptions/0afefe50-734e-4610-8a82-a144ahf49dea/providers/Microsoft.ManagedServices/marketplaceRegistrationDefinitions/marketplace-test.test.test-plan.1.0.0
+                        plan:
+                          name: test-plan
+                          product: test
+                          publisher: marketplace-test
+                          version: 1.0.0
+                        properties:
+                          authorizations:
+                            - principalId: f98g86a2-4cc4-4e6d-ad47-b3e80a1bcdfc
+                              roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                          managedByTenantId: 83ace5cd-bcc3-441a-hd86-e6a75360cecc
+                          offerDisplayName: Marketplace Test Offer
+                          planDisplayName: Test Plan
+                          publisherDisplayName: Marketplace Test Publisher
+          x-ms-pageable:
+            nextLinkName: nextLink
+        language:
+          default:
+            name: list
+            description: Gets a list of the marketplace registration definitions for the marketplace identifier.
+            paging: &ref_33
+              nextLinkName: nextLink
+          cli:
+            name: List
+            description: Gets a list of the marketplace registration definitions for the marketplace identifier.
+            cliKey: List
+          python:
+            name: list
+            description: Gets a list of the marketplace registration definitions for the marketplace identifier.
+            paging: *ref_33
+        protocol: {}
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - &ref_37
+            schema: *ref_2
+            implementation: Method
+            required: true
+            extensions:
+              x-ms-skip-url-encoding: true
+            language:
+              default:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+              cli:
+                name: scope
+                description: Scope of the resource.
+                cliKey: scope
+              python:
+                name: scope
+                description: Scope of the resource.
+                serializedName: scope
+            protocol:
+              http:
+                in: path
+          - &ref_38
+            schema: *ref_2
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: marketplace_identifier
+                description: 'Market place identifer. Expected Formats - {publisher}.{product[-preview]}.{planName}.{version} or {publisher}.{product[-preview]}.{planName} or {publisher}.{product[-preview]} or {publisher}).'
+                serializedName: marketplaceIdentifier
+              cli:
+                name: marketplaceIdentifier
+                description: 'Market place identifer. Expected Formats - {publisher}.{product[-preview]}.{planName}.{version} or {publisher}.{product[-preview]}.{planName} or {publisher}.{product[-preview]} or {publisher}).'
+                cliKey: marketplaceIdentifier
+              python:
+                name: marketplace_identifier
+                description: 'Market place identifer. Expected Formats - {publisher}.{product[-preview]}.{planName}.{version} or {publisher}.{product[-preview]}.{planName} or {publisher}.{product[-preview]} or {publisher}).'
+                serializedName: marketplaceIdentifier
+            protocol:
+              http:
+                in: path
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/{scope}/providers/Microsoft.ManagedServices/marketplaceRegistrationDefinitions/{marketplaceIdentifier}'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_37
+          - *ref_38
+        responses:
+          - schema: *ref_36
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Get Registration Definitions:
+              parameters:
+                api-version: 2020-02-01-preview
+                marketplaceIdentifier: publisher.product.planName.version
+                scope: subscription/0afefe50-734e-4610-8a82-a144ahf49dea
+              responses:
+                '200':
+                  body:
+                    name: marketplace-test.test.test-plan.1.0.0
+                    type: Microsoft.ManagedServices/marketplaceRegistrationDefinitions
+                    id: /subscriptions/0afefe50-734e-4610-8a82-a144ahf49dea/providers/Microsoft.ManagedServices/marketplaceRegistrationDefinitions/marketplace-test.test.test-plan.1.0.0
+                    plan:
+                      name: test-plan
+                      product: test
+                      publisher: marketplace-test
+                      version: 1.0.0
+                    properties:
+                      authorizations:
+                        - principalId: f98g86a2-4cc4-4e6d-ad47-b3e80a1bcdfc
+                          roleDefinitionId: acdd72a7-3385-48ef-bd42-f606fba81ae7
+                      managedByTenantId: 83ace5cd-bcc3-441a-hd86-e6a75360cecc
+                      offerDisplayName: Marketplace Test Offer
+                      planDisplayName: Test Plan
+                      publisherDisplayName: Marketplace Test Publisher
+        language:
+          default:
+            name: get
+            description: Get the marketplace registration definition for the marketplace identifier.
+          cli:
+            name: Get
+            description: Get the marketplace registration definition for the marketplace identifier.
+            cliKey: Get
+          python:
+            name: get
+            description: Get the marketplace registration definition for the marketplace identifier.
+        protocol: {}
+    language:
+      default:
+        name: MarketplaceRegistrationDefinitions
+        description: ''
+      cli:
+        name: MarketplaceRegistrationDefinition
+        description: ''
+        cliKey: MarketplaceRegistrationDefinitions
+      python:
+        name: marketplace_registration_definitions
+        description: ''
+        className: MarketplaceRegistrationDefinitionsOperations
+    protocol: {}
+  - $key: Operations
+    operations:
+      - apiVersions:
+          - version: 2020-02-01-preview
+        parameters:
+          - *ref_1
+          - *ref_3
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: /providers/Microsoft.ManagedServices/operations
+                method: get
+                uri: '{$host}'
+        signatureParameters: []
+        responses:
+          - schema: *ref_63
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_6
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            Get Registration Operations:
+              parameters:
+                api-version: 2020-02-01-preview
+              responses:
+                '200':
+                  body:
+                    value:
+                      - name: Microsoft.ManagedServices/registrationDefinitions/read
+                        display:
+                          description: Retrieves a list of Managed Services registration definitions.
+                          operation: List Managed Services Registration Definitions
+                          provider: Microsoft Managed Services
+                          resource: Managed Services Registration Definition
+        language:
+          default:
+            name: list
+            description: Gets a list of the operations.
+          cli:
+            name: List
+            description: Gets a list of the operations.
+            cliKey: List
+          python:
+            name: list
+            description: Gets a list of the operations.
+        protocol: {}
+    language:
+      default:
+        name: Operations
+        description: ''
+      cli:
+        name: Operation
+        description: ''
+        cliKey: Operations
+      python:
+        name: operations
+        description: ''
+        className: Operations
+    protocol: {}
+security:
+  authenticationRequired: true
+language:
+  default:
+    name: ManagedServicesClient
+    description: ''
+  cli:
+    name: ManagedServicesClient
+    description: ''
+  python:
+    name: managedservicesclient
+    description: ''
+protocol:
+  http: {}

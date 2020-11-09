@@ -1,0 +1,43 @@
+ - name: Create a VirtualMachineRunCommand
+   azure_rm_virtualmachineruncommand:
+     resource_group_name: my_resource_group_name
+     vm_name: my_vm_name
+     run_command_name: my_run_command_name
+     async_execution: true
+     run_as_user: my_run_as_user
+     run_as_password: my_run_as_password
+     output_blob_uri: my_output_blob_uri
+     error_blob_uri: my_error_blob_uri
+   
+
+ - name: Update the VirtualMachineRunCommand (no change)
+   azure_rm_virtualmachineruncommand:
+     resource_group_name: my_resource_group_name
+     vm_name: my_vm_name
+     run_command_name: my_run_command_name
+     async_execution: true
+     run_as_user: my_run_as_user
+     run_as_password: my_run_as_password
+     output_blob_uri: my_output_blob_uri
+     error_blob_uri: my_error_blob_uri
+   
+
+ - name: Update the VirtualMachineRunCommand
+   azure_rm_virtualmachineruncommand:
+     resource_group_name: my_resource_group_name
+     vm_name: my_vm_name
+     run_command_name: my_run_command_name
+     async_execution: true22
+     run_as_user: my_run_as_user22
+     run_as_password: my_run_as_password22
+     output_blob_uri: my_output_blob_uri22
+     error_blob_uri: my_error_blob_uri22
+   
+
+ - name: Delete the VirtualMachineRunCommand
+   azure_rm_virtualmachineruncommand:
+     resource_group_name: my_resource_group_name
+     vm_name: my_vm_name
+     run_command_name: my_run_command_name
+     state: absent
+   
