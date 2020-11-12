@@ -1,0 +1,36 @@
+ - name: Create a VirtualWan
+   azure_rm_virtualwan:
+     resource_group_name: my_resource_group_name
+     virtual_wan_name: my_virtual_wan_name
+     disable_vpn_encryption: true
+     allow_branch_to_branch_traffic: true
+     allow_vnet_to_vnet_traffic: true
+     type_properties_type: my_type_properties_type
+   
+
+ - name: Update the VirtualWan (no change)
+   azure_rm_virtualwan:
+     resource_group_name: my_resource_group_name
+     virtual_wan_name: my_virtual_wan_name
+     disable_vpn_encryption: true
+     allow_branch_to_branch_traffic: true
+     allow_vnet_to_vnet_traffic: true
+     type_properties_type: my_type_properties_type
+   
+
+ - name: Update the VirtualWan
+   azure_rm_virtualwan:
+     resource_group_name: my_resource_group_name
+     virtual_wan_name: my_virtual_wan_name
+     disable_vpn_encryption: true2
+     allow_branch_to_branch_traffic: true2
+     allow_vnet_to_vnet_traffic: true2
+     type_properties_type: my_type_properties_type2
+   
+
+ - name: Delete the VirtualWan
+   azure_rm_virtualwan:
+     resource_group_name: my_resource_group_name
+     virtual_wan_name: my_virtual_wan_name
+     state: absent
+   
