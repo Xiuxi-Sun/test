@@ -1,0 +1,27 @@
+ - name: Create a VpnGateway
+   azure_rm_vpngateway:
+     resource_group_name: my_resource_group_name
+     gateway_name: my_gateway_name
+     is_routing_preference_internet: true
+   
+
+ - name: Update the VpnGateway (no change)
+   azure_rm_vpngateway:
+     resource_group_name: my_resource_group_name
+     gateway_name: my_gateway_name
+     is_routing_preference_internet: true
+   
+
+ - name: Update the VpnGateway
+   azure_rm_vpngateway:
+     resource_group_name: my_resource_group_name
+     gateway_name: my_gateway_name
+     is_routing_preference_internet: true2
+   
+
+ - name: Delete the VpnGateway
+   azure_rm_vpngateway:
+     resource_group_name: my_resource_group_name
+     gateway_name: my_gateway_name
+     state: absent
+   
