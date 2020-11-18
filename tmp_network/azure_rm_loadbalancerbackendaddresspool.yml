@@ -1,0 +1,31 @@
+ - name: Create a LoadBalancerBackendAddressPool
+   azure_rm_loadbalancerbackendaddresspool:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     backend_address_pool_name: my_backend_address_pool_name
+     name: my_name
+   
+
+ - name: Update the LoadBalancerBackendAddressPool (no change)
+   azure_rm_loadbalancerbackendaddresspool:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     backend_address_pool_name: my_backend_address_pool_name
+     name: my_name
+   
+
+ - name: Update the LoadBalancerBackendAddressPool
+   azure_rm_loadbalancerbackendaddresspool:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     backend_address_pool_name: my_backend_address_pool_name
+     name: my_name2
+   
+
+ - name: Delete the LoadBalancerBackendAddressPool
+   azure_rm_loadbalancerbackendaddresspool:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     backend_address_pool_name: my_backend_address_pool_name
+     state: absent
+   

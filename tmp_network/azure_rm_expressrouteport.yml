@@ -1,0 +1,27 @@
+ - name: Create a ExpressRoutePort
+   azure_rm_expressrouteport:
+     resource_group_name: my_resource_group_name
+     express_route_port_name: my_express_route_port_name
+     peering_location: my_peering_location
+   
+
+ - name: Update the ExpressRoutePort (no change)
+   azure_rm_expressrouteport:
+     resource_group_name: my_resource_group_name
+     express_route_port_name: my_express_route_port_name
+     peering_location: my_peering_location
+   
+
+ - name: Update the ExpressRoutePort
+   azure_rm_expressrouteport:
+     resource_group_name: my_resource_group_name
+     express_route_port_name: my_express_route_port_name
+     peering_location: my_peering_location2
+   
+
+ - name: Delete the ExpressRoutePort
+   azure_rm_expressrouteport:
+     resource_group_name: my_resource_group_name
+     express_route_port_name: my_express_route_port_name
+     state: absent
+   

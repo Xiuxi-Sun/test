@@ -1,0 +1,30 @@
+ - name: Create a IpAllocation
+   azure_rm_ipallocation:
+     resource_group_name: my_resource_group_name
+     ip_allocation_name: my_ip_allocation_name
+     prefix: my_prefix
+     ipam_allocation_id: my_ipam_allocation_id
+   
+
+ - name: Update the IpAllocation (no change)
+   azure_rm_ipallocation:
+     resource_group_name: my_resource_group_name
+     ip_allocation_name: my_ip_allocation_name
+     prefix: my_prefix
+     ipam_allocation_id: my_ipam_allocation_id
+   
+
+ - name: Update the IpAllocation
+   azure_rm_ipallocation:
+     resource_group_name: my_resource_group_name
+     ip_allocation_name: my_ip_allocation_name
+     prefix: my_prefix2
+     ipam_allocation_id: my_ipam_allocation_id2
+   
+
+ - name: Delete the IpAllocation
+   azure_rm_ipallocation:
+     resource_group_name: my_resource_group_name
+     ip_allocation_name: my_ip_allocation_name
+     state: absent
+   

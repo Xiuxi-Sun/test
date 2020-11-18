@@ -1,0 +1,42 @@
+ - name: Create a ExpressRouteCircuit
+   azure_rm_expressroutecircuit:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     allow_classic_operations: true
+     circuit_provisioning_state: my_circuit_provisioning_state
+     service_key: my_service_key
+     service_provider_notes: my_service_provider_notes
+     gateway_manager_etag: my_gateway_manager_etag
+     global_reach_enabled: true
+   
+
+ - name: Update the ExpressRouteCircuit (no change)
+   azure_rm_expressroutecircuit:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     allow_classic_operations: true
+     circuit_provisioning_state: my_circuit_provisioning_state
+     service_key: my_service_key
+     service_provider_notes: my_service_provider_notes
+     gateway_manager_etag: my_gateway_manager_etag
+     global_reach_enabled: true
+   
+
+ - name: Update the ExpressRouteCircuit
+   azure_rm_expressroutecircuit:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     allow_classic_operations: true2
+     circuit_provisioning_state: my_circuit_provisioning_state2
+     service_key: my_service_key2
+     service_provider_notes: my_service_provider_notes2
+     gateway_manager_etag: my_gateway_manager_etag2
+     global_reach_enabled: true2
+   
+
+ - name: Delete the ExpressRouteCircuit
+   azure_rm_expressroutecircuit:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     state: absent
+   

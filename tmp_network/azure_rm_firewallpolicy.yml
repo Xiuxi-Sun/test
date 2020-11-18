@@ -1,0 +1,24 @@
+ - name: Create a FirewallPolicy
+   azure_rm_firewallpolicy:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+   
+
+ - name: Update the FirewallPolicy (no change)
+   azure_rm_firewallpolicy:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+   
+
+ - name: Update the FirewallPolicy
+   azure_rm_firewallpolicy:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+   
+
+ - name: Delete the FirewallPolicy
+   azure_rm_firewallpolicy:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+     state: absent
+   

@@ -1,0 +1,24 @@
+ - name: Create a DdosCustomPolicy
+   azure_rm_ddoscustompolicy:
+     resource_group_name: my_resource_group_name
+     ddos_custom_policy_name: my_ddos_custom_policy_name
+   
+
+ - name: Update the DdosCustomPolicy (no change)
+   azure_rm_ddoscustompolicy:
+     resource_group_name: my_resource_group_name
+     ddos_custom_policy_name: my_ddos_custom_policy_name
+   
+
+ - name: Update the DdosCustomPolicy
+   azure_rm_ddoscustompolicy:
+     resource_group_name: my_resource_group_name
+     ddos_custom_policy_name: my_ddos_custom_policy_name
+   
+
+ - name: Delete the DdosCustomPolicy
+   azure_rm_ddoscustompolicy:
+     resource_group_name: my_resource_group_name
+     ddos_custom_policy_name: my_ddos_custom_policy_name
+     state: absent
+   

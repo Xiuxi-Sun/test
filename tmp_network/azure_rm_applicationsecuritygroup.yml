@@ -1,0 +1,24 @@
+ - name: Create a ApplicationSecurityGroup
+   azure_rm_applicationsecuritygroup:
+     resource_group_name: my_resource_group_name
+     application_security_group_name: my_application_security_group_name
+   
+
+ - name: Update the ApplicationSecurityGroup (no change)
+   azure_rm_applicationsecuritygroup:
+     resource_group_name: my_resource_group_name
+     application_security_group_name: my_application_security_group_name
+   
+
+ - name: Update the ApplicationSecurityGroup
+   azure_rm_applicationsecuritygroup:
+     resource_group_name: my_resource_group_name
+     application_security_group_name: my_application_security_group_name
+   
+
+ - name: Delete the ApplicationSecurityGroup
+   azure_rm_applicationsecuritygroup:
+     resource_group_name: my_resource_group_name
+     application_security_group_name: my_application_security_group_name
+     state: absent
+   

@@ -1,0 +1,31 @@
+ - name: Create a NetworkInterfaceTapConfiguration
+   azure_rm_networkinterfacetapconfiguration:
+     resource_group_name: my_resource_group_name
+     network_interface_name: my_network_interface_name
+     tap_configuration_name: my_tap_configuration_name
+     name: my_name
+   
+
+ - name: Update the NetworkInterfaceTapConfiguration (no change)
+   azure_rm_networkinterfacetapconfiguration:
+     resource_group_name: my_resource_group_name
+     network_interface_name: my_network_interface_name
+     tap_configuration_name: my_tap_configuration_name
+     name: my_name
+   
+
+ - name: Update the NetworkInterfaceTapConfiguration
+   azure_rm_networkinterfacetapconfiguration:
+     resource_group_name: my_resource_group_name
+     network_interface_name: my_network_interface_name
+     tap_configuration_name: my_tap_configuration_name
+     name: my_name2
+   
+
+ - name: Delete the NetworkInterfaceTapConfiguration
+   azure_rm_networkinterfacetapconfiguration:
+     resource_group_name: my_resource_group_name
+     network_interface_name: my_network_interface_name
+     tap_configuration_name: my_tap_configuration_name
+     state: absent
+   

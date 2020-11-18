@@ -1,0 +1,27 @@
+ - name: Create a CustomIPPrefix
+   azure_rm_customipprefix:
+     resource_group_name: my_resource_group_name
+     custom_ip_prefix_name: my_custom_ip_prefix_name
+     cidr: my_cidr
+   
+
+ - name: Update the CustomIPPrefix (no change)
+   azure_rm_customipprefix:
+     resource_group_name: my_resource_group_name
+     custom_ip_prefix_name: my_custom_ip_prefix_name
+     cidr: my_cidr
+   
+
+ - name: Update the CustomIPPrefix
+   azure_rm_customipprefix:
+     resource_group_name: my_resource_group_name
+     custom_ip_prefix_name: my_custom_ip_prefix_name
+     cidr: my_cidr2
+   
+
+ - name: Delete the CustomIPPrefix
+   azure_rm_customipprefix:
+     resource_group_name: my_resource_group_name
+     custom_ip_prefix_name: my_custom_ip_prefix_name
+     state: absent
+   

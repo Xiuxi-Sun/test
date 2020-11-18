@@ -1,0 +1,34 @@
+ - name: Create a ExpressRouteCircuitAuthorization
+   azure_rm_expressroutecircuitauthorization:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     authorization_name: my_authorization_name
+     name: my_name
+     authorization_key: my_authorization_key
+   
+
+ - name: Update the ExpressRouteCircuitAuthorization (no change)
+   azure_rm_expressroutecircuitauthorization:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     authorization_name: my_authorization_name
+     name: my_name
+     authorization_key: my_authorization_key
+   
+
+ - name: Update the ExpressRouteCircuitAuthorization
+   azure_rm_expressroutecircuitauthorization:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     authorization_name: my_authorization_name
+     name: my_name2
+     authorization_key: my_authorization_key2
+   
+
+ - name: Delete the ExpressRouteCircuitAuthorization
+   azure_rm_expressroutecircuitauthorization:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     authorization_name: my_authorization_name
+     state: absent
+   

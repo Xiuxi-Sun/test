@@ -1,0 +1,46 @@
+ - name: Create a SecurityRule
+   azure_rm_securityrule:
+     resource_group_name: my_resource_group_name
+     network_security_group_name: my_network_security_group_name
+     security_rule_name: my_security_rule_name
+     name: my_name
+     description: my_description
+     source_port_range: my_source_port_range
+     destination_port_range: my_destination_port_range
+     source_address_prefix: my_source_address_prefix
+     destination_address_prefix: my_destination_address_prefix
+   
+
+ - name: Update the SecurityRule (no change)
+   azure_rm_securityrule:
+     resource_group_name: my_resource_group_name
+     network_security_group_name: my_network_security_group_name
+     security_rule_name: my_security_rule_name
+     name: my_name
+     description: my_description
+     source_port_range: my_source_port_range
+     destination_port_range: my_destination_port_range
+     source_address_prefix: my_source_address_prefix
+     destination_address_prefix: my_destination_address_prefix
+   
+
+ - name: Update the SecurityRule
+   azure_rm_securityrule:
+     resource_group_name: my_resource_group_name
+     network_security_group_name: my_network_security_group_name
+     security_rule_name: my_security_rule_name
+     name: my_name2
+     description: my_description2
+     source_port_range: my_source_port_range2
+     destination_port_range: my_destination_port_range2
+     source_address_prefix: my_source_address_prefix2
+     destination_address_prefix: my_destination_address_prefix2
+   
+
+ - name: Delete the SecurityRule
+   azure_rm_securityrule:
+     resource_group_name: my_resource_group_name
+     network_security_group_name: my_network_security_group_name
+     security_rule_name: my_security_rule_name
+     state: absent
+   

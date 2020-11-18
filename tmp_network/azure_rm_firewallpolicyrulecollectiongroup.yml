@@ -1,0 +1,31 @@
+ - name: Create a FirewallPolicyRuleCollectionGroup
+   azure_rm_firewallpolicyrulecollectiongroup:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+     rule_collection_group_name: my_rule_collection_group_name
+     name: my_name
+   
+
+ - name: Update the FirewallPolicyRuleCollectionGroup (no change)
+   azure_rm_firewallpolicyrulecollectiongroup:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+     rule_collection_group_name: my_rule_collection_group_name
+     name: my_name
+   
+
+ - name: Update the FirewallPolicyRuleCollectionGroup
+   azure_rm_firewallpolicyrulecollectiongroup:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+     rule_collection_group_name: my_rule_collection_group_name
+     name: my_name2
+   
+
+ - name: Delete the FirewallPolicyRuleCollectionGroup
+   azure_rm_firewallpolicyrulecollectiongroup:
+     resource_group_name: my_resource_group_name
+     firewall_policy_name: my_firewall_policy_name
+     rule_collection_group_name: my_rule_collection_group_name
+     state: absent
+   

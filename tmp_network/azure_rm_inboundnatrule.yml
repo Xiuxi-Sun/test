@@ -1,0 +1,37 @@
+ - name: Create a InboundNatRule
+   azure_rm_inboundnatrule:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     inbound_nat_rule_name: my_inbound_nat_rule_name
+     name: my_name
+     enable_floating_ip: true
+     enable_tcp_reset: true
+   
+
+ - name: Update the InboundNatRule (no change)
+   azure_rm_inboundnatrule:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     inbound_nat_rule_name: my_inbound_nat_rule_name
+     name: my_name
+     enable_floating_ip: true
+     enable_tcp_reset: true
+   
+
+ - name: Update the InboundNatRule
+   azure_rm_inboundnatrule:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     inbound_nat_rule_name: my_inbound_nat_rule_name
+     name: my_name2
+     enable_floating_ip: true2
+     enable_tcp_reset: true2
+   
+
+ - name: Delete the InboundNatRule
+   azure_rm_inboundnatrule:
+     resource_group_name: my_resource_group_name
+     load_balancer_name: my_load_balancer_name
+     inbound_nat_rule_name: my_inbound_nat_rule_name
+     state: absent
+   

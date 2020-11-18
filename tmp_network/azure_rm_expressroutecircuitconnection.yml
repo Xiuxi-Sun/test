@@ -1,0 +1,41 @@
+ - name: Create a ExpressRouteCircuitConnection
+   azure_rm_expressroutecircuitconnection:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     peering_name: my_peering_name
+     connection_name: my_connection_name
+     name: my_name
+     address_prefix: my_address_prefix
+     authorization_key: my_authorization_key
+   
+
+ - name: Update the ExpressRouteCircuitConnection (no change)
+   azure_rm_expressroutecircuitconnection:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     peering_name: my_peering_name
+     connection_name: my_connection_name
+     name: my_name
+     address_prefix: my_address_prefix
+     authorization_key: my_authorization_key
+   
+
+ - name: Update the ExpressRouteCircuitConnection
+   azure_rm_expressroutecircuitconnection:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     peering_name: my_peering_name
+     connection_name: my_connection_name
+     name: my_name2
+     address_prefix: my_address_prefix2
+     authorization_key: my_authorization_key2
+   
+
+ - name: Delete the ExpressRouteCircuitConnection
+   azure_rm_expressroutecircuitconnection:
+     resource_group_name: my_resource_group_name
+     circuit_name: my_circuit_name
+     peering_name: my_peering_name
+     connection_name: my_connection_name
+     state: absent
+   

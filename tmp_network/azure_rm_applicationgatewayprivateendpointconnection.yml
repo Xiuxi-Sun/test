@@ -1,0 +1,23 @@
+ - name: Update the ApplicationGatewayPrivateEndpointConnection (no change)
+   azure_rm_applicationgatewayprivateendpointconnection:
+     resource_group_name: my_resource_group_name
+     application_gateway_name: my_application_gateway_name
+     connection_name: my_connection_name
+     name: my_name
+   
+
+ - name: Update the ApplicationGatewayPrivateEndpointConnection
+   azure_rm_applicationgatewayprivateendpointconnection:
+     resource_group_name: my_resource_group_name
+     application_gateway_name: my_application_gateway_name
+     connection_name: my_connection_name
+     name: my_name2
+   
+
+ - name: Delete the ApplicationGatewayPrivateEndpointConnection
+   azure_rm_applicationgatewayprivateendpointconnection:
+     resource_group_name: my_resource_group_name
+     application_gateway_name: my_application_gateway_name
+     connection_name: my_connection_name
+     state: absent
+   

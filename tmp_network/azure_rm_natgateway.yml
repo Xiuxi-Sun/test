@@ -1,0 +1,24 @@
+ - name: Create a NatGateway
+   azure_rm_natgateway:
+     resource_group_name: my_resource_group_name
+     nat_gateway_name: my_nat_gateway_name
+   
+
+ - name: Update the NatGateway (no change)
+   azure_rm_natgateway:
+     resource_group_name: my_resource_group_name
+     nat_gateway_name: my_nat_gateway_name
+   
+
+ - name: Update the NatGateway
+   azure_rm_natgateway:
+     resource_group_name: my_resource_group_name
+     nat_gateway_name: my_nat_gateway_name
+   
+
+ - name: Delete the NatGateway
+   azure_rm_natgateway:
+     resource_group_name: my_resource_group_name
+     nat_gateway_name: my_nat_gateway_name
+     state: absent
+   

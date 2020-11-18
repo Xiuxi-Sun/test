@@ -1,0 +1,27 @@
+ - name: Create a DdosProtectionPlan
+   azure_rm_ddosprotectionplan:
+     resource_group_name: my_resource_group_name
+     ddos_protection_plan_name: my_ddos_protection_plan_name
+     location: my_location
+   
+
+ - name: Update the DdosProtectionPlan (no change)
+   azure_rm_ddosprotectionplan:
+     resource_group_name: my_resource_group_name
+     ddos_protection_plan_name: my_ddos_protection_plan_name
+     location: my_location
+   
+
+ - name: Update the DdosProtectionPlan
+   azure_rm_ddosprotectionplan:
+     resource_group_name: my_resource_group_name
+     ddos_protection_plan_name: my_ddos_protection_plan_name
+     location: my_location2
+   
+
+ - name: Delete the DdosProtectionPlan
+   azure_rm_ddosprotectionplan:
+     resource_group_name: my_resource_group_name
+     ddos_protection_plan_name: my_ddos_protection_plan_name
+     state: absent
+   

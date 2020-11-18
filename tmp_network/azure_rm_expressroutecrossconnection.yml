@@ -1,0 +1,20 @@
+ - name: Create a ExpressRouteCrossConnection
+   azure_rm_expressroutecrossconnection:
+     resource_group_name: my_resource_group_name
+     cross_connection_name: my_cross_connection_name
+     service_provider_notes: my_service_provider_notes
+   
+
+ - name: Update the ExpressRouteCrossConnection (no change)
+   azure_rm_expressroutecrossconnection:
+     resource_group_name: my_resource_group_name
+     cross_connection_name: my_cross_connection_name
+     service_provider_notes: my_service_provider_notes
+   
+
+ - name: Update the ExpressRouteCrossConnection
+   azure_rm_expressroutecrossconnection:
+     resource_group_name: my_resource_group_name
+     cross_connection_name: my_cross_connection_name
+     service_provider_notes: my_service_provider_notes2
+   

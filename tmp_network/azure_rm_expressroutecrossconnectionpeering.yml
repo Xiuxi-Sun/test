@@ -1,0 +1,43 @@
+ - name: Create a ExpressRouteCrossConnectionPeering
+   azure_rm_expressroutecrossconnectionpeering:
+     resource_group_name: my_resource_group_name
+     cross_connection_name: my_cross_connection_name
+     peering_name: my_peering_name
+     name: my_name
+     primary_peer_address_prefix: my_primary_peer_address_prefix
+     secondary_peer_address_prefix: my_secondary_peer_address_prefix
+     shared_key: my_shared_key
+     gateway_manager_etag: my_gateway_manager_etag
+   
+
+ - name: Update the ExpressRouteCrossConnectionPeering (no change)
+   azure_rm_expressroutecrossconnectionpeering:
+     resource_group_name: my_resource_group_name
+     cross_connection_name: my_cross_connection_name
+     peering_name: my_peering_name
+     name: my_name
+     primary_peer_address_prefix: my_primary_peer_address_prefix
+     secondary_peer_address_prefix: my_secondary_peer_address_prefix
+     shared_key: my_shared_key
+     gateway_manager_etag: my_gateway_manager_etag
+   
+
+ - name: Update the ExpressRouteCrossConnectionPeering
+   azure_rm_expressroutecrossconnectionpeering:
+     resource_group_name: my_resource_group_name
+     cross_connection_name: my_cross_connection_name
+     peering_name: my_peering_name
+     name: my_name2
+     primary_peer_address_prefix: my_primary_peer_address_prefix2
+     secondary_peer_address_prefix: my_secondary_peer_address_prefix2
+     shared_key: my_shared_key2
+     gateway_manager_etag: my_gateway_manager_etag2
+   
+
+ - name: Delete the ExpressRouteCrossConnectionPeering
+   azure_rm_expressroutecrossconnectionpeering:
+     resource_group_name: my_resource_group_name
+     cross_connection_name: my_cross_connection_name
+     peering_name: my_peering_name
+     state: absent
+   

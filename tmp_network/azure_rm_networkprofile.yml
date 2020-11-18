@@ -1,0 +1,24 @@
+ - name: Create a NetworkProfile
+   azure_rm_networkprofile:
+     resource_group_name: my_resource_group_name
+     network_profile_name: my_network_profile_name
+   
+
+ - name: Update the NetworkProfile (no change)
+   azure_rm_networkprofile:
+     resource_group_name: my_resource_group_name
+     network_profile_name: my_network_profile_name
+   
+
+ - name: Update the NetworkProfile
+   azure_rm_networkprofile:
+     resource_group_name: my_resource_group_name
+     network_profile_name: my_network_profile_name
+   
+
+ - name: Delete the NetworkProfile
+   azure_rm_networkprofile:
+     resource_group_name: my_resource_group_name
+     network_profile_name: my_network_profile_name
+     state: absent
+   

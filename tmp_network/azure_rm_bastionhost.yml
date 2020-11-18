@@ -1,0 +1,27 @@
+ - name: Create a BastionHost
+   azure_rm_bastionhost:
+     resource_group_name: my_resource_group_name
+     bastion_host_name: my_bastion_host_name
+     dns_name: my_dns_name
+   
+
+ - name: Update the BastionHost (no change)
+   azure_rm_bastionhost:
+     resource_group_name: my_resource_group_name
+     bastion_host_name: my_bastion_host_name
+     dns_name: my_dns_name
+   
+
+ - name: Update the BastionHost
+   azure_rm_bastionhost:
+     resource_group_name: my_resource_group_name
+     bastion_host_name: my_bastion_host_name
+     dns_name: my_dns_name2
+   
+
+ - name: Delete the BastionHost
+   azure_rm_bastionhost:
+     resource_group_name: my_resource_group_name
+     bastion_host_name: my_bastion_host_name
+     state: absent
+   
