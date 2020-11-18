@@ -623,7 +623,7 @@ class AzureRMVpnSiteInfo(AzureRMModuleBase):
         self.status_code = [200]
 
         self.query_parameters = {}
-        self.query_parameters['api-version'] = '2020-07-01'
+        self.query_parameters['api-version'] = '2020-06-01'
         self.header_parameters = {}
         self.header_parameters['Content-Type'] = 'application/json; charset=utf-8'
 
@@ -637,7 +637,7 @@ class AzureRMVpnSiteInfo(AzureRMModuleBase):
 
         self.mgmt_client = self.get_mgmt_svc_client(NetworkManagementClient,
                                                     base_url=self._cloud_environment.endpoints.resource_manager,
-                                                    api_version='2020-07-01')
+                                                    api_version='2020-06-01')
 
         if (self.resource_group_name is not None and
             self.vpn_site_name is not None):

@@ -1,0 +1,36 @@
+ - name: Create a VirtualHub
+   azure_rm_virtualhub:
+     resource_group_name: my_resource_group_name
+     virtual_hub_name: my_virtual_hub_name
+     address_prefix: my_address_prefix
+     security_provider_name: my_security_provider_name
+     sku: my_sku
+     enable_virtual_router_route_propogation: true
+   
+
+ - name: Update the VirtualHub (no change)
+   azure_rm_virtualhub:
+     resource_group_name: my_resource_group_name
+     virtual_hub_name: my_virtual_hub_name
+     address_prefix: my_address_prefix
+     security_provider_name: my_security_provider_name
+     sku: my_sku
+     enable_virtual_router_route_propogation: true
+   
+
+ - name: Update the VirtualHub
+   azure_rm_virtualhub:
+     resource_group_name: my_resource_group_name
+     virtual_hub_name: my_virtual_hub_name
+     address_prefix: my_address_prefix2
+     security_provider_name: my_security_provider_name2
+     sku: my_sku2
+     enable_virtual_router_route_propogation: true2
+   
+
+ - name: Delete the VirtualHub
+   azure_rm_virtualhub:
+     resource_group_name: my_resource_group_name
+     virtual_hub_name: my_virtual_hub_name
+     state: absent
+   

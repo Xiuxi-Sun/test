@@ -733,7 +733,7 @@ class AzureRMVpnSite(AzureRMModuleBaseExt):
 
         self.mgmt_client = self.get_mgmt_svc_client(NetworkManagementClient,
                                                     base_url=self._cloud_environment.endpoints.resource_manager,
-                                                    api_version='2020-07-01')
+                                                    api_version='2020-06-01')
 
         old_response = self.get_resource()
 
