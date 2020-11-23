@@ -1,0 +1,33 @@
+ - name: Create a VpnServerConfiguration
+   azure_rm_vpnserverconfiguration:
+     resource_group_name: my_resource_group_name
+     vpn_server_configuration_name: my_vpn_server_configuration_name
+     name_properties_name: my_name_properties_name
+     radius_server_address: my_radius_server_address
+     radius_server_secret: my_radius_server_secret
+   
+
+ - name: Update the VpnServerConfiguration (no change)
+   azure_rm_vpnserverconfiguration:
+     resource_group_name: my_resource_group_name
+     vpn_server_configuration_name: my_vpn_server_configuration_name
+     name_properties_name: my_name_properties_name
+     radius_server_address: my_radius_server_address
+     radius_server_secret: my_radius_server_secret
+   
+
+ - name: Update the VpnServerConfiguration
+   azure_rm_vpnserverconfiguration:
+     resource_group_name: my_resource_group_name
+     vpn_server_configuration_name: my_vpn_server_configuration_name
+     name_properties_name: my_name_properties_name2
+     radius_server_address: my_radius_server_address2
+     radius_server_secret: my_radius_server_secret2
+   
+
+ - name: Delete the VpnServerConfiguration
+   azure_rm_vpnserverconfiguration:
+     resource_group_name: my_resource_group_name
+     vpn_server_configuration_name: my_vpn_server_configuration_name
+     state: absent
+   
