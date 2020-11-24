@@ -1,0 +1,37 @@
+ - name: Create a Route
+   azure_rm_route:
+     resource_group_name: my_resource_group_name
+     route_table_name: my_route_table_name
+     route_name: my_route_name
+     name: my_name
+     address_prefix: my_address_prefix
+     next_hop_ip_address: my_next_hop_ip_address
+   
+
+ - name: Update the Route (no change)
+   azure_rm_route:
+     resource_group_name: my_resource_group_name
+     route_table_name: my_route_table_name
+     route_name: my_route_name
+     name: my_name
+     address_prefix: my_address_prefix
+     next_hop_ip_address: my_next_hop_ip_address
+   
+
+ - name: Update the Route
+   azure_rm_route:
+     resource_group_name: my_resource_group_name
+     route_table_name: my_route_table_name
+     route_name: my_route_name
+     name: my_name2
+     address_prefix: my_address_prefix2
+     next_hop_ip_address: my_next_hop_ip_address2
+   
+
+ - name: Delete the Route
+   azure_rm_route:
+     resource_group_name: my_resource_group_name
+     route_table_name: my_route_table_name
+     route_name: my_route_name
+     state: absent
+   
