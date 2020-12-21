@@ -1,0 +1,3820 @@
+info:
+  description: The subscription client.
+  pascal_case_title: SubscriptionClient
+  python_title: subscription_client
+  title: SubscriptionClient
+  extensions:
+    cli-dump-index: 10
+schemas:
+  strings:
+    - &ref_2
+      type: string
+      language:
+        default:
+          name: String
+          description: simple string
+        cli:
+          name: String
+          description: simple string
+        python:
+          name: string
+          description: simple string.
+      protocol: {}
+    - &ref_4
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: String
+          description: ''
+        cli:
+          name: String
+          description: ''
+        python:
+          name: string
+          description: ''
+      protocol: {}
+    - &ref_50
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: LocationId
+          description: 'The fully qualified ID of the location. For example, /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.'
+        cli:
+          name: LocationId
+          description: 'The fully qualified ID of the location. For example, /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.'
+        python:
+          name: locationid
+          description: 'The fully qualified ID of the location. For example, /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.'
+      protocol: {}
+    - &ref_51
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: LocationSubscriptionId
+          description: The subscription ID.
+        cli:
+          name: LocationSubscriptionId
+          description: The subscription ID.
+        python:
+          name: locationsubscriptionid
+          description: The subscription ID.
+      protocol: {}
+    - &ref_52
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: LocationName
+          description: The location name.
+        cli:
+          name: LocationName
+          description: The location name.
+        python:
+          name: locationname
+          description: The location name.
+      protocol: {}
+    - &ref_53
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: LocationDisplayName
+          description: The display name of the location.
+        cli:
+          name: LocationDisplayName
+          description: The display name of the location.
+        python:
+          name: locationdisplayname
+          description: The display name of the location.
+      protocol: {}
+    - &ref_54
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: LocationLatitude
+          description: The latitude of the location.
+        cli:
+          name: LocationLatitude
+          description: The latitude of the location.
+        python:
+          name: locationlatitude
+          description: The latitude of the location.
+      protocol: {}
+    - &ref_55
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: LocationLongitude
+          description: The longitude of the location.
+        cli:
+          name: LocationLongitude
+          description: The longitude of the location.
+        python:
+          name: locationlongitude
+          description: The longitude of the location.
+      protocol: {}
+    - &ref_56
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: SubscriptionId
+          description: 'The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000.'
+        cli:
+          name: SubscriptionId
+          description: 'The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000.'
+        python:
+          name: subscriptionid
+          description: 'The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000.'
+      protocol: {}
+    - &ref_57
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: SubscriptionId
+          description: The subscription ID.
+        cli:
+          name: SubscriptionId
+          description: The subscription ID.
+        python:
+          name: subscriptionid
+          description: The subscription ID.
+      protocol: {}
+    - &ref_58
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: SubscriptionDisplayName
+          description: The subscription display name.
+        cli:
+          name: SubscriptionDisplayName
+          description: The subscription display name.
+        python:
+          name: subscriptiondisplayname
+          description: The subscription display name.
+      protocol: {}
+    - &ref_59
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: SubscriptionPoliciesLocationPlacementId
+          description: 'The subscription location placement ID. The ID indicates which regions are visible for a subscription. For example, a subscription with a location placement Id of Public_2014-09-01 has access to Azure public regions.'
+        cli:
+          name: SubscriptionPoliciesLocationPlacementId
+          description: 'The subscription location placement ID. The ID indicates which regions are visible for a subscription. For example, a subscription with a location placement Id of Public_2014-09-01 has access to Azure public regions.'
+        python:
+          name: subscriptionpolicieslocationplacementid
+          description: 'The subscription location placement ID. The ID indicates which regions are visible for a subscription. For example, a subscription with a location placement Id of Public_2014-09-01 has access to Azure public regions.'
+      protocol: {}
+    - &ref_60
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: SubscriptionPoliciesQuotaId
+          description: The subscription quota ID.
+        cli:
+          name: SubscriptionPoliciesQuotaId
+          description: The subscription quota ID.
+        python:
+          name: subscriptionpoliciesquotaid
+          description: The subscription quota ID.
+      protocol: {}
+    - &ref_61
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: SubscriptionAuthorizationSource
+          description: 'The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, ''Legacy, RoleBased''.'
+        cli:
+          name: SubscriptionAuthorizationSource
+          description: 'The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, ''Legacy, RoleBased''.'
+        python:
+          name: subscriptionauthorizationsource
+          description: 'The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, ''Legacy, RoleBased''.'
+      protocol: {}
+    - &ref_62
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: SubscriptionListResultNextLink
+          description: The URL to get the next set of results.
+        cli:
+          name: SubscriptionListResultNextLink
+          description: The URL to get the next set of results.
+        python:
+          name: subscriptionlistresultnextlink
+          description: The URL to get the next set of results.
+      protocol: {}
+    - &ref_63
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: TenantIdDescriptionId
+          description: 'The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000.'
+        cli:
+          name: TenantIdDescriptionId
+          description: 'The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000.'
+        python:
+          name: tenantiddescriptionid
+          description: 'The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000.'
+      protocol: {}
+    - &ref_64
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: TenantIdDescriptionTenantId
+          description: 'The tenant ID. For example, 00000000-0000-0000-0000-000000000000.'
+        cli:
+          name: TenantIdDescriptionTenantId
+          description: 'The tenant ID. For example, 00000000-0000-0000-0000-000000000000.'
+        python:
+          name: tenantiddescriptiontenantid
+          description: 'The tenant ID. For example, 00000000-0000-0000-0000-000000000000.'
+      protocol: {}
+    - &ref_65
+      type: string
+      apiVersions:
+        - version: '2016-06-01'
+      language:
+        default:
+          name: TenantListResultNextLink
+          description: The URL to use for getting the next set of results.
+        cli:
+          name: TenantListResultNextLink
+          description: The URL to use for getting the next set of results.
+        python:
+          name: tenantlistresultnextlink
+          description: The URL to use for getting the next set of results.
+      protocol: {}
+    - &ref_12
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: String
+          description: ''
+        cli:
+          name: String
+          description: ''
+        python:
+          name: string
+          description: ''
+      protocol: {}
+    - &ref_66
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: CanceledSubscriptionIdValue
+          description: The ID of the canceled subscription
+        cli:
+          name: CanceledSubscriptionIdValue
+          description: The ID of the canceled subscription
+        python:
+          name: canceledsubscriptionidvalue
+          description: The ID of the canceled subscription.
+      protocol: {}
+    - &ref_67
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: ErrorResponseCode
+          description: Error code
+        cli:
+          name: ErrorResponseCode
+          description: Error code
+        python:
+          name: errorresponsecode
+          description: Error code.
+      protocol: {}
+    - &ref_68
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: ErrorResponseMessage
+          description: Error message indicating why the operation failed.
+        cli:
+          name: ErrorResponseMessage
+          description: Error message indicating why the operation failed.
+        python:
+          name: errorresponsemessage
+          description: Error message indicating why the operation failed.
+      protocol: {}
+    - &ref_69
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: SubscriptionName
+          description: New subscription name
+        cli:
+          name: SubscriptionName
+          description: New subscription name
+        python:
+          name: subscriptionname
+          description: New subscription name.
+      protocol: {}
+    - &ref_70
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: RenamedSubscriptionIdValue
+          description: The ID of the subscriptions that is being renamed
+        cli:
+          name: RenamedSubscriptionIdValue
+          description: The ID of the subscriptions that is being renamed
+        python:
+          name: renamedsubscriptionidvalue
+          description: The ID of the subscriptions that is being renamed.
+      protocol: {}
+    - &ref_71
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: EnabledSubscriptionIdValue
+          description: The ID of the subscriptions that is being enabled
+        cli:
+          name: EnabledSubscriptionIdValue
+          description: The ID of the subscriptions that is being enabled
+        python:
+          name: enabledsubscriptionidvalue
+          description: The ID of the subscriptions that is being enabled.
+      protocol: {}
+    - &ref_72
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: OperationName
+          description: 'Operation name: {provider}/{resource}/{operation}'
+        cli:
+          name: OperationName
+          description: 'Operation name: {provider}/{resource}/{operation}'
+        python:
+          name: operationname
+          description: 'Operation name: {provider}/{resource}/{operation}.'
+      protocol: {}
+    - &ref_73
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: OperationDisplayProvider
+          description: 'Service provider: Microsoft.Subscription'
+        cli:
+          name: OperationDisplayProvider
+          description: 'Service provider: Microsoft.Subscription'
+        python:
+          name: operationdisplayprovider
+          description: 'Service provider: Microsoft.Subscription.'
+      protocol: {}
+    - &ref_74
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: OperationDisplayResource
+          description: 'Resource on which the operation is performed: Profile, endpoint, etc.'
+        cli:
+          name: OperationDisplayResource
+          description: 'Resource on which the operation is performed: Profile, endpoint, etc.'
+        python:
+          name: operationdisplayresource
+          description: 'Resource on which the operation is performed: Profile, endpoint, etc.'
+      protocol: {}
+    - &ref_75
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: OperationDisplayOperation
+          description: 'Operation type: Read, write, delete, etc.'
+        cli:
+          name: OperationDisplayOperation
+          description: 'Operation type: Read, write, delete, etc.'
+        python:
+          name: operationdisplayoperation
+          description: 'Operation type: Read, write, delete, etc.'
+      protocol: {}
+    - &ref_76
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: OperationListResultNextLink
+          description: URL to get the next set of operation list results if there are any.
+        cli:
+          name: OperationListResultNextLink
+          description: URL to get the next set of operation list results if there are any.
+        python:
+          name: operationlistresultnextlink
+          description: URL to get the next set of operation list results if there are any.
+      protocol: {}
+    - &ref_77
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasRequestPropertiesDisplayName
+          description: The friendly name of the subscription.
+        cli:
+          name: PutAliasRequestPropertiesDisplayName
+          description: The friendly name of the subscription.
+        python:
+          name: putaliasrequestpropertiesdisplayname
+          description: The friendly name of the subscription.
+      protocol: {}
+    - &ref_78
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasRequestPropertiesBillingScope
+          description: 'Determines whether subscription is fieldLed, partnerLed or LegacyEA'
+        cli:
+          name: PutAliasRequestPropertiesBillingScope
+          description: 'Determines whether subscription is fieldLed, partnerLed or LegacyEA'
+        python:
+          name: putaliasrequestpropertiesbillingscope
+          description: 'Determines whether subscription is fieldLed, partnerLed or LegacyEA.'
+      protocol: {}
+    - &ref_79
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasRequestPropertiesSubscriptionId
+          description: This parameter can be used to create alias for existing subscription Id
+        cli:
+          name: PutAliasRequestPropertiesSubscriptionId
+          description: This parameter can be used to create alias for existing subscription Id
+        python:
+          name: putaliasrequestpropertiessubscriptionid
+          description: This parameter can be used to create alias for existing subscription Id.
+      protocol: {}
+    - &ref_80
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasRequestPropertiesResellerId
+          description: 'Reseller ID, basically MPN Id'
+        cli:
+          name: PutAliasRequestPropertiesResellerId
+          description: 'Reseller ID, basically MPN Id'
+        python:
+          name: putaliasrequestpropertiesresellerid
+          description: 'Reseller ID, basically MPN Id.'
+      protocol: {}
+    - &ref_81
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasResponseId
+          description: Fully qualified ID for the alias resource.
+        cli:
+          name: PutAliasResponseId
+          description: Fully qualified ID for the alias resource.
+        python:
+          name: putaliasresponseid
+          description: Fully qualified ID for the alias resource.
+      protocol: {}
+    - &ref_82
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasResponseName
+          description: Alias ID.
+        cli:
+          name: PutAliasResponseName
+          description: Alias ID.
+        python:
+          name: putaliasresponsename
+          description: Alias ID.
+      protocol: {}
+    - &ref_83
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasResponseType
+          description: 'Resource type, Microsoft.Subscription/aliases.'
+        cli:
+          name: PutAliasResponseType
+          description: 'Resource type, Microsoft.Subscription/aliases.'
+        python:
+          name: putaliasresponsetype
+          description: 'Resource type, Microsoft.Subscription/aliases.'
+      protocol: {}
+    - &ref_84
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasResponsePropertiesSubscriptionId
+          description: Newly created subscription Id.
+        cli:
+          name: PutAliasResponsePropertiesSubscriptionId
+          description: Newly created subscription Id.
+        python:
+          name: putaliasresponsepropertiessubscriptionid
+          description: Newly created subscription Id.
+      protocol: {}
+    - &ref_85
+      type: string
+      apiVersions:
+        - version: '2020-09-01'
+      language:
+        default:
+          name: PutAliasListResultNextLink
+          description: The link (url) to the next page of results.
+        cli:
+          name: PutAliasListResultNextLink
+          description: The link (url) to the next page of results.
+        python:
+          name: putaliaslistresultnextlink
+          description: The link (url) to the next page of results.
+      protocol: {}
+  choices:
+    - &ref_29
+      choices:
+        - value: Production
+          language:
+            default:
+              name: production
+              description: ''
+            cli:
+              name: Production
+              description: ''
+              cliKey: Production
+            python:
+              name: PRODUCTION
+              description: ''
+        - value: DevTest
+          language:
+            default:
+              name: dev_test
+              description: ''
+            cli:
+              name: DevTest
+              description: ''
+              cliKey: DevTest
+            python:
+              name: DEV_TEST
+              description: ''
+      type: choice
+      apiVersions:
+        - version: '2020-09-01'
+      choiceType: *ref_2
+      language:
+        default:
+          name: Workload
+          description: The workload type of the subscription. It can be either Production or DevTest.
+        cli:
+          name: Workload
+          description: The workload type of the subscription. It can be either Production or DevTest.
+          cliKey: workload
+        python:
+          name: Workload
+          description: The workload type of the subscription. It can be either Production or DevTest.
+      protocol: {}
+    - &ref_30
+      choices:
+        - value: Accepted
+          language:
+            default:
+              name: accepted
+              description: ''
+            cli:
+              name: Accepted
+              description: ''
+              cliKey: Accepted
+            python:
+              name: ACCEPTED
+              description: ''
+        - value: Succeeded
+          language:
+            default:
+              name: succeeded
+              description: ''
+            cli:
+              name: Succeeded
+              description: ''
+              cliKey: Succeeded
+            python:
+              name: SUCCEEDED
+              description: ''
+        - value: Failed
+          language:
+            default:
+              name: failed
+              description: ''
+            cli:
+              name: Failed
+              description: ''
+              cliKey: Failed
+            python:
+              name: FAILED
+              description: ''
+      type: choice
+      apiVersions:
+        - version: '2020-09-01'
+      choiceType: *ref_2
+      language:
+        default:
+          name: ProvisioningState
+          description: The provisioning state of the resource.
+        cli:
+          name: ProvisioningState
+          description: The provisioning state of the resource.
+          cliKey: ProvisioningState
+        python:
+          name: ProvisioningState
+          description: The provisioning state of the resource.
+      protocol: {}
+  sealedChoices:
+    - &ref_48
+      choices:
+        - value: Enabled
+          language:
+            default:
+              name: enabled
+              description: ''
+            cli:
+              name: Enabled
+              description: ''
+              cliKey: Enabled
+            python:
+              name: ENABLED
+              description: ''
+        - value: Warned
+          language:
+            default:
+              name: warned
+              description: ''
+            cli:
+              name: Warned
+              description: ''
+              cliKey: Warned
+            python:
+              name: WARNED
+              description: ''
+        - value: PastDue
+          language:
+            default:
+              name: past_due
+              description: ''
+            cli:
+              name: PastDue
+              description: ''
+              cliKey: PastDue
+            python:
+              name: PAST_DUE
+              description: ''
+        - value: Disabled
+          language:
+            default:
+              name: disabled
+              description: ''
+            cli:
+              name: Disabled
+              description: ''
+              cliKey: Disabled
+            python:
+              name: DISABLED
+              description: ''
+        - value: Deleted
+          language:
+            default:
+              name: deleted
+              description: ''
+            cli:
+              name: Deleted
+              description: ''
+              cliKey: Deleted
+            python:
+              name: DELETED
+              description: ''
+      type: sealed-choice
+      apiVersions:
+        - version: '2016-06-01'
+      choiceType: *ref_2
+      language:
+        default:
+          name: SubscriptionState
+          description: 'The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.'
+        cli:
+          name: SubscriptionState
+          description: 'The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.'
+          cliKey: SubscriptionState
+        python:
+          name: SubscriptionState
+          description: 'The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.'
+      protocol: {}
+    - &ref_49
+      choices:
+        - value: 'On'
+          language:
+            default:
+              name: 'on'
+              description: ''
+            cli:
+              name: 'On'
+              description: ''
+              cliKey: 'On'
+            python:
+              name: 'ON'
+              description: ''
+        - value: 'Off'
+          language:
+            default:
+              name: 'off'
+              description: ''
+            cli:
+              name: 'Off'
+              description: ''
+              cliKey: 'Off'
+            python:
+              name: 'OFF'
+              description: ''
+        - value: CurrentPeriodOff
+          language:
+            default:
+              name: current_period_off
+              description: ''
+            cli:
+              name: CurrentPeriodOff
+              description: ''
+              cliKey: CurrentPeriodOff
+            python:
+              name: CURRENT_PERIOD_OFF
+              description: ''
+      type: sealed-choice
+      apiVersions:
+        - version: '2016-06-01'
+      choiceType: *ref_2
+      language:
+        default:
+          name: SpendingLimit
+          description: The subscription spending limit.
+        cli:
+          name: SpendingLimit
+          description: The subscription spending limit.
+          cliKey: spendingLimit
+        python:
+          name: SpendingLimit
+          description: The subscription spending limit.
+      protocol: {}
+  constants:
+    - &ref_5
+      type: constant
+      value:
+        value: '2016-06-01'
+      valueType: *ref_2
+      language:
+        default:
+          name: api_version2016_06_01
+          description: Api Version (2016-06-01)
+        cli:
+          name: ApiVersion20160601
+          description: Api Version (2016-06-01)
+        python:
+          name: api_version2016_06_01
+          description: Api Version (2016-06-01).
+      protocol: {}
+    - &ref_13
+      type: constant
+      value:
+        value: '2020-09-01'
+      valueType: *ref_2
+      language:
+        default:
+          name: api_version2020_09_01
+          description: Api Version (2020-09-01)
+        cli:
+          name: ApiVersion20200901
+          description: Api Version (2020-09-01)
+        python:
+          name: api_version2020_09_01
+          description: Api Version (2020-09-01).
+      protocol: {}
+    - &ref_17
+      type: constant
+      value:
+        value: application/json
+      valueType: *ref_2
+      language:
+        default:
+          name: application_json
+          description: Content Type 'application/json'
+        cli:
+          name: ApplicationJson
+          description: Content Type 'application/json'
+        python:
+          name: application_json
+          description: Content Type 'application/json'.
+      protocol: {}
+  objects:
+    - &ref_31
+      type: object
+      apiVersions:
+        - version: '2016-06-01'
+      properties:
+        - schema: &ref_24
+            type: array
+            apiVersions:
+              - version: '2016-06-01'
+            elementType: &ref_32
+              type: object
+              apiVersions:
+                - version: '2016-06-01'
+              properties:
+                - schema: *ref_50
+                  readOnly: true
+                  serializedName: id
+                  language:
+                    default:
+                      name: id
+                      description: 'The fully qualified ID of the location. For example, /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.'
+                    cli:
+                      name: id
+                      description: 'The fully qualified ID of the location. For example, /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.'
+                      cliKey: id
+                    python:
+                      name: id
+                      description: 'The fully qualified ID of the location. For example, /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.'
+                  protocol: {}
+                - schema: *ref_51
+                  readOnly: true
+                  serializedName: subscriptionId
+                  language:
+                    default:
+                      name: subscription_id
+                      description: The subscription ID.
+                    cli:
+                      name: subscriptionId
+                      description: The subscription ID.
+                      cliKey: subscriptionId
+                    python:
+                      name: subscription_id
+                      description: The subscription ID.
+                  protocol: {}
+                - schema: *ref_52
+                  readOnly: true
+                  serializedName: name
+                  language:
+                    default:
+                      name: name
+                      description: The location name.
+                    cli:
+                      name: name
+                      description: The location name.
+                      cliKey: name
+                    python:
+                      name: name
+                      description: The location name.
+                  protocol: {}
+                - schema: *ref_53
+                  readOnly: true
+                  serializedName: displayName
+                  language:
+                    default:
+                      name: display_name
+                      description: The display name of the location.
+                    cli:
+                      name: displayName
+                      description: The display name of the location.
+                      cliKey: displayName
+                    python:
+                      name: display_name
+                      description: The display name of the location.
+                  protocol: {}
+                - schema: *ref_54
+                  readOnly: true
+                  serializedName: latitude
+                  language:
+                    default:
+                      name: latitude
+                      description: The latitude of the location.
+                    cli:
+                      name: latitude
+                      description: The latitude of the location.
+                      cliKey: latitude
+                    python:
+                      name: latitude
+                      description: The latitude of the location.
+                  protocol: {}
+                - schema: *ref_55
+                  readOnly: true
+                  serializedName: longitude
+                  language:
+                    default:
+                      name: longitude
+                      description: The longitude of the location.
+                    cli:
+                      name: longitude
+                      description: The longitude of the location.
+                      cliKey: longitude
+                    python:
+                      name: longitude
+                      description: The longitude of the location.
+                  protocol: {}
+              serializationFormats:
+                - json
+              usage:
+                - output
+              language:
+                default:
+                  name: Location
+                  description: Location information.
+                  namespace: ''
+                cli:
+                  name: Location
+                  description: Location information.
+                  cli-complexity: object_simple
+                  cli-mark: checked
+                  cli-simplify-indicator:
+                    propertyCountIfSimplify: 0
+                    propertyCountIfSimplifyWithoutSimpleObject: 0
+                    simplifiable: true
+                  cliKey: Location
+                python:
+                  name: Location
+                  description: Location information.
+                  namespace: ''
+              protocol: {}
+            language:
+              default:
+                name: LocationListResultValue
+                description: An array of locations.
+              cli:
+                name: LocationListResultValue
+                description: An array of locations.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: locationlistresultvalue
+                description: An array of locations.
+            protocol: {}
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: An array of locations.
+            cli:
+              name: value
+              description: An array of locations.
+              cliKey: value
+            python:
+              name: value
+              description: An array of locations.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: LocationListResult
+          description: Location list operation response.
+          namespace: ''
+        cli:
+          name: LocationListResult
+          description: Location list operation response.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 10000
+            propertyCountIfSimplifyWithoutSimpleObject: 10000
+            simplifiable: false
+          cliKey: LocationListResult
+        python:
+          name: LocationListResult
+          description: Location list operation response.
+          namespace: ''
+      protocol: {}
+    - *ref_32
+    - &ref_8
+      type: object
+      apiVersions:
+        - version: '2016-06-01'
+      properties:
+        - schema: *ref_56
+          readOnly: true
+          serializedName: id
+          language:
+            default:
+              name: id
+              description: 'The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000.'
+            cli:
+              name: id
+              description: 'The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000.'
+              cliKey: id
+            python:
+              name: id
+              description: 'The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000.'
+          protocol: {}
+        - schema: *ref_57
+          readOnly: true
+          serializedName: subscriptionId
+          language:
+            default:
+              name: subscription_id
+              description: The subscription ID.
+            cli:
+              name: subscriptionId
+              description: The subscription ID.
+              cliKey: subscriptionId
+            python:
+              name: subscription_id
+              description: The subscription ID.
+          protocol: {}
+        - schema: *ref_58
+          readOnly: true
+          serializedName: displayName
+          language:
+            default:
+              name: display_name
+              description: The subscription display name.
+            cli:
+              name: displayName
+              description: The subscription display name.
+              cliKey: displayName
+            python:
+              name: display_name
+              description: The subscription display name.
+          protocol: {}
+        - schema: *ref_48
+          readOnly: true
+          serializedName: state
+          language:
+            default:
+              name: state
+              description: 'The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.'
+            cli:
+              name: state
+              description: 'The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.'
+              cliKey: state
+            python:
+              name: state
+              description: 'The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.'
+          protocol: {}
+        - schema: &ref_33
+            type: object
+            apiVersions:
+              - version: '2016-06-01'
+            properties:
+              - schema: *ref_59
+                readOnly: true
+                serializedName: locationPlacementId
+                language:
+                  default:
+                    name: location_placement_id
+                    description: 'The subscription location placement ID. The ID indicates which regions are visible for a subscription. For example, a subscription with a location placement Id of Public_2014-09-01 has access to Azure public regions.'
+                  cli:
+                    name: locationPlacementId
+                    description: 'The subscription location placement ID. The ID indicates which regions are visible for a subscription. For example, a subscription with a location placement Id of Public_2014-09-01 has access to Azure public regions.'
+                    cliKey: locationPlacementId
+                  python:
+                    name: location_placement_id
+                    description: 'The subscription location placement ID. The ID indicates which regions are visible for a subscription. For example, a subscription with a location placement Id of Public_2014-09-01 has access to Azure public regions.'
+                protocol: {}
+              - schema: *ref_60
+                readOnly: true
+                serializedName: quotaId
+                language:
+                  default:
+                    name: quota_id
+                    description: The subscription quota ID.
+                  cli:
+                    name: quotaId
+                    description: The subscription quota ID.
+                    cliKey: quotaId
+                  python:
+                    name: quota_id
+                    description: The subscription quota ID.
+                protocol: {}
+              - schema: *ref_49
+                readOnly: true
+                serializedName: spendingLimit
+                language:
+                  default:
+                    name: spending_limit
+                    description: The subscription spending limit.
+                  cli:
+                    name: spendingLimit
+                    description: The subscription spending limit.
+                    cliKey: spendingLimit
+                  python:
+                    name: spending_limit
+                    description: The subscription spending limit.
+                protocol: {}
+            serializationFormats:
+              - json
+            usage:
+              - output
+            language:
+              default:
+                name: SubscriptionPolicies
+                description: Subscription policies.
+                namespace: ''
+              cli:
+                name: SubscriptionPolicies
+                description: Subscription policies.
+                cli-complexity: object_simple
+                cli-mark: checked
+                cli-simplify-indicator:
+                  propertyCountIfSimplify: 0
+                  propertyCountIfSimplifyWithoutSimpleObject: 0
+                  simplifiable: true
+                cliKey: SubscriptionPolicies
+              python:
+                name: SubscriptionPolicies
+                description: Subscription policies.
+                namespace: ''
+            protocol: {}
+          serializedName: subscriptionPolicies
+          language:
+            default:
+              name: subscription_policies
+              description: The subscription policies.
+            cli:
+              name: subscriptionPolicies
+              description: The subscription policies.
+              cliKey: subscriptionPolicies
+            python:
+              name: subscription_policies
+              description: The subscription policies.
+          protocol: {}
+        - schema: *ref_61
+          serializedName: authorizationSource
+          language:
+            default:
+              name: authorization_source
+              description: 'The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, ''Legacy, RoleBased''.'
+            cli:
+              name: authorizationSource
+              description: 'The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, ''Legacy, RoleBased''.'
+              cliKey: authorizationSource
+            python:
+              name: authorization_source
+              description: 'The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, ''Legacy, RoleBased''.'
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: Subscription
+          description: Subscription information.
+          namespace: ''
+        cli:
+          name: Subscription
+          description: Subscription information.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 1
+            propertyCountIfSimplifyWithoutSimpleObject: 2
+            simplifiable: true
+          cliKey: Subscription
+        python:
+          name: Subscription
+          description: Subscription information.
+          namespace: ''
+      protocol: {}
+    - *ref_33
+    - &ref_34
+      type: object
+      apiVersions:
+        - version: '2016-06-01'
+      properties:
+        - schema: &ref_25
+            type: array
+            apiVersions:
+              - version: '2016-06-01'
+            elementType: *ref_8
+            language:
+              default:
+                name: SubscriptionListResultValue
+                description: An array of subscriptions.
+              cli:
+                name: SubscriptionListResultValue
+                description: An array of subscriptions.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: subscriptionlistresultvalue
+                description: An array of subscriptions.
+            protocol: {}
+          required: false
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: An array of subscriptions.
+            cli:
+              name: value
+              description: An array of subscriptions.
+              cliKey: value
+            python:
+              name: value
+              description: An array of subscriptions.
+          protocol: {}
+        - schema: *ref_62
+          required: true
+          serializedName: nextLink
+          language:
+            default:
+              name: next_link
+              description: The URL to get the next set of results.
+            cli:
+              name: nextLink
+              description: The URL to get the next set of results.
+              cliKey: nextLink
+            python:
+              name: next_link
+              description: The URL to get the next set of results.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: SubscriptionListResult
+          description: Subscription list operation response.
+          namespace: ''
+        cli:
+          name: SubscriptionListResult
+          description: Subscription list operation response.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 10000
+            propertyCountIfSimplifyWithoutSimpleObject: 10000
+            simplifiable: false
+          cliKey: SubscriptionListResult
+        python:
+          name: SubscriptionListResult
+          description: Subscription list operation response.
+          namespace: ''
+      protocol: {}
+    - &ref_35
+      type: object
+      apiVersions:
+        - version: '2016-06-01'
+      properties:
+        - schema: &ref_26
+            type: array
+            apiVersions:
+              - version: '2016-06-01'
+            elementType: &ref_36
+              type: object
+              apiVersions:
+                - version: '2016-06-01'
+              properties:
+                - schema: *ref_63
+                  readOnly: true
+                  serializedName: id
+                  language:
+                    default:
+                      name: id
+                      description: 'The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000.'
+                    cli:
+                      name: id
+                      description: 'The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000.'
+                      cliKey: id
+                    python:
+                      name: id
+                      description: 'The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000.'
+                  protocol: {}
+                - schema: *ref_64
+                  readOnly: true
+                  serializedName: tenantId
+                  language:
+                    default:
+                      name: tenant_id
+                      description: 'The tenant ID. For example, 00000000-0000-0000-0000-000000000000.'
+                    cli:
+                      name: tenantId
+                      description: 'The tenant ID. For example, 00000000-0000-0000-0000-000000000000.'
+                      cliKey: tenantId
+                    python:
+                      name: tenant_id
+                      description: 'The tenant ID. For example, 00000000-0000-0000-0000-000000000000.'
+                  protocol: {}
+              serializationFormats:
+                - json
+              usage:
+                - output
+              language:
+                default:
+                  name: TenantIdDescription
+                  description: Tenant Id information.
+                  namespace: ''
+                cli:
+                  name: TenantIdDescription
+                  description: Tenant Id information.
+                  cli-complexity: object_simple
+                  cli-mark: checked
+                  cli-simplify-indicator:
+                    propertyCountIfSimplify: 0
+                    propertyCountIfSimplifyWithoutSimpleObject: 0
+                    simplifiable: true
+                  cliKey: TenantIdDescription
+                python:
+                  name: TenantIdDescription
+                  description: Tenant Id information.
+                  namespace: ''
+              protocol: {}
+            language:
+              default:
+                name: TenantListResultValue
+                description: An array of tenants.
+              cli:
+                name: TenantListResultValue
+                description: An array of tenants.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: tenantlistresultvalue
+                description: An array of tenants.
+            protocol: {}
+          required: false
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: An array of tenants.
+            cli:
+              name: value
+              description: An array of tenants.
+              cliKey: value
+            python:
+              name: value
+              description: An array of tenants.
+          protocol: {}
+        - schema: *ref_65
+          required: true
+          serializedName: nextLink
+          language:
+            default:
+              name: next_link
+              description: The URL to use for getting the next set of results.
+            cli:
+              name: nextLink
+              description: The URL to use for getting the next set of results.
+              cliKey: nextLink
+            python:
+              name: next_link
+              description: The URL to use for getting the next set of results.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: TenantListResult
+          description: Tenant Ids information.
+          namespace: ''
+        cli:
+          name: TenantListResult
+          description: Tenant Ids information.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 10000
+            propertyCountIfSimplifyWithoutSimpleObject: 10000
+            simplifiable: false
+          cliKey: TenantListResult
+        python:
+          name: TenantListResult
+          description: Tenant Ids information.
+          namespace: ''
+      protocol: {}
+    - *ref_36
+    - &ref_37
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: *ref_66
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: The ID of the canceled subscription
+            cli:
+              name: value
+              description: The ID of the canceled subscription
+              cliKey: value
+            python:
+              name: value
+              description: The ID of the canceled subscription.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: CanceledSubscriptionId
+          description: The ID of the canceled subscription
+          namespace: ''
+        cli:
+          name: CanceledSubscriptionId
+          description: The ID of the canceled subscription
+          cli-complexity: object_simple
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: CanceledSubscriptionId
+        python:
+          name: CanceledSubscriptionId
+          description: The ID of the canceled subscription.
+          namespace: ''
+      protocol: {}
+    - &ref_11
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: *ref_67
+          serializedName: code
+          language:
+            default:
+              name: code
+              description: Error code
+            cli:
+              name: code
+              description: Error code
+              cliKey: code
+            python:
+              name: code
+              description: Error code.
+          protocol: {}
+        - schema: *ref_68
+          serializedName: message
+          language:
+            default:
+              name: message
+              description: Error message indicating why the operation failed.
+            cli:
+              name: message
+              description: Error message indicating why the operation failed.
+              cliKey: message
+            python:
+              name: message
+              description: Error message indicating why the operation failed.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - exception
+      language:
+        default:
+          name: ErrorResponse
+          description: Describes the format of Error response.
+          namespace: ''
+        cli:
+          name: ErrorResponse
+          description: Describes the format of Error response.
+          cli-complexity: object_simple
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 2
+            propertyCountIfSimplifyWithoutSimpleObject: 2
+            simplifiable: true
+          cliKey: ErrorResponse
+        python:
+          name: ErrorResponse
+          description: Describes the format of Error response.
+          namespace: ''
+      protocol: {}
+    - &ref_38
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: *ref_69
+          serializedName: subscriptionName
+          language:
+            default:
+              name: subscription_name
+              description: New subscription name
+            cli:
+              name: subscriptionName
+              description: New subscription name
+              cliKey: subscriptionName
+            python:
+              name: subscription_name
+              description: New subscription name.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - input
+      language:
+        default:
+          name: SubscriptionName
+          description: The new name of the subscription.
+          namespace: ''
+        cli:
+          name: SubscriptionName
+          description: The new name of the subscription.
+          cli-complexity: object_simple
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 1
+            propertyCountIfSimplifyWithoutSimpleObject: 1
+            simplifiable: true
+          cliKey: SubscriptionName
+        python:
+          name: SubscriptionName
+          description: The new name of the subscription.
+          namespace: ''
+      protocol: {}
+    - &ref_39
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: *ref_70
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: The ID of the subscriptions that is being renamed
+            cli:
+              name: value
+              description: The ID of the subscriptions that is being renamed
+              cliKey: value
+            python:
+              name: value
+              description: The ID of the subscriptions that is being renamed.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: RenamedSubscriptionId
+          description: The ID of the subscriptions that is being renamed
+          namespace: ''
+        cli:
+          name: RenamedSubscriptionId
+          description: The ID of the subscriptions that is being renamed
+          cli-complexity: object_simple
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: RenamedSubscriptionId
+        python:
+          name: RenamedSubscriptionId
+          description: The ID of the subscriptions that is being renamed.
+          namespace: ''
+      protocol: {}
+    - &ref_40
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: *ref_71
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: The ID of the subscriptions that is being enabled
+            cli:
+              name: value
+              description: The ID of the subscriptions that is being enabled
+              cliKey: value
+            python:
+              name: value
+              description: The ID of the subscriptions that is being enabled.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: EnabledSubscriptionId
+          description: The ID of the subscriptions that is being enabled
+          namespace: ''
+        cli:
+          name: EnabledSubscriptionId
+          description: The ID of the subscriptions that is being enabled
+          cli-complexity: object_simple
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: EnabledSubscriptionId
+        python:
+          name: EnabledSubscriptionId
+          description: The ID of the subscriptions that is being enabled.
+          namespace: ''
+      protocol: {}
+    - &ref_41
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: &ref_27
+            type: array
+            apiVersions:
+              - version: '2020-09-01'
+            elementType: &ref_42
+              type: object
+              apiVersions:
+                - version: '2020-09-01'
+              properties:
+                - schema: *ref_72
+                  serializedName: name
+                  language:
+                    default:
+                      name: name
+                      description: 'Operation name: {provider}/{resource}/{operation}'
+                    cli:
+                      name: name
+                      description: 'Operation name: {provider}/{resource}/{operation}'
+                      cliKey: name
+                    python:
+                      name: name
+                      description: 'Operation name: {provider}/{resource}/{operation}.'
+                  protocol: {}
+                - schema: &ref_43
+                    type: object
+                    apiVersions:
+                      - version: '2020-09-01'
+                    properties:
+                      - schema: *ref_73
+                        serializedName: provider
+                        language:
+                          default:
+                            name: provider
+                            description: 'Service provider: Microsoft.Subscription'
+                          cli:
+                            name: provider
+                            description: 'Service provider: Microsoft.Subscription'
+                            cliKey: provider
+                          python:
+                            name: provider
+                            description: 'Service provider: Microsoft.Subscription.'
+                        protocol: {}
+                      - schema: *ref_74
+                        serializedName: resource
+                        language:
+                          default:
+                            name: resource
+                            description: 'Resource on which the operation is performed: Profile, endpoint, etc.'
+                          cli:
+                            name: resource
+                            description: 'Resource on which the operation is performed: Profile, endpoint, etc.'
+                            cliKey: resource
+                          python:
+                            name: resource
+                            description: 'Resource on which the operation is performed: Profile, endpoint, etc.'
+                        protocol: {}
+                      - schema: *ref_75
+                        serializedName: operation
+                        language:
+                          default:
+                            name: operation
+                            description: 'Operation type: Read, write, delete, etc.'
+                          cli:
+                            name: operation
+                            description: 'Operation type: Read, write, delete, etc.'
+                            cliKey: operation
+                          python:
+                            name: operation
+                            description: 'Operation type: Read, write, delete, etc.'
+                        protocol: {}
+                    serializationFormats:
+                      - json
+                    usage:
+                      - output
+                    extensions:
+                      x-internal-autorest-anonymous-schema:
+                        anonymous: true
+                    language:
+                      default:
+                        name: OperationDisplay
+                        description: The object that represents the operation.
+                        namespace: ''
+                      cli:
+                        name: OperationDisplay
+                        description: The object that represents the operation.
+                        cli-complexity: object_simple
+                        cli-mark: checked
+                        cli-simplify-indicator:
+                          propertyCountIfSimplify: 3
+                          propertyCountIfSimplifyWithoutSimpleObject: 3
+                          simplifiable: true
+                        cliKey: Operation-display
+                      python:
+                        name: OperationDisplay
+                        description: The object that represents the operation.
+                        namespace: ''
+                    protocol: {}
+                  serializedName: display
+                  language:
+                    default:
+                      name: display
+                      description: The object that represents the operation.
+                    cli:
+                      name: display
+                      description: The object that represents the operation.
+                      cliKey: display
+                    python:
+                      name: display
+                      description: The object that represents the operation.
+                  protocol: {}
+              serializationFormats:
+                - json
+              usage:
+                - output
+              language:
+                default:
+                  name: Operation
+                  description: REST API operation
+                  namespace: ''
+                cli:
+                  name: Operation
+                  description: REST API operation
+                  cli-complexity: object_complex
+                  cli-mark: checked
+                  cli-simplify-indicator:
+                    propertyCountIfSimplify: 4
+                    propertyCountIfSimplifyWithoutSimpleObject: 2
+                    simplifiable: true
+                  cliKey: Operation
+                python:
+                  name: Operation
+                  description: REST API operation.
+                  namespace: ''
+              protocol: {}
+            language:
+              default:
+                name: OperationListResultValue
+                description: List of operations.
+              cli:
+                name: OperationListResultValue
+                description: List of operations.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: operationlistresultvalue
+                description: List of operations.
+            protocol: {}
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: List of operations.
+            cli:
+              name: value
+              description: List of operations.
+              cliKey: value
+            python:
+              name: value
+              description: List of operations.
+          protocol: {}
+        - schema: *ref_76
+          serializedName: nextLink
+          language:
+            default:
+              name: next_link
+              description: URL to get the next set of operation list results if there are any.
+            cli:
+              name: nextLink
+              description: URL to get the next set of operation list results if there are any.
+              cliKey: nextLink
+            python:
+              name: next_link
+              description: URL to get the next set of operation list results if there are any.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: OperationListResult
+          description: Result of the request to list operations. It contains a list of operations and a URL link to get the next set of results.
+          namespace: ''
+        cli:
+          name: OperationListResult
+          description: Result of the request to list operations. It contains a list of operations and a URL link to get the next set of results.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 10000
+            propertyCountIfSimplifyWithoutSimpleObject: 10000
+            simplifiable: false
+          cliKey: OperationListResult
+        python:
+          name: OperationListResult
+          description: Result of the request to list operations. It contains a list of operations and a URL link to get the next set of results.
+          namespace: ''
+      protocol: {}
+    - *ref_42
+    - *ref_43
+    - &ref_44
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: &ref_45
+            type: object
+            apiVersions:
+              - version: '2020-09-01'
+            properties:
+              - schema: *ref_77
+                serializedName: displayName
+                language:
+                  default:
+                    name: display_name
+                    description: The friendly name of the subscription.
+                  cli:
+                    name: displayName
+                    description: The friendly name of the subscription.
+                    cliKey: displayName
+                  python:
+                    name: display_name
+                    description: The friendly name of the subscription.
+                protocol: {}
+              - schema: *ref_29
+                serializedName: workload
+                language:
+                  default:
+                    name: workload
+                    description: The workload type of the subscription. It can be either Production or DevTest.
+                  cli:
+                    name: workload
+                    description: The workload type of the subscription. It can be either Production or DevTest.
+                    cliKey: workload
+                  python:
+                    name: workload
+                    description: The workload type of the subscription. It can be either Production or DevTest.
+                protocol: {}
+              - schema: *ref_78
+                serializedName: billingScope
+                language:
+                  default:
+                    name: billing_scope
+                    description: 'Determines whether subscription is fieldLed, partnerLed or LegacyEA'
+                  cli:
+                    name: billingScope
+                    description: 'Determines whether subscription is fieldLed, partnerLed or LegacyEA'
+                    cliKey: billingScope
+                  python:
+                    name: billing_scope
+                    description: 'Determines whether subscription is fieldLed, partnerLed or LegacyEA.'
+                protocol: {}
+              - schema: *ref_79
+                serializedName: subscriptionId
+                language:
+                  default:
+                    name: subscription_id
+                    description: This parameter can be used to create alias for existing subscription Id
+                  cli:
+                    name: subscriptionId
+                    description: This parameter can be used to create alias for existing subscription Id
+                    cliKey: subscriptionId
+                  python:
+                    name: subscription_id
+                    description: This parameter can be used to create alias for existing subscription Id.
+                protocol: {}
+              - schema: *ref_80
+                serializedName: resellerId
+                language:
+                  default:
+                    name: reseller_id
+                    description: 'Reseller ID, basically MPN Id'
+                  cli:
+                    name: resellerId
+                    description: 'Reseller ID, basically MPN Id'
+                    cliKey: resellerId
+                  python:
+                    name: reseller_id
+                    description: 'Reseller ID, basically MPN Id.'
+                protocol: {}
+            serializationFormats:
+              - json
+            usage:
+              - input
+            language:
+              default:
+                name: PutAliasRequestProperties
+                description: Put subscription properties.
+                namespace: ''
+              cli:
+                name: PutAliasRequestProperties
+                description: Put subscription properties.
+                cli-complexity: object_simple
+                cli-mark: checked
+                cli-simplify-indicator:
+                  propertyCountIfSimplify: 5
+                  propertyCountIfSimplifyWithoutSimpleObject: 5
+                  simplifiable: true
+                cliKey: PutAliasRequestProperties
+              python:
+                name: PutAliasRequestProperties
+                description: Put subscription properties.
+                namespace: ''
+            protocol: {}
+          required: true
+          serializedName: properties
+          language:
+            default:
+              name: properties
+              description: Put alias request properties.
+            cli:
+              name: properties
+              description: Put alias request properties.
+              cliKey: properties
+            python:
+              name: properties
+              description: Put alias request properties.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - input
+      language:
+        default:
+          name: PutAliasRequest
+          description: The parameters required to create a new subscription.
+          namespace: ''
+        cli:
+          name: PutAliasRequest
+          description: The parameters required to create a new subscription.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 5
+            propertyCountIfSimplifyWithoutSimpleObject: 1
+            simplifiable: true
+          cliKey: PutAliasRequest
+        python:
+          name: PutAliasRequest
+          description: The parameters required to create a new subscription.
+          namespace: ''
+      protocol: {}
+    - *ref_45
+    - &ref_19
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: *ref_81
+          readOnly: true
+          serializedName: id
+          language:
+            default:
+              name: id
+              description: Fully qualified ID for the alias resource.
+            cli:
+              name: id
+              description: Fully qualified ID for the alias resource.
+              cliKey: id
+            python:
+              name: id
+              description: Fully qualified ID for the alias resource.
+          protocol: {}
+        - schema: *ref_82
+          readOnly: true
+          serializedName: name
+          language:
+            default:
+              name: name
+              description: Alias ID.
+            cli:
+              name: name
+              description: Alias ID.
+              cliKey: name
+            python:
+              name: name
+              description: Alias ID.
+          protocol: {}
+        - schema: *ref_83
+          readOnly: true
+          serializedName: type
+          language:
+            default:
+              name: type
+              description: 'Resource type, Microsoft.Subscription/aliases.'
+            cli:
+              name: type
+              description: 'Resource type, Microsoft.Subscription/aliases.'
+              cliKey: type
+            python:
+              name: type
+              description: 'Resource type, Microsoft.Subscription/aliases.'
+          protocol: {}
+        - schema: &ref_46
+            type: object
+            apiVersions:
+              - version: '2020-09-01'
+            properties:
+              - schema: *ref_84
+                readOnly: true
+                serializedName: subscriptionId
+                language:
+                  default:
+                    name: subscription_id
+                    description: Newly created subscription Id.
+                  cli:
+                    name: subscriptionId
+                    description: Newly created subscription Id.
+                    cliKey: subscriptionId
+                  python:
+                    name: subscription_id
+                    description: Newly created subscription Id.
+                protocol: {}
+              - schema: *ref_30
+                serializedName: provisioningState
+                language:
+                  default:
+                    name: provisioning_state
+                    description: The provisioning state of the resource.
+                  cli:
+                    name: provisioningState
+                    description: The provisioning state of the resource.
+                    cliKey: provisioningState
+                  python:
+                    name: provisioning_state
+                    description: The provisioning state of the resource.
+                protocol: {}
+            serializationFormats:
+              - json
+            usage:
+              - output
+            language:
+              default:
+                name: PutAliasResponseProperties
+                description: Put subscription creation result properties.
+                namespace: ''
+              cli:
+                name: PutAliasResponseProperties
+                description: Put subscription creation result properties.
+                cli-complexity: object_simple
+                cli-mark: checked
+                cli-simplify-indicator:
+                  propertyCountIfSimplify: 1
+                  propertyCountIfSimplifyWithoutSimpleObject: 1
+                  simplifiable: true
+                cliKey: PutAliasResponseProperties
+              python:
+                name: PutAliasResponseProperties
+                description: Put subscription creation result properties.
+                namespace: ''
+            protocol: {}
+          serializedName: properties
+          language:
+            default:
+              name: properties
+              description: Put Alias response properties.
+            cli:
+              name: properties
+              description: Put Alias response properties.
+              cliKey: properties
+            python:
+              name: properties
+              description: Put Alias response properties.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      extensions:
+        x-ms-azure-resource: true
+      language:
+        default:
+          name: PutAliasResponse
+          description: Subscription Information with the alias.
+          namespace: ''
+        cli:
+          name: PutAliasResponse
+          description: Subscription Information with the alias.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 1
+            propertyCountIfSimplifyWithoutSimpleObject: 1
+            simplifiable: true
+          cliKey: PutAliasResponse
+        python:
+          name: PutAliasResponse
+          description: Subscription Information with the alias.
+          namespace: ''
+      protocol: {}
+    - *ref_46
+    - &ref_21
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: *ref_11
+          serializedName: error
+          language:
+            default:
+              name: error
+              description: The details of the error.
+            cli:
+              name: error
+              description: The details of the error.
+              cliKey: error
+            python:
+              name: error
+              description: The details of the error.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - exception
+      language:
+        default:
+          name: ErrorResponseBody
+          description: Error response indicates that the service is not able to process the incoming request. The reason is provided in the error message.
+          namespace: ''
+        cli:
+          name: ErrorResponseBody
+          description: Error response indicates that the service is not able to process the incoming request. The reason is provided in the error message.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 2
+            propertyCountIfSimplifyWithoutSimpleObject: 1
+            simplifiable: true
+          cliKey: ErrorResponseBody
+        python:
+          name: ErrorResponseBody
+          description: Error response indicates that the service is not able to process the incoming request. The reason is provided in the error message.
+          namespace: ''
+      protocol: {}
+    - &ref_47
+      type: object
+      apiVersions:
+        - version: '2020-09-01'
+      properties:
+        - schema: &ref_28
+            type: array
+            apiVersions:
+              - version: '2020-09-01'
+            elementType: *ref_19
+            language:
+              default:
+                name: PutAliasListResultValue
+                description: The list of alias.
+              cli:
+                name: PutAliasListResultValue
+                description: The list of alias.
+                cli-complexity: array_complex
+                cli-mark: checked
+              python:
+                name: putaliaslistresultvalue
+                description: The list of alias.
+            protocol: {}
+          readOnly: true
+          serializedName: value
+          language:
+            default:
+              name: value
+              description: The list of alias.
+            cli:
+              name: value
+              description: The list of alias.
+              cliKey: value
+            python:
+              name: value
+              description: The list of alias.
+          protocol: {}
+        - schema: *ref_85
+          readOnly: true
+          serializedName: nextLink
+          language:
+            default:
+              name: next_link
+              description: The link (url) to the next page of results.
+            cli:
+              name: nextLink
+              description: The link (url) to the next page of results.
+              cliKey: nextLink
+            python:
+              name: next_link
+              description: The link (url) to the next page of results.
+          protocol: {}
+      serializationFormats:
+        - json
+      usage:
+        - output
+      language:
+        default:
+          name: PutAliasListResult
+          description: The list of aliases.
+          namespace: ''
+        cli:
+          name: PutAliasListResult
+          description: The list of aliases.
+          cli-complexity: object_complex
+          cli-mark: checked
+          cli-simplify-indicator:
+            propertyCountIfSimplify: 0
+            propertyCountIfSimplifyWithoutSimpleObject: 0
+            simplifiable: true
+          cliKey: PutAliasListResult
+        python:
+          name: PutAliasListResult
+          description: The list of aliases.
+          namespace: ''
+      protocol: {}
+  arrays:
+    - *ref_24
+    - *ref_25
+    - *ref_26
+    - *ref_27
+    - *ref_28
+globalParameters:
+  - &ref_1
+    schema: *ref_2
+    clientDefaultValue: 'https://management.azure.com'
+    implementation: Client
+    origin: 'modelerfour:synthesized/host'
+    required: true
+    extensions:
+      x-ms-skip-url-encoding: true
+    language:
+      default:
+        name: $host
+        description: server parameter
+        serializedName: $host
+      cli:
+        name: $host
+        description: server parameter
+        cliKey: $host
+      python:
+        name: host
+        description: server parameter.
+        serializedName: $host
+    protocol:
+      http:
+        in: uri
+operationGroups:
+  - $key: Subscriptions
+    operations:
+      - apiVersions:
+          - version: '2016-06-01'
+        parameters:
+          - *ref_1
+          - &ref_3
+            schema: *ref_4
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: subscription_id
+                description: The ID of the target subscription.
+                serializedName: subscriptionId
+              cli:
+                name: subscriptionId
+                description: The ID of the target subscription.
+                cliKey: subscriptionId
+              python:
+                name: subscription_id
+                description: The ID of the target subscription.
+                serializedName: subscriptionId
+            protocol:
+              http:
+                in: path
+          - schema: *ref_5
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/subscriptions/{subscriptionId}/locations'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_3
+        responses:
+          - schema: *ref_31
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        extensions:
+          x-ms-examples:
+            listLocations:
+              parameters:
+                api-version: '2016-06-01'
+                subscriptionId: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+              responses:
+                '200':
+                  body:
+                    value:
+                      - name: eastasia
+                        displayName: East Asia
+                        id: /subscriptions/83aa47df-e3e9-49ff-877b-94304bf3d3ad/locations/eastasia
+                        latitude: '22.267'
+                        longitude: '114.188'
+                      - name: southeastasia
+                        displayName: Southeast Asia
+                        id: /subscriptions/83aa47df-e3e9-49ff-877b-94304bf3d3ad/locations/southeastasia
+                        latitude: '1.283'
+                        longitude: '103.833'
+          x-ms-pageable:
+            nextLinkName: null
+        language:
+          default:
+            name: list_locations
+            description: 'This operation provides all the locations that are available for resource providers; however, each resource provider may support a subset of this list.'
+            paging: &ref_0
+              nextLinkName: null
+            summary: Gets all available geo-locations.
+          cli:
+            name: ListLocation
+            description: 'This operation provides all the locations that are available for resource providers; however, each resource provider may support a subset of this list.'
+            cliKey: ListLocations
+          python:
+            name: list_locations
+            description: 'This operation provides all the locations that are available for resource providers; however, each resource provider may support a subset of this list.'
+            paging: *ref_0
+            summary: Gets all available geo-locations.
+        protocol: {}
+      - apiVersions:
+          - version: '2016-06-01'
+        parameters:
+          - *ref_1
+          - &ref_6
+            schema: *ref_4
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: subscription_id
+                description: The ID of the target subscription.
+                serializedName: subscriptionId
+              cli:
+                name: subscriptionId
+                description: The ID of the target subscription.
+                cliKey: subscriptionId
+              python:
+                name: subscription_id
+                description: The ID of the target subscription.
+                serializedName: subscriptionId
+            protocol:
+              http:
+                in: path
+          - schema: *ref_5
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/subscriptions/{subscriptionId}'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_6
+        responses:
+          - schema: *ref_8
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        extensions:
+          x-ms-examples:
+            getSubscription:
+              parameters:
+                api-version: '2016-06-01'
+                subscriptionId: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+              responses:
+                '200':
+                  body:
+                    authorizationSource: Legacy
+                    displayName: Subscription2
+                    id: /subscriptions/83aa47df-e3e9-49ff-877b-94304bf3d3ad
+                    state: Enabled
+                    subscriptionId: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+                    subscriptionPolicies:
+                      locationPlacementId: Internal_2014-09-01
+                      quotaId: Internal_2014-09-01
+                      spendingLimit: 'Off'
+        language:
+          default:
+            name: get
+            description: Gets details about a specified subscription.
+          cli:
+            name: Get
+            description: Gets details about a specified subscription.
+            cliKey: Get
+          python:
+            name: get
+            description: Gets details about a specified subscription.
+        protocol: {}
+      - apiVersions:
+          - version: '2016-06-01'
+        parameters:
+          - *ref_1
+          - schema: *ref_5
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: /subscriptions
+                method: get
+                uri: '{$host}'
+        signatureParameters: []
+        responses:
+          - schema: *ref_34
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        extensions:
+          x-ms-examples:
+            listSubscriptions:
+              parameters:
+                api-version: '2016-06-01'
+              responses:
+                '200':
+                  body:
+                    nextLink: string
+                    value:
+                      - authorizationSource: Legacy
+                        displayName: SubscriptionName
+                        id: /subscriptions/83aa47df-e3e9-49ff-877b-94304bf3d3ad
+                        state: Enabled
+                        subscriptionId: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+                        subscriptionPolicies:
+                          locationPlacementId: Internal_2014-09-01
+                          quotaId: Internal_2014-09-01
+                          spendingLimit: 'Off'
+          x-ms-pageable:
+            nextLinkName: nextLink
+        language:
+          default:
+            name: list
+            description: Gets all subscriptions for a tenant.
+            paging: &ref_7
+              nextLinkName: nextLink
+          cli:
+            name: List
+            description: Gets all subscriptions for a tenant.
+            cliKey: List
+          python:
+            name: list
+            description: Gets all subscriptions for a tenant.
+            paging: *ref_7
+        protocol: {}
+    language:
+      default:
+        name: Subscriptions
+        description: ''
+      cli:
+        name: Subscription
+        description: ''
+        cliKey: Subscriptions
+      python:
+        name: subscriptions
+        description: ''
+        className: SubscriptionsOperations
+    protocol: {}
+  - $key: Tenants
+    operations:
+      - apiVersions:
+          - version: '2016-06-01'
+        parameters:
+          - *ref_1
+          - schema: *ref_5
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: /tenants
+                method: get
+                uri: '{$host}'
+        signatureParameters: []
+        responses:
+          - schema: *ref_35
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        extensions:
+          x-ms-examples:
+            listTenants:
+              parameters:
+                api-version: '2016-06-01'
+              responses:
+                '200':
+                  body:
+                    nextLink: string
+                    value:
+                      - id: /tenants/72f988bf-86f1-41af-91ab-2d7cd011db47
+                        tenantId: 72f988bf-86f1-41af-91ab-2d7cd011db47
+                      - id: /tenants/33e01921-4d64-4f8c-a055-5bdaffd5e33d
+                        tenantId: 33e01921-4d64-4f8c-a055-5bdaffd5e33d
+          x-ms-pageable:
+            nextLinkName: nextLink
+        language:
+          default:
+            name: list
+            description: Gets the tenants for your account.
+            paging: &ref_9
+              nextLinkName: nextLink
+          cli:
+            name: List
+            description: Gets the tenants for your account.
+            cliKey: List
+          python:
+            name: list
+            description: Gets the tenants for your account.
+            paging: *ref_9
+        protocol: {}
+    language:
+      default:
+        name: Tenants
+        description: ''
+      cli:
+        name: Tenant
+        description: ''
+        cliKey: Tenants
+      python:
+        name: tenants
+        description: ''
+        className: TenantsOperations
+    protocol: {}
+  - $key: Subscription
+    operations:
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - &ref_10
+            schema: *ref_12
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: subscription_id
+                description: Subscription Id.
+                serializedName: subscriptionId
+              cli:
+                name: subscriptionId
+                description: Subscription Id.
+                cliKey: subscriptionId
+              python:
+                name: subscription_id
+                description: Subscription Id.
+                serializedName: subscriptionId
+            protocol:
+              http:
+                in: path
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/subscriptions/{subscriptionId}/providers/Microsoft.Subscription/cancel'
+                method: post
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_10
+        responses:
+          - schema: *ref_37
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_11
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            cancelSubscription:
+              parameters:
+                api-version: '2020-09-01'
+                subscriptionId: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+              responses:
+                '200':
+                  body:
+                    value: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+        language:
+          default:
+            name: cancel
+            description: The operation to cancel a subscription
+          cli:
+            name: Cancel
+            description: The operation to cancel a subscription
+            cliKey: Cancel
+          python:
+            name: cancel
+            description: The operation to cancel a subscription.
+        protocol: {}
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - &ref_15
+            schema: *ref_12
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: subscription_id
+                description: Subscription Id.
+                serializedName: subscriptionId
+              cli:
+                name: subscriptionId
+                description: Subscription Id.
+                cliKey: subscriptionId
+              python:
+                name: subscription_id
+                description: Subscription Id.
+                serializedName: subscriptionId
+            protocol:
+              http:
+                in: path
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - parameters:
+              - schema: *ref_17
+                implementation: Method
+                origin: 'modelerfour:synthesized/content-type'
+                required: true
+                language:
+                  default:
+                    name: content_type
+                    description: Body Parameter content-type
+                    serializedName: Content-Type
+                  cli:
+                    name: ContentType
+                    description: Body Parameter content-type
+                    cliKey: content-type
+                  python:
+                    name: content_type
+                    description: Body Parameter content-type.
+                    serializedName: Content-Type
+                protocol:
+                  http:
+                    in: header
+              - &ref_14
+                schema: *ref_38
+                implementation: Method
+                required: true
+                language:
+                  default:
+                    name: body
+                    description: Subscription Name
+                  cli:
+                    name: body
+                    description: Subscription Name
+                    cliKey: body
+                  python:
+                    name: body
+                    description: Subscription Name.
+                protocol:
+                  http:
+                    in: body
+                    style: json
+            signatureParameters:
+              - *ref_14
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/subscriptions/{subscriptionId}/providers/Microsoft.Subscription/rename'
+                method: post
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_15
+        responses:
+          - schema: *ref_39
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_11
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            renameSubscription:
+              parameters:
+                api-version: '2020-09-01'
+                body:
+                  subscriptionName: Test Sub
+                subscriptionId: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+              responses:
+                '200':
+                  body:
+                    value: 83aa47df-e3e9-49ff-877b-94304bf3d3ad
+        language:
+          default:
+            name: rename
+            description: The operation to rename a subscription
+          cli:
+            name: Rename
+            description: The operation to rename a subscription
+            cliKey: Rename
+          python:
+            name: rename
+            description: The operation to rename a subscription.
+        protocol: {}
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - &ref_16
+            schema: *ref_12
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: subscription_id
+                description: Subscription Id.
+                serializedName: subscriptionId
+              cli:
+                name: subscriptionId
+                description: Subscription Id.
+                cliKey: subscriptionId
+              python:
+                name: subscription_id
+                description: Subscription Id.
+                serializedName: subscriptionId
+            protocol:
+              http:
+                in: path
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/subscriptions/{subscriptionId}/providers/Microsoft.Subscription/enable'
+                method: post
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_16
+        responses:
+          - schema: *ref_40
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_11
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            enableSubscription:
+              parameters:
+                api-version: '2020-09-01'
+                subscriptionId: 7948bcee-488c-47ce-941c-38e20ede803d
+              responses:
+                '200':
+                  body:
+                    value: 7948bcee-488c-47ce-941c-38e20ede803d
+        language:
+          default:
+            name: enable
+            description: The operation to enable a subscription
+          cli:
+            name: Enable
+            description: The operation to enable a subscription
+            cliKey: Enable
+          python:
+            name: enable
+            description: The operation to enable a subscription.
+        protocol: {}
+    language:
+      default:
+        name: Subscription
+        description: ''
+      cli:
+        name: Subscription
+        description: ''
+        cliKey: Subscription
+      python:
+        name: subscription
+        description: ''
+        className: SubscriptionOperations
+    protocol: {}
+  - $key: Operations
+    operations:
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: /providers/Microsoft.Subscription/operations
+                method: get
+                uri: '{$host}'
+        signatureParameters: []
+        responses:
+          - schema: *ref_41
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_11
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            getOperations:
+              parameters:
+                api-version: '2020-09-01'
+              responses:
+                '200':
+                  body:
+                    value:
+                      - name: Microsoft.Subscription/createOperation/action
+                        display:
+                          operation: Create a subscription
+                          provider: Microsoft Subscription
+                          resource: Resources
+        language:
+          default:
+            name: list
+            description: Lists all of the available Microsoft.Subscription API operations.
+          cli:
+            name: List
+            description: Lists all of the available Microsoft.Subscription API operations.
+            cliKey: List
+          python:
+            name: list
+            description: Lists all of the available Microsoft.Subscription API operations.
+        protocol: {}
+    language:
+      default:
+        name: Operations
+        description: ''
+      cli:
+        name: Operation
+        description: ''
+        cliKey: Operations
+      python:
+        name: operations
+        description: ''
+        className: Operations
+    protocol: {}
+  - $key: Alias
+    operations:
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - &ref_20
+            schema: *ref_12
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: alias_name
+                description: Alias Name
+                serializedName: aliasName
+              cli:
+                name: aliasName
+                description: Alias Name
+                cliKey: aliasName
+              python:
+                name: alias_name
+                description: Alias Name.
+                serializedName: aliasName
+            protocol:
+              http:
+                in: path
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - parameters:
+              - schema: *ref_17
+                implementation: Method
+                origin: 'modelerfour:synthesized/content-type'
+                required: true
+                language:
+                  default:
+                    name: content_type
+                    description: Body Parameter content-type
+                    serializedName: Content-Type
+                  cli:
+                    name: ContentType
+                    description: Body Parameter content-type
+                    cliKey: content-type
+                  python:
+                    name: content_type
+                    description: Body Parameter content-type.
+                    serializedName: Content-Type
+                protocol:
+                  http:
+                    in: header
+              - &ref_18
+                schema: *ref_44
+                implementation: Method
+                required: true
+                language:
+                  default:
+                    name: body
+                    description: ''
+                  cli:
+                    name: body
+                    description: ''
+                    cliKey: body
+                  python:
+                    name: body
+                    description: ''
+                protocol:
+                  http:
+                    in: body
+                    style: json
+            signatureParameters:
+              - *ref_18
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/providers/Microsoft.Subscription/aliases/{aliasName}'
+                method: put
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_20
+        responses:
+          - schema: *ref_19
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+          - schema: *ref_19
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '201'
+        exceptions:
+          - schema: *ref_21
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            CreateAlias:
+              parameters:
+                aliasName: aliasForNewSub
+                api-version: '2020-09-01'
+                body:
+                  properties:
+                    billingScope: '/providers/Microsoft.Billing/billingAccounts/e879cf0f-2b4d-5431-109a-f72fc9868693:024cabf4-7321-4cf9-be59-df0c77ca51de_2019-05-31/billingProfiles/PE2Q-NOIT-BG7-TGB/invoiceSections/MTT4-OBS7-PJA-TGB'
+                    displayName: Contoso MCA subscription
+                    workload: Production
+              responses:
+                '200':
+                  body:
+                    name: aliasForNewSub
+                    type: Microsoft.Subscription/aliases
+                    id: /providers/Microsoft.Subscription/aliases/aliasForNewSub
+                    properties:
+                      subscriptionId: subscriptions/291bba3f-e0a5-47bc-a099-3bdcb2a50a05
+                '201':
+                  body:
+                    name: aliasForNewSub
+                    type: Microsoft.Subscription/aliases
+                    id: /providers/Microsoft.Subscription/aliases/aliasForNewSub
+                    properties:
+                      subscriptionId: subscriptions/291bba3f-e0a5-47bc-a099-3bdcb2a50a05
+          x-ms-long-running-operation: true
+        language:
+          default:
+            name: create
+            description: Create Alias Subscription.
+          cli:
+            name: Create
+            description: Create Alias Subscription.
+            cliKey: Create
+          python:
+            name: create
+            description: Create Alias Subscription.
+        protocol: {}
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - &ref_22
+            schema: *ref_12
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: alias_name
+                description: Alias Name
+                serializedName: aliasName
+              cli:
+                name: aliasName
+                description: Alias Name
+                cliKey: aliasName
+              python:
+                name: alias_name
+                description: Alias Name.
+                serializedName: aliasName
+            protocol:
+              http:
+                in: path
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/providers/Microsoft.Subscription/aliases/{aliasName}'
+                method: get
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_22
+        responses:
+          - schema: *ref_19
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_21
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            GetAlias:
+              parameters:
+                aliasName: aliasForNewSub
+                api-version: '2020-09-01'
+              responses:
+                '200':
+                  body:
+                    name: aliasForNewSub
+                    type: Microsoft.Subscription/aliases
+                    id: /providers/Microsoft.Subscription/aliases/aliasForNewSub
+                    properties:
+                      subscriptionId: subscriptions/291bba3f-e0a5-47bc-a099-3bdcb2a50a05
+        language:
+          default:
+            name: get
+            description: Get Alias Subscription.
+          cli:
+            name: Get
+            description: Get Alias Subscription.
+            cliKey: Get
+          python:
+            name: get
+            description: Get Alias Subscription.
+        protocol: {}
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - &ref_23
+            schema: *ref_12
+            implementation: Method
+            required: true
+            language:
+              default:
+                name: alias_name
+                description: Alias Name
+                serializedName: aliasName
+              cli:
+                name: aliasName
+                description: Alias Name
+                cliKey: aliasName
+              python:
+                name: alias_name
+                description: Alias Name.
+                serializedName: aliasName
+            protocol:
+              http:
+                in: path
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: '/providers/Microsoft.Subscription/aliases/{aliasName}'
+                method: delete
+                uri: '{$host}'
+        signatureParameters:
+          - *ref_23
+        responses:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                statusCodes:
+                  - '200'
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                statusCodes:
+                  - '204'
+        exceptions:
+          - schema: *ref_21
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            DeleteAlias:
+              parameters:
+                aliasName: aliasForNewSub
+                api-version: '2020-09-01'
+              responses:
+                '200': {}
+                '204': {}
+        language:
+          default:
+            name: delete
+            description: Delete Alias.
+          cli:
+            name: Delete
+            description: Delete Alias.
+            cliKey: Delete
+          python:
+            name: delete
+            description: Delete Alias.
+        protocol: {}
+      - apiVersions:
+          - version: '2020-09-01'
+        parameters:
+          - *ref_1
+          - schema: *ref_13
+            implementation: Method
+            origin: 'modelerfour:synthesized/api-version'
+            required: true
+            language:
+              default:
+                name: api_version
+                description: Api Version
+                serializedName: api-version
+              cli:
+                name: ApiVersion
+                description: Api Version
+                cliKey: ApiVersion
+              python:
+                name: api_version
+                description: Api Version.
+                serializedName: api-version
+            protocol:
+              http:
+                in: query
+        requests:
+          - language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                path: /providers/Microsoft.Subscription/aliases
+                method: get
+                uri: '{$host}'
+        signatureParameters: []
+        responses:
+          - schema: *ref_47
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - '200'
+        exceptions:
+          - schema: *ref_21
+            language:
+              default:
+                name: ''
+                description: ''
+              python:
+                name: ''
+                description: ''
+            protocol:
+              http:
+                knownMediaType: json
+                mediaTypes:
+                  - application/json
+                statusCodes:
+                  - default
+        extensions:
+          x-ms-examples:
+            GetAlias:
+              parameters:
+                api-version: '2020-09-01'
+              responses:
+                '200':
+                  body:
+                    nextLink: null
+                    value:
+                      - name: aliasForNewSub
+                        type: Microsoft.Subscription/aliases
+                        id: /providers/Microsoft.Subscription/aliases/aliasForNewSub
+                        properties:
+                          subscriptionId: subscriptions/291bba3f-e0a5-47bc-a099-3bdcb2a50a05
+        language:
+          default:
+            name: list
+            description: Get Alias Subscription.
+          cli:
+            name: List
+            description: Get Alias Subscription.
+            cliKey: List
+          python:
+            name: list
+            description: Get Alias Subscription.
+        protocol: {}
+    language:
+      default:
+        name: Alias
+        description: ''
+      cli:
+        name: Alias
+        description: ''
+        cliKey: Alias
+      python:
+        name: alias
+        description: ''
+        className: AliasOperations
+    protocol: {}
+security:
+  authenticationRequired: true
+language:
+  default:
+    name: SubscriptionClient
+    description: ''
+  cli:
+    name: SubscriptionClient
+    description: ''
+  python:
+    name: subscriptionclient
+    description: ''
+protocol:
+  http: {}
