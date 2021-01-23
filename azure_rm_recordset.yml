@@ -1,0 +1,43 @@
+ - name: Create a RecordSet
+   azure_rm_recordset:
+     resource_group_name: my_resource_group_name
+     zone_name: my_zone_name
+     relative_record_set_name: my_relative_record_set_name
+     if_match: my_if_match
+     if_none_match: my_if_none_match
+     etag: my_etag
+   
+
+ - name: get the RecordSet
+   azure_rm_recordset_info:
+     resource_group_name: my_resource_group_name
+     zone_name: my_zone_name
+     relative_record_set_name: my_relative_record_set_name
+   
+
+ - name: Update the RecordSet (no change)
+   azure_rm_recordset:
+     resource_group_name: my_resource_group_name
+     zone_name: my_zone_name
+     relative_record_set_name: my_relative_record_set_name
+     if_match: my_if_match
+     etag: my_etag
+   
+
+ - name: Update the RecordSet
+   azure_rm_recordset:
+     resource_group_name: my_resource_group_name
+     zone_name: my_zone_name
+     relative_record_set_name: my_relative_record_set_name
+     if_match: my_if_match
+     etag: my_etag22
+   
+
+ - name: Delete the RecordSet
+   azure_rm_recordset:
+     resource_group_name: my_resource_group_name
+     zone_name: my_zone_name
+     relative_record_set_name: my_relative_record_set_name
+     if_match: my_if_match
+     state: absent
+   
